@@ -8,3 +8,5 @@ I mean, the documents in the folder named "sketsch_of_lectures" are not useful f
 ####Explanations about the missed date of "Eine Woche,  ein Beispiel"
 
 November 28th-December 5th, 2021: focus on the "moduli".
+
+December 19th, 2021: focus on the "moduli of vector bundles"(haven't done actually)
