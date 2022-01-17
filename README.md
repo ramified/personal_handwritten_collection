@@ -9,4 +9,6 @@ I mean, the documents in the folder named "sketsch_of_lectures" are not useful f
 
 November 28th-December 5th, 2021: focus on the "moduli".
 
-December 19th, 2021: focus on the "moduli of vector bundles"(haven't done actually)
+December 19th, 2021: focus on the "moduli of vector bundles"
+
+January 2th, 2022: focus on the "moduli of elliptic curves"(haven't finished actually)
