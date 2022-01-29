@@ -5,7 +5,7 @@
 
 I mean, the documents in the folder named "sketsch_of_lectures" are not useful for you. I keep them here only for the convenience of myself.
 
-####Explanations about the missed date of "Eine Woche,  ein Beispiel"
+####Explanations about the missed date of "Eine Woche,  ein Beispiel"(in Chinese, "日拱一卒")
 
 November 28th-December 5th, 2021: focus on the "moduli".
 
