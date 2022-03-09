@@ -22,3 +22,9 @@ January 23rd, 2022: I saw the videos of the mini-course “$p$-adic functions on
 
 
 February 6th, 2022: prepare for the exam. 
+
+March 6th, 2022: Read the survey "The Borel-Weil-Bott theorem in examples" by Liao Wang and saw the videos of the mini-course “[Sieves](https://www.youtube.com/watch?v=uBYLWvynKuc&list=PLYpVTXjEi1oflFW1S4oLGoo5rEmQ2ErwW&index=1)” by Brandon Alberts. There are some typos, and the exercise of mini-course in the last 3 pages are rather difficult for me. Here are some highlights for the mini-course:
+
+- Abel summation is a powerful tool in estimating sums.
+- By applying Brun's sieve, one can get an upper bound of twin prime numbers.
+- Brun's main theorem can give us both upper bound and lower bound.
