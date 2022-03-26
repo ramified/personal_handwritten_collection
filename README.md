@@ -30,5 +30,5 @@ March 6th, 2022: Read the survey "The Borel-Weil-Bott theorem in examples" by Li
 - By applying Brun's sieve, one can get an upper bound of twin prime numbers.
 - Brun's main theorem can give us both upper bound and lower bound.
 
-March 20th, 2022: During these two weeks, I take part in the [Klein AG seminar](https://www.math.uni-bonn.de/people/heuer/KAG), travel to Hamburg, listen to two operas, play with the software [LMMS](https://docs.lmms.io/user-manual/), learn some knowledge of chords from [Bilibili](https://www.bilibili.com/video/BV1ot4y1S7jh). So I want to have a rest. T_T
+March 20th, 2022: During these two weeks, I take part in the [Klein AG seminar](http://www.math.uni-bonn.de/people/heuer/KleineAG), travel to Hamburg, listen to two operas, play with the software [LMMS](https://docs.lmms.io/user-manual/), learn some knowledge of chords from [Bilibili](https://www.bilibili.com/video/BV1ot4y1S7jh). So I want to have a rest. T_T
 
