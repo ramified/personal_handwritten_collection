@@ -32,4 +32,6 @@ March 6th, 2022: Read the survey "The Borel-Weil-Bott theorem in examples" by Li
 
 March 20th, 2022: During these two weeks, I take part in the [Klein AG seminar](http://www.math.uni-bonn.de/people/heuer/KleineAG), travel to Hamburg, listen to two operas, play with the software [LMMS](https://docs.lmms.io/user-manual/), learn some knowledge of chords from [Bilibili](https://www.bilibili.com/video/BV1ot4y1S7jh). So I want to have a rest. T_T
 
-April 3th, 2022: I have to prepare two talks: the first one want to introduce the Auslander--Reiten theory in a personal way (with no proof), and the second one concludes the irreducible representations of $GL_2(\mathbb{Q}_p)$. 
+April 3th, 2022: I have to prepare two talks: the first one want to introduce the Auslander--Reiten theory in a personal way (with no proof), and the second one concludes the irreducible representations of $GL_2(\mathbb{Q}_p)$. (Finally I don't need to prepare anyone, but I don't want to fill in this blank ╮(╯▽╰)╭)
+
+May 8th-May 22nd, 2022: I wanted to write irreducible representations of $GL_2(\mathbb{Q}_p)$, but I need to prepare the talk, so I have no time to do that...
