@@ -4,7 +4,7 @@ This is the "notes" of modular forms which are only useful for giving a talk. Th
 
 Some references for interested readers and for labeling:
 
-[Vakil] Vakil, The Rising Sea: Foundations of Algebraic Geometry
+[JP] Jean Pierre Serre, A course in arithmetic
 
 [DZ] Don Zagier, The 1-2-3 of Modular Forms: Lectures at a Summer School in Nordfjordeid
 
@@ -13,6 +13,8 @@ Some references for interested readers and for labeling:
 [WWL] 李文威,模形式初步
 
 [KL] Klein, Lectures on the Icosahedron and the Solution of Equations of the Fifth Degree
+
+[Vakil] Vakil, The Rising Sea: Foundations of Algebraic Geometry
 
 Most of them can be easily found on the internet.
 
