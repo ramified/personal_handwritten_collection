@@ -35,3 +35,5 @@ March 20th, 2022: During these two weeks, I take part in the [Klein AG seminar](
 April 3th, 2022: I have to prepare two talks: the first one want to introduce the Auslander--Reiten theory in a personal way (with no proof), and the second one concludes the irreducible representations of $GL_2(\mathbb{Q}_p)$. (Finally I don't need to prepare anyone, but I don't want to fill in this blank ╮(╯▽╰)╭)
 
 May 8th-May 22nd, 2022: I wanted to write irreducible representations of $GL_2(\mathbb{Q}_p)$, but I need to prepare the talk, so I have no time to do that... (After some discussion with Qirui Li, these blankness are now filled in)
+
+July 31st-August 7th, 2022: Work on modular forms. Actually I should write something on perverse sheaf on $\mathbb{CP}^1$.
