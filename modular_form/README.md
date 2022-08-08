@@ -14,6 +14,8 @@ Some references for interested readers and for labeling:
 
 [NTII] 数论II-岩泽理论和自守形式-黑川信重等著+印林生等译
 
+[ECII] Silverman, The Arithmetic of Elliptic Curves
+
 [KL] Klein, Lectures on the Icosahedron and the Solution of Equations of the Fifth Degree
 
 [Vakil] Vakil, The Rising Sea: Foundations of Algebraic Geometry
