@@ -37,3 +37,16 @@ https://github.com/ramified/personal_tex_collection/blob/main/%E8%9B%99%E9%B8%A3
 https://github.com/ramified/moduli_in_algebraic_geometry/blob/main/moduli.pdf
 
 https://github.com/ramified/personal_tex_collection/blob/main/%E6%88%91%E7%9C%8B%E8%BF%87%E7%9A%84%E4%B9%A6/%E4%B9%A6%E5%8D%95.pdf
+
+
+
+The following links are something I want to read but haven't read:
+
+[Notes on modular forms of half-integral weight.](https://www.ma.imperial.ac.uk/~buzzard/maths/research/notes/modular_forms_of_half_integral_weight.pdf)
+
+[Riemann form and high rank torus](https://math.stanford.edu/~conrad/vigregroup/vigre04/abvaran.pdf) 
+[](change pdf to tex)
+
+[congruences between modular forms](https://swc-math.github.io/aws/2013/2013CalegariLectureNotes.pdf)
+
+[Index of Winter Schools](https://swc-math.github.io/aws/index.html)
