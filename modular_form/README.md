@@ -22,6 +22,8 @@ Some references for interested readers and for labeling:
 
 [Vakil] Vakil, The Rising Sea: Foundations of Algebraic Geometry
 
+[Milne] Everything from J.S. Milne. Not recommend. I cite it only because I can not find other references sometimes.
+
 Most of them can be easily found on the internet.
 
 
