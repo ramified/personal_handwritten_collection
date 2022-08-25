@@ -36,4 +36,4 @@ April 3th, 2022: I have to prepare two talks: the first one want to introduce th
 
 May 8th-May 22nd, 2022: I wanted to write irreducible representations of $GL_2(\mathbb{Q}_p)$, but I need to prepare the talk, so I have no time to do that... (After some discussion with Qirui Li, these blankness are now filled in)
 
-July 31st-August 7th, 2022: Work on modular forms. Actually I should write something on perverse sheaf on $\mathbb{CP}^1$.
+July 31st-August 21th, 2022: Work on modular forms. Actually I should write something on perverse sheaf on $\mathbb{CP}^1$.
