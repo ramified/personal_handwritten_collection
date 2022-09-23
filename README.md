@@ -37,3 +37,5 @@ April 3th, 2022: I have to prepare two talks: the first one want to introduce th
 May 8th-May 22nd, 2022: I wanted to write irreducible representations of $GL_2(\mathbb{Q}_p)$, but I need to prepare the talk, so I have no time to do that... (After some discussion with Qirui Li, these blankness are now filled in)
 
 July 31st-August 14th, 2022: Work on modular forms. Actually I should write something on perverse sheaf on $\mathbb{CP}^1$.
+
+September 11th, 2022: Had one week of tourism in Paris and one week in Antwerp. Had no time to think out new examples, but you can definitely get lots of (highly non-trivial) examples in [the videos](https://www.youtube.com/channel/UCMfdlw1N9Ug_FYm6r0g6xPA) of the conference: Noncommutative Shapes.
