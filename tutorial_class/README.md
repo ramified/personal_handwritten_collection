@@ -23,3 +23,8 @@ For convenience, I put links here:
 [The intuition behind Fourier and Laplace transforms](https://www.youtube.com/watch?v=3gjJDuCAEQQ)
 <!--[What does the Laplace Transform really tell us? A visual explanation (plus applications)](https://www.youtube.com/watch?v=n2y7n6jw5d0) see 2:06-2:23-->
 
+### Session 2
+
+We mainly discuss some computations of partial derivatives (Task 1,2,4).
+
+Task 3 concerns with the visualization of complex functions. Videos in session 1 are recommended.
