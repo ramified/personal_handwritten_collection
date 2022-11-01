@@ -28,3 +28,11 @@ For convenience, I put links here:
 We mainly discuss some computations of partial derivatives (Task 1,2,4).
 
 Task 3 concerns with the visualization of complex functions. Videos in session 1 are recommended.
+
+[Divergence and curl: The language of Maxwell's equations, fluid flow, and more](https://www.youtube.com/watch?v=rB83DpBJQsE): It explains the physical meaning of divergence and curl.
+
+### Session 3
+
+We mainly discuss some computations of operators (Task 2,3).
+[But what is a partial differential equation? | DE2](https://www.youtube.com/watch?v=ly4S0oi3Yz8&list=RDCMUCYO_jab_esuFRV4b17AJtAw&index=3): It explains the physical meaning of heat equation and laplacian.
+[The equation of a wave](https://www.youtube.com/watch?v=9WZM68aVnGk): It explains the physical meaning of wave equation.
