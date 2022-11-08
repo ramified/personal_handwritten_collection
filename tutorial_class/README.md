@@ -36,3 +36,9 @@ Task 3 concerns with the visualization of complex functions. Videos in session 1
 We mainly discuss some computations of operators (Task 2,3).
 [But what is a partial differential equation? | DE2](https://www.youtube.com/watch?v=ly4S0oi3Yz8&list=RDCMUCYO_jab_esuFRV4b17AJtAw&index=3): It explains the physical meaning of heat equation and laplacian.
 [The equation of a wave](https://www.youtube.com/watch?v=9WZM68aVnGk): It explains the physical meaning of wave equation.
+
+### Session 4
+
+We mainly discuss some special cases of Stokes' Theorem: Green's Theorem and divergence theorem(Gauss's theorem)
+
+[Stokes' Theorem on Manifolds](https://www.youtube.com/watch?v=1lGM5DEdMaw): The emphasis of this videa is the local-global correspodence.
