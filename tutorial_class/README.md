@@ -42,3 +42,12 @@ We mainly discuss some computations of operators (Task 2,3).
 We mainly discuss some special cases of Stokes' Theorem: Green's Theorem and divergence theorem(Gauss's theorem)
 
 [Stokes' Theorem on Manifolds](https://www.youtube.com/watch?v=1lGM5DEdMaw): The emphasis of this videa is the local-global correspodence.
+
+### Session 5
+
+We mainly discuss the distributions. In mathematics, we always want to work on a bigger spaces.
+
+[Dirac Delta-Funktion und ihre wichtige Eigenschaften](https://www.youtube.com/watch?v=QdPJaZzEvD4): I like the motivation part especially.
+[Distribution theory](https://www.youtube.com/watch?v=gwVEEUg8PBY&list=PLBh2i93oe2qsbptdcvFlowCl51EX_a3nB): It is long and a little boring actually.
+[Was sind Distributionen? Ist der Dirac-Impuls eine Funktion?](https://www.youtube.com/watch?v=J8Gfq11eBlY): seeing the picture of  1:00 is enough.
+[The graph of a bump function](https://en.wikipedia.org/wiki/Bump_function#/media/File:Bump.png)
