@@ -51,3 +51,18 @@ We mainly discuss the distributions. In mathematics, we always want to work on a
 [Distribution theory](https://www.youtube.com/watch?v=gwVEEUg8PBY&list=PLBh2i93oe2qsbptdcvFlowCl51EX_a3nB): It is long and a little boring actually.
 [Was sind Distributionen? Ist der Dirac-Impuls eine Funktion?](https://www.youtube.com/watch?v=J8Gfq11eBlY): seeing the picture of  1:00 is enough.
 [The graph of a bump function](https://en.wikipedia.org/wiki/Bump_function#/media/File:Bump.png)
+
+### Session 6
+
+You may use sage to double check your calculation:
+
+sage: var('x,y,s,t');
+sage: taylor( (x-y)/(x+y), (x,1), (y,1), 2 )
+derivative((x-y)/(x+y), x)
+derivative((x-y)/(x+y), y)
+derivative(1/(x + y) - (x - y)/(x + y)^2, x)
+derivative(1/(x + y) - (x - y)/(x + y)^2, y)
+derivative(-1/(x + y) - (x - y)/(x + y)^2, y)
+
+forget() # always remember to forget assumptions you no longer need
+integrate((2*x+2)*4*((6-x)/6)^2,(x,0,6))
