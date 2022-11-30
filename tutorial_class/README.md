@@ -66,3 +66,7 @@ derivative(-1/(x + y) - (x - y)/(x + y)^2, y)
 
 forget() # always remember to forget assumptions you no longer need
 integrate((2*x+2)*4*((6-x)/6)^2,(x,0,6))
+
+### Session 7
+
+We mainly discuss the convergence of the power series.
