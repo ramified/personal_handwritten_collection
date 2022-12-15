@@ -70,3 +70,8 @@ integrate((2*x+2)*4*((6-x)/6)^2,(x,0,6))
 ### Session 7
 
 We mainly discuss the convergence of the power series.
+
+### Session 8
+
+This week we review two types of convergence of function series: pointwise convergence and uniform convergence.
+

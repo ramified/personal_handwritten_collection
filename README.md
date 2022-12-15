@@ -43,3 +43,5 @@ September 11th, 2022: Had one week of tourism in Paris and one week in Antwerp. 
 October 9th-16th, 2022: No time to update. TOEFL exam is coming!
 
 See [Algebraic K-theory and Trace Methods](https://www.youtube.com/watch?v=URXm2zIBLyU) if you want to understand some histories and introductions to algebraic K-theory.
+
+December, 2022: Working on the master thesis.
