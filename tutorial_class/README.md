@@ -75,3 +75,6 @@ We mainly discuss the convergence of the power series.
 
 This week we review two types of convergence of function series: pointwise convergence and uniform convergence.
 
+### Session 10-11
+
+This week we discuss the residue formula. The tutorial is roughly divided into two parts, the first part on local informations (singularity and Laurent series) and second part on global informations (contour integrals).
