@@ -78,3 +78,9 @@ This week we review two types of convergence of function series: pointwise conve
 ### Session 10-11
 
 This week we discuss the residue formula. The tutorial is roughly divided into two parts, the first part on local informations (singularity and Laurent series) and second part on global informations (contour integrals).
+
+### Session 12
+
+This week we compute the Fourier coefficient and constructs the existence of non-measurable set (assuming the axiom of choice).
+
+[But what is a Fourier series? From heat flow to drawing with circles | DE4](https://www.youtube.com/watch?v=r6sGWTCMz2k&t=56s)
