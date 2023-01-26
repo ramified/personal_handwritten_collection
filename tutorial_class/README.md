@@ -15,6 +15,7 @@ For convenience, I put links here:
 
 [exponential function](https://www.youtube.com/watch?v=v0YEaeIClKY) and [Euler's Formula Poem](https://www.youtube.com/watch?v=zLzLxVeqdQg): The work of 3Blue1Brown is usually nice.
 
+[stereographic projection](https://syntopia.github.io/Polytopia/polytopes.html#rboxSimple3): Play with the stereographic projection!
 #####Fourier analysis
 
 [But what is the Fourier Transform? A visual introduction.](https://www.youtube.com/watch?v=spUNpyF58BY)
@@ -83,4 +84,6 @@ This week we discuss the residue formula. The tutorial is roughly divided into t
 
 This week we compute the Fourier coefficient and constructs the existence of non-measurable set (assuming the axiom of choice).
 
-[But what is a Fourier series? From heat flow to drawing with circles | DE4](https://www.youtube.com/watch?v=r6sGWTCMz2k&t=56s)
+### Session 13
+
+This week we discuss the measurable functions and the (square) integrable functions.
