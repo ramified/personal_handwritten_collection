@@ -38,7 +38,22 @@ May 8th-May 22nd, 2022: I wanted to write irreducible representations of $GL_2(\
 
 July 31st-August 14th, 2022: Work on modular forms. Actually I should write something on perverse sheaf on $\mathbb{CP}^1$.
 
-September 11th, 2022: Had one week of tourism in Paris and one week in Antwerp. Had no time to think out new examples, but you can definitely get lots of (highly non-trivial) examples in [the videos](https://www.youtube.com/channel/UCMfdlw1N9Ug_FYm6r0g6xPA) of the conference: Noncommutative Shapes. I also learned the [Alexander's theorem](https://en.wikipedia.org/wiki/Alexander%27s_theorem) from my schoolmate, which can help us to parametrize knots and links. (For example, up to ambient isotopy there are only countable many knots in $S^3$, one can compute the Alexander–Conway polynomial systematically, and we can let the computer know the knot we want.)
+September 11th, 2022: Had one week of tourism in Paris and one week in Antwerp. Had no time to think out new examples, but you can definitely get lots of (highly non-trivial) examples in [the videos](https://www.youtube.com/channel/UCMfdlw1N9Ug_FYm6r0g6xPA) of the conference: Noncommutative Shapes. I also learned the [Alexander's theorem](https://en.wikipedia.org/wiki/Alexander%27s_theorem) from my schoolmate, which can help us to parametrize knots and links, see [Braids](https://www.youtube.com/watch?v=1goWirL46qo&t=1s). (For example, up to ambient isotopy there are only countable many knots in $S^3$, one can compute the Alexander–Conway polynomial systematically, and we can let the computer know the knot we want.) Some explanations between configuration spaces and braid groups is shown here:  [Video](https://www.youtube.com/watch?v=3vZ8TT5Ln7o), [snapshots](https://www.imaginary.org/sites/default/files/snapshots/snapshots-2019-011.pdf)
+
+Some formulas are collected here:
+
+$$B_2=\left<\sigma_1,\sigma_2 \middle| \sigma_1\sigma_2\sigma_1=\sigma_2\sigma_1\sigma_2  \right>\cong \pi_1(\operatorname{UConf}_5(\mathbb{C}))$$
+$$\mathcal{S}_2=\left<a=(\sigma_1\sigma_2)^3, b=\sigma_2^2, c= \sigma_2\sigma_1^2\sigma_2  \middle| aba^{-1}b^{-1}, aca^{-1}c^{-1}  \right> \cong \pi_1(\operatorname{Conf}_5(\mathbb{C}))$$
+
+$$1 \longrightarrow \mathcal{S}_k  \longrightarrow B_k  \longrightarrow S_k  \longrightarrow 1 $$
+
+$$1 \longrightarrow \left<\sigma_i^n \right>_i  \longrightarrow B_k  \longrightarrow B_k(n)  \longrightarrow 1 $$
+
+For $k,n \geqslant 3$, $\# B_k(n) < +\infty \Longleftrightarrow (k,n)= (3,3), (3,4), (4,3), (3,5), (5,3)$.
+
+In those cases, we know $\# B_k(n)$ in the snapshot.
+
+
 
 October 9th-16th, 2022: No time to update. TOEFL exam is coming!
 

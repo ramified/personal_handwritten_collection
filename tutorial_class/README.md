@@ -57,6 +57,8 @@ We mainly discuss the distributions. In mathematics, we always want to work on a
 
 You may use sage to double check your calculation:
 
+
+```
 sage: var('x,y,s,t');
 sage: taylor( (x-y)/(x+y), (x,1), (y,1), 2 )
 derivative((x-y)/(x+y), x)
@@ -67,7 +69,7 @@ derivative(-1/(x + y) - (x - y)/(x + y)^2, y)
 
 forget() # always remember to forget assumptions you no longer need
 integrate((2*x+2)*4*((6-x)/6)^2,(x,0,6))
-
+```
 ### Session 7
 
 We mainly discuss the convergence of the power series.
