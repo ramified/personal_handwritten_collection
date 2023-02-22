@@ -36,14 +36,17 @@ Modular form:
 
 Most of them can be easily found on the internet.
 
-
-
 For some parts I have already written, see [here](http://home.ustc.edu.cn/~xx352229/web/main/newprogram.html) .
-
-
-
-
 
 The following links are something I want to read but haven't read:
 
 [Index of Winter Schools](https://swc-math.github.io/aws/index.html)
+
+
+
+###1.1
+
+My notes: [NAlocal](https://github.com/ramified/personal_handwritten_collection/raw/main/weeklyupdate/2022.04.10_non-Archimedean_local_field_F.pdf), [NAext](https://github.com/ramified/personal_handwritten_collection/raw/main/weeklyupdate/2022.05.01_extension_of_NA_local_field.pdf), [NAval](https://github.com/ramified/personal_handwritten_collection/raw/main/weeklyupdate/2022.07.10_NA_valued_field.pdf)
+
+[etale]: [Galois Groups and Fundamental Groups, Etale Fundamental Groups](https://math.berkeley.edu/~dcorwin/files/etale.pdf)
+
