@@ -24,11 +24,14 @@ The following links are something I want to read but haven't read:
 
 ###1.1
 
-My notes: \[[NAlocal](https://github.com/ramified/personal_handwritten_collection/raw/main/weeklyupdate/2022.04.10_non-Archimedean_local_field_F.pdf)\],  \[[NAext](https://github.com/ramified/personal_handwritten_collection/raw/main/weeklyupdate/2022.05.01_extension_of_NA_local_field.pdf)\],  \[[NAval](https://github.com/ramified/personal_handwritten_collection/raw/main/weeklyupdate/2022.07.10_NA_valued_field.pdf)\],  \[[Dessin d'enfant](https://github.com/ramified/personal_tex_collection/raw/main/dessin%20d&#39;enfant/dessin%20d&#39;enfant%20ppt.pdf)\],  \[[Adèle](https://github.com/ramified/personal_handwritten_collection/blob/raw/weeklyupdate/2022.08.28_global_field.pdf)\]
+My notes: \[[NAlocal](https://github.com/ramified/personal_handwritten_collection/raw/main/weeklyupdate/2022.04.10_non-Archimedean_local_field_F.pdf)\],  \[[NAext](https://github.com/ramified/personal_handwritten_collection/raw/main/weeklyupdate/2022.05.01_extension_of_NA_local_field.pdf)\],  \[[NAval](https://github.com/ramified/personal_handwritten_collection/raw/main/weeklyupdate/2022.07.10_NA_valued_field.pdf)\],  \[[Dessin d'enfant](https://github.com/ramified/personal_tex_collection/raw/main/dessin%20d&#39;enfant/dessin%20d&#39;enfant%20ppt.pdf)\],  \[[Algfungp](https://github.com/ramified/personal_handwritten_collection/blob/raw/scattered/%E4%BB%A3%E6%95%B0%E5%9F%BA%E6%9C%AC%E7%BE%A4.pdf)\],  \[[Adèle](https://github.com/ramified/personal_handwritten_collection/blob/raw/weeklyupdate/2022.08.28_global_field.pdf)\]
 
+\[LCFT\]: [Notes on class field theory](https://kskedlaya.org/cft)
 \[etale\]: [Galois Groups and Fundamental Groups, Etale Fundamental Groups](https://math.berkeley.edu/~dcorwin/files/etale.pdf)
 \[GalFun\]:  Tamás Szamuely, Galois Groups and Fundamental Groups
 \[Collins\]: [the Galois action on Dessin d'enfants](http://math.uchicago.edu/~may/REU2019/REUPapers/Collins.pdf)
+\[Cox $x^2+ny^2$\]: [Primes of the Form x2+ny2](http://www.math.toronto.edu/~ila/Cox-Primes_of_the_form_x2+ny2.pdf)
+\[Knotprime\]: [Knots and Primes](http://www.math.columbia.edu/~chaoli/tutorial2012/knots-and-primes.pdf)
 
 ###4.2
 
