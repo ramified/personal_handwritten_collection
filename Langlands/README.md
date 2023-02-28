@@ -38,6 +38,13 @@ My notes: \[[NAlocal](https://github.com/ramified/personal_handwritten_collectio
 
 \[Knotprime\]: [Knots and Primes](http://www.math.columbia.edu/~chaoli/tutorial2012/knots-and-primes.pdf)
 
+###2.1
+
+\[Allen\]: Patrick Allen, [Nonarchimedean Local Fields](https://faculty.math.illinois.edu/~pballen/research/LocalFields.pdf)
+
+\[VS\]: Gabriel D. Villa–Salvador, [Analogue of the Kronecker–Weber Theorem in positive characteristic](https://www.ctrl.cinvestav.mx/~gvilla/KronecherWebercharpDegruyerv3.pdf)
+
+\[Hayes\]:  D. Hayes, “A brief introduction to Drinfeld modules”, in The Arithmetic of Function Fields (Columbus, OH, 1991), de Gruyter, Berlin, (1992), 1–32.
 ###4.2
 
 
