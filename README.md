@@ -60,3 +60,5 @@ October 9th-16th, 2022: No time to update. TOEFL exam is coming!
 See [Algebraic K-theory and Trace Methods](https://www.youtube.com/watch?v=URXm2zIBLyU) if you want to understand some histories and introductions to algebraic K-theory.
 
 December, 2022: Working on the master thesis.
+
+From February to March, 2022: Sorry I was quite busy these two months, for PhD applications, 3 oral exams, 1 master thesis defense, 1 informal talk, 1 conference, 1 Klein AG  and 2 exam invigilations.
