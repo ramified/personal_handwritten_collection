@@ -45,9 +45,8 @@ My notes: \[[NAlocal](https://github.com/ramified/personal_handwritten_collectio
 \[VS\]: Gabriel D. Villa–Salvador, [Analogue of the Kronecker–Weber Theorem in positive characteristic](https://www.ctrl.cinvestav.mx/~gvilla/KronecherWebercharpDegruyerv3.pdf)
 
 \[Hayes\]:  D. Hayes, “A brief introduction to Drinfeld modules”, in The Arithmetic of Function Fields (Columbus, OH, 1991), de Gruyter, Berlin, (1992), 1–32.
+
 ###4.2
-
-
 
 Modular form:
 
@@ -66,3 +65,9 @@ Modular form:
 \[KM85\] Nicholas M. Katz, Barry Mazur, Arithmetic Moduli of Elliptic Curves
 
 \[Milne\] Everything from J.S. Milne. Not recommend. I cite it only because I can not find other references sometimes.
+
+###$GL$-case
+
+\[LLC_R_89\]: Langlands, Robert P., [On the classification of irreducible representations of real algebraic groups](https://publications.ias.edu/sites/default/files/classification-rpl.pdf)
+
+\[Knapp91\]: A. W. KNAPP, [Local Langlands correspondence: the Archimedean case](https://www.math.stonybrook.edu/~aknapp/pdf-files/motives.pdf) or [here](https://www.researchgate.net/publication/240095596_Local_Langlands_correspondence_The_Archimedean_case)
