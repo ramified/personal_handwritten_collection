@@ -23,3 +23,7 @@ The lecture note [Functional Analysis](http://staff.ustc.edu.cn/~wangzuoq/Course
 - $\varepsilon-\delta$ language, convergence (Task 4).
 
 [Limits, L'Hôpital's rule, and epsilon delta definitions](https://www.youtube.com/watch?v=kfF40MiS7zA): see 4:52-9:53
+
+###Session 2
+
+We discuss about the topology in $\mathbb{R}^n$. The subsets in $\mathbb{C}$ is also discussed.
