@@ -71,3 +71,6 @@ Modular form:
 \[LLC_R_89\]: Langlands, Robert P., [On the classification of irreducible representations of real algebraic groups](https://publications.ias.edu/sites/default/files/classification-rpl.pdf)
 
 \[Knapp91\]: A. W. KNAPP, [Local Langlands correspondence: the Archimedean case](https://www.math.stonybrook.edu/~aknapp/pdf-files/motives.pdf) or [here](https://www.researchgate.net/publication/240095596_Local_Langlands_correspondence_The_Archimedean_case)
+
+\[BVA92\]: Dan Barbasch, David Vogan, and Jeffrey Adams
+, [The Langlands Classification and Irreducible Characters for Real Reductive Groups](http://www.math.utah.edu/~ptrapa/math-library/abv/abv.pdf)
