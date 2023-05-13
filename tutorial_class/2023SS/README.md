@@ -27,3 +27,7 @@ The lecture note [Functional Analysis](http://staff.ustc.edu.cn/~wangzuoq/Course
 ###Session 2
 
 We discuss about the topology in $\mathbb{R}^n$. The subsets in $\mathbb{C}$ is also discussed.
+
+###Session 4
+
+We talk about some preliminaries: sets, pictures and equivalent descriptions. Finally we review the topological concepts for those exercises.
