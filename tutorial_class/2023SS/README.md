@@ -31,3 +31,7 @@ We discuss about the topology in $\mathbb{R}^n$. The subsets in $\mathbb{C}$ is 
 ###Session 4
 
 We talk about some preliminaries: sets, pictures and equivalent descriptions. Finally we review the topological concepts for those exercises.
+
+###Session 5
+
+This week we discuss about topological spaces and their properties. For a more detailed discussion about this topic, please see Prof. Zuoqin Wang's [lecture notes](http://staff.ustc.edu.cn/~wangzuoq/Courses/19S-Topology/index.html).
