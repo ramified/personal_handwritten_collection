@@ -74,3 +74,5 @@ Modular form:
 
 \[BVA92\]: Dan Barbasch, David Vogan, and Jeffrey Adams
 , [The Langlands Classification and Irreducible Characters for Real Reductive Groups](http://www.math.utah.edu/~ptrapa/math-library/abv/abv.pdf)
+
+\[MP23\]: Mihran Papikian, [Drinfeld Modules](https://link.springer.com/book/10.1007/978-3-031-19707-9)
