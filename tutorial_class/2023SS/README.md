@@ -35,3 +35,7 @@ We talk about some preliminaries: sets, pictures and equivalent descriptions. Fi
 ###Session 5
 
 This week we discuss about topological spaces and their properties. For a more detailed discussion about this topic, please see Prof. Zuoqin Wang's [lecture notes](http://staff.ustc.edu.cn/~wangzuoq/Courses/19S-Topology/index.html).
+
+###Session 6
+
+This week we do exercises.
