@@ -39,3 +39,7 @@ This week we discuss about topological spaces and their properties. For a more d
 ###Session 6
 
 This week we do exercises.
+
+###Session 7 (Blatt 8)
+
+This week we discuss integration and measure. We also discuss in detail about the absolute convergence and conditional convergence. For a more detailed discussion about measure theory, please see Prof. Zuoqin Wang's [lecture notes](http://staff.ustc.edu.cn/~wangzuoq/Courses/18S-RealAnalysis/index.html).
