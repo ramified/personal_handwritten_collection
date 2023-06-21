@@ -43,3 +43,11 @@ This week we do exercises.
 ###Session 7 (Blatt 8)
 
 This week we discuss integration and measure. We also discuss in detail about the absolute convergence and conditional convergence. For a more detailed discussion about measure theory, please see Prof. Zuoqin Wang's [lecture notes](http://staff.ustc.edu.cn/~wangzuoq/Courses/18S-RealAnalysis/index.html).
+
+###Session 8 (Blatt 9)
+
+This week we discuss more about integration. To be exact, we conclude ways to compute indefinite integrals, and defined Lebesgue integration. As an application, we computed
+
+$$\int_0^{\infty}\frac{\sin x}{x}dx$$
+
+Finally, we also begin working with the change of variables in multiple variables.
