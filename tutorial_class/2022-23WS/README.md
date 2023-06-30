@@ -16,6 +16,9 @@ For convenience, I put links here:
 [exponential function](https://www.youtube.com/watch?v=v0YEaeIClKY) and [Euler's Formula Poem](https://www.youtube.com/watch?v=zLzLxVeqdQg): The work of 3Blue1Brown is usually nice.
 
 [stereographic projection](https://syntopia.github.io/Polytopia/polytopes.html#rboxSimple3): Play with the stereographic projection!
+
+[Animation vs. Math](https://www.youtube.com/watch?v=B1J6Ou4q8vE): Enjoy math!
+
 #####Fourier analysis
 
 [But what is the Fourier Transform? A visual introduction.](https://www.youtube.com/watch?v=spUNpyF58BY)

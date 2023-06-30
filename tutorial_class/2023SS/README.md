@@ -1,5 +1,5 @@
 # Tutorial class
- Here are some notes for the tutorial class. I'm lazy to type them or rewrite some of them, so I will upload some photos for temporary replacement.
+Here are some notes as well as some links for the tutorial class. I'm lazy to type them or rewrite some of them, so I will upload some photos for temporary replacement.
 
 
 
@@ -51,3 +51,8 @@ This week we discuss more about integration. To be exact, we conclude ways to co
 $$\int_0^{\infty}\frac{\sin x}{x}dx$$
 
 Finally, we also begin working with the change of variables in multiple variables.
+
+###Session 9 (Blatt 10)
+
+This week we discuss more about differentials.
+[The paradox of the derivative | Chapter 2, Essence of calculus](https://www.youtube.com/watch?v=9vKqVkMQHKk&list=PL0-GT3co4r2wlh6UHTUeQsrf3mlS2lk6x&index=2)
