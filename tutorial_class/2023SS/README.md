@@ -56,3 +56,7 @@ Finally, we also begin working with the change of variables in multiple variable
 
 This week we discuss more about differentials.
 [The paradox of the derivative | Chapter 2, Essence of calculus](https://www.youtube.com/watch?v=9vKqVkMQHKk&list=PL0-GT3co4r2wlh6UHTUeQsrf3mlS2lk6x&index=2)
+
+###Session 10 (Blatt 11)
+
+This week we discuss about the path integration. We also discuss a bit about simply connected space.
