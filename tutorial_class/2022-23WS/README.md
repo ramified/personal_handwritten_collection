@@ -77,6 +77,8 @@ integrate((2*x+2)*4*((6-x)/6)^2,(x,0,6))
 
 We mainly discuss the convergence of the power series.
 
+[The Limits of Analytic Continuation](https://youtu.be/krtf-v19TJg?t=510): See 8:30-11:51.
+
 ### Session 8
 
 This week we review two types of convergence of function series: pointwise convergence and uniform convergence.
