@@ -68,3 +68,5 @@ April 2nd, 2023: I saw the videos of [Solara570](https://space.bilibili.com/3557
 May 7th, 2023: Read 2/3 of my coursemate's master thesis (really nice with pictures and examples!), read 1/2 of Prof. Wang's course note "[Functional Analysis](http://staff.ustc.edu.cn/~wangzuoq/Courses/15F-FA/index.html)" (learned a lot about the facts for the dual space!), and prepare for the Langlands correspondence summer school in Bonn.
 
 June 18th, 2023: upload unramified L-parameters in Archimedean case:  [GL_n case](https://github.com/ramified/personal_handwritten_collection/blob/main/Langlands/GL_case.pdf).
+
+July 16th, 2023: prepare for the exams of global analysis and topology II.
