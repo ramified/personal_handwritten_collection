@@ -12,6 +12,12 @@ Some references for interested readers and for labeling:
 
 
 
+For a preliminary feeling of the Langlands program, you can see:
+
+[David] David Guiraud, [Notes on Functoriality](https://typo.iwr.uni-heidelberg.de/fileadmin/groups/arithgeo/templates/data/David_Guiraud/functoriality_20131216.pdf)
+
+
+
 Most of them can be easily found on the internet.
 
 For some parts I have already written, see [here](http://home.ustc.edu.cn/~xx352229/web/main/newprogram.html) .
@@ -76,3 +82,4 @@ Modular form:
 , [The Langlands Classification and Irreducible Characters for Real Reductive Groups](http://www.math.utah.edu/~ptrapa/math-library/abv/abv.pdf)
 
 \[MP23\]: Mihran Papikian, [Drinfeld Modules](https://link.springer.com/book/10.1007/978-3-031-19707-9)
+
