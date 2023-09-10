@@ -6,7 +6,7 @@ Some references for interested readers and for labeling:
 
 \[Ana23\] the unpublished lecture notes. For a course information, see [The arithmetic of the Langlands program](https://www.ma.imperial.ac.uk/~acaraian/alp.pdf).
 
-\[Ge\] Toby Gee, [Modularity lifting theorems](https://arxiv.org/abs/2202.05818).
+\[Gee\] Toby Gee, [Modularity lifting theorems](https://arxiv.org/abs/2202.05818).
 
 \[Vakil\] Vakil, The Rising Sea: Foundations of Algebraic Geometry
 
