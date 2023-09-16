@@ -2,4 +2,18 @@ This folder contains notes introducing my interests to Yilong Zhang. The series 
 
 Some references for interested readers and for labeling:
 
+https://ncatlab.org/nlab/show/function+field+analogy
+
 \[Donaldson\] S. K. Donaldson, Riemann Surfaces (Oxford Graduate Texts in Mathematics).
+
+For later usage:
+
+number field:
+
+https://math.stackexchange.com/questions/4170126/geometric-interpretation-of-discriminant-of-a-number-field-and-reference-sugges
+
+https://math.stackexchange.com/questions/762882/galois-group-of-l-mathbbq-is-generated-by-inertia-groups
+
+Brauer group:
+
+https://math.stackexchange.com/questions/3965273/over-which-extensions-of-mathbb-q-2-is-x2y2z2-isotropic

@@ -95,3 +95,8 @@ August 20th-September 10th, 2023: I am sorry that I'm doing bad in this program 
 
 In the same time I should also prepare the KleinAG talks.
 
+
+
+Reference for ultrametric space:
+
+https://en.wikipedia.org/wiki/Ultrametric_space
