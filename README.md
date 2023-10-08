@@ -39,6 +39,7 @@ May 8th-May 22nd, 2022: I wanted to write irreducible representations of $GL_2(\
 July 31st-August 14th, 2022: Work on modular forms. Actually I should write something on perverse sheaf on $\mathbb{CP}^1$.
 
 September 11th, 2022: Had one week of tourism in Paris and one week in Antwerp. Had no time to think out new examples, but you can definitely get lots of (highly non-trivial) examples in [the videos](https://www.youtube.com/channel/UCMfdlw1N9Ug_FYm6r0g6xPA) of the conference: Noncommutative Shapes. I also learned the [Alexander's theorem](https://en.wikipedia.org/wiki/Alexander%27s_theorem) from my schoolmate, which can help us to parametrize knots and links, see [Braids](https://www.youtube.com/watch?v=1goWirL46qo&t=1s). (For example, up to ambient isotopy there are only countable many knots in $S^3$, one can compute the Alexander–Conway polynomial systematically, and we can let the computer know the knot we want.) Some explanations between configuration spaces and braid groups is shown here:  [Video](https://www.youtube.com/watch?v=3vZ8TT5Ln7o), [snapshots](https://www.imaginary.org/sites/default/files/snapshots/snapshots-2019-011.pdf)
+For the connection between knot and number theory, maybe I can see this: [Arithmeticity of Knot Complements](https://londmathsoc.onlinelibrary.wiley.com/doi/epdf/10.1112/jlms/s2-43.1.171)
 
 Some formulas are collected here:
 
@@ -94,6 +95,8 @@ August 20th-September 10th, 2023: I am sorry that I'm doing bad in this program 
 
 
 In the same time I should also prepare the KleinAG talks.
+
+September 17th-October 8th, 2023: It took me so much time to move from Bonn to Berlin. The lecture notes of KleinAG talk is typed, and the computer has been cleaned. Will have my own office!
 
 
 

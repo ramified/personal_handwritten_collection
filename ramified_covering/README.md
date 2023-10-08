@@ -17,3 +17,6 @@ https://math.stackexchange.com/questions/762882/galois-group-of-l-mathbbq-is-gen
 Brauer group:
 
 https://math.stackexchange.com/questions/3965273/over-which-extensions-of-mathbb-q-2-is-x2y2z2-isotropic
+
+[embeddings of fields into simple algebras over global fields](https://projecteuclid.org/journals/asian-journal-of-mathematics/volume-18/issue-2/Embeddings-of-fields-into-simple-algebras-over-global-fields/ajm/1409168529.pdf)
+
