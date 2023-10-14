@@ -8,6 +8,10 @@ https://ncatlab.org/nlab/show/function+field+analogy
 
 \[Perfseminar\][Number theory learning seminar 2014-2015](http://math.stanford.edu/~conrad/Perfseminar/)
 
+We cite mainly Lec 2: Spaces of valuations. The other part also worth reading, if you have problem reading the berkeley notes.
+
+
+
 For later usage:
 
 number field:
