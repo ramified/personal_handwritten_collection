@@ -6,6 +6,8 @@ https://ncatlab.org/nlab/show/function+field+analogy
 
 \[Donaldson\] S. K. Donaldson, Riemann Surfaces (Oxford Graduate Texts in Mathematics).
 
+\[Perfseminar\][Number theory learning seminar 2014-2015](http://math.stanford.edu/~conrad/Perfseminar/)
+
 For later usage:
 
 number field:
