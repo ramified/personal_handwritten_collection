@@ -98,6 +98,8 @@ In the same time I should also prepare the KleinAG talks.
 
 September 17th-October 8th, 2023: It took me so much time to move from Bonn to Berlin. The lecture notes of KleinAG talk is typed, and the computer has been cleaned. Will have my own office!
 
+October 15th, 2023: Try to fill the hole I made before. I made too many strands not completed, which is bad. Anyhow, at least part of the stuff are left, and I don't need to struggle from the beginning.
+
 
 
 Reference for ultrametric space:
