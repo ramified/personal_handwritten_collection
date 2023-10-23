@@ -81,9 +81,9 @@ August 20th-September 10th, 2023: I am sorry that I'm doing bad in this program 
 - the relationships between the ramified covering and the functional field extension.
 - from RS to algebraic curve over real/finite field, and finally the number field (mixed characteristic in two meanings: char 0+char finite, and different characters). In these cases, try to explain
 
-  - the "nearby cycle Frob", 
+  - the Frob, 
   - the difference between the "residue field automorphism group" and "Deck transformation group"
-  - analogs of the Chebotarev density theorem
+  - the Chebotarev density theorem
   - In the number field, I should explain why the ramification points can be computed by the discriminant, and recompute the ramification points of RS in the same way.
 - How the ramification theory interacts with the Brauer group as well as quartenion algebras. There are no direct relationships, but I think it to be fun.
 - (local field extension)
@@ -99,6 +99,15 @@ In the same time I should also prepare the KleinAG talks.
 September 17th-October 8th, 2023: It took me so much time to move from Bonn to Berlin. The lecture notes of KleinAG talk is typed, and the computer has been cleaned. Will have my own office!
 
 October 15th, 2023: Try to fill the hole I made before. I made too many strands not completed, which is bad. Anyhow, at least part of the stuff are left, and I don't need to struggle from the beginning.
+
+October 22nd, 2023: Read Conway's book The sensual (quadratic) form. It is an amazing book, with lots of figures and thousands of combinatorical results. Unfortunately, most results are not conclude in a independent theorem, so it becomes harder to cite the results. In ptc, he classifies 
+- quadratic forms up to rational equivalence in Lec 4, p94-97;
+
+- integral binary quadratic forms up to integrally equivalence in p16-26;
+- definite integral 3-dim quadratic forms in Lec 3;
+- indefinite integral quadratic forms in Lec 4, p125;
+- even unimodular lattices of dim 8, 16, 24 in p38, p57;
+- cubic and isocubic lattices, tetralattices, root lattices, Niemeier lattices... in Lec 2+afterthoughts;
 
 
 
