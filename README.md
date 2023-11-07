@@ -114,3 +114,12 @@ October 22nd, 2023: Read Conway's book The sensual (quadratic) form. It is an am
 Reference for ultrametric space:
 
 https://en.wikipedia.org/wiki/Ultrametric_space
+
+November 5th, 2023: Read Laurenţiu G. Maxim's book "[Intersection Homology & Perverse Sheaves](https://link.springer.com/book/10.1007/978-3-030-27644-7). This book establishes a paradigm for comprehending perverse sheaves and vanishing cycles.
+
+- **Singular spaces** frequently arise in research, with famous examples like Schubert cells, moduli spaces, and some equation-cut varieties. In section 2.1, the author introduces the concepts of topologically stratified spaces and **topological pseudomanifolds** as fundamental elements of this book.
+- To gain a deeper understanding of their geometric properties, we need to develop the theory of (Borel-Moore) **intersection homology**, which lies in between the cohomology and the BM homology. They provide us the Kähler package, and they reflect some properties of the singularities. As a compromise, they are no longer homotopy-equivalent invariants. In practice, the computation of intersection homology often reduces to the computation of usual homology.
+- To view intersection homology as a form of sheaf cohomology, the **intersection cohomology complex** $IC^{\cdot}_{\bar{p}}$ is introduced. This sheaf is uniquely determined by certain axioms and can be explicitly constructed in two ways: as singular chains or as the Deligne complex (via induction). On a smooth oriented manifold, $IC^{\cdot}_{\bar{p}}$ is equivalent to the constant sheaf $\underline{\mathbb{Z}}$.
+- $IC^{\cdot}_{\bar{p}}$ lies naturally in the category of (derived category of) **constructable sheaves**, and it even lies in the heart. Therefore, $IC^{\cdot}_{\bar{p}}$ becomes a buiding object of the **perverse sheaf**.
+- Cohomology provides valuable information. **Kähler package**, Hodge structure, **Characteristic class**, ... These can all be generalized in the study of singular spaces.
+

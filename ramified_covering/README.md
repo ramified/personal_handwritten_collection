@@ -14,7 +14,7 @@ We cite mainly Lec 2: Spaces of valuations. The other part also worth reading, i
 
 [Vakil] Vakil, The Rising Sea: Foundations of Algebraic Geometry
 
-
+[WWL_Al-jabr] 李文威,代数学方法：卷一
 
 For later usage:
 
