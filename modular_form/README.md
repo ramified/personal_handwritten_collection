@@ -20,7 +20,7 @@ Some references for interested readers and for labeling:
 
 [KL] Klein, Lectures on the Icosahedron and the Solution of Equations of the Fifth Degree
 
-[Vakil] Vakil, The Rising Sea: Foundations of Algebraic Geometry
+[Vakil] Vakil, The Rising Sea: Foundations of Algebraic Geometry, 2016
 
 [Milne] Everything from J.S. Milne. Not recommend. I cite it only because I can not find other references sometimes.
 
