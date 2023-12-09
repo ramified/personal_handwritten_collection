@@ -72,7 +72,7 @@ June 18th, 2023: upload unramified L-parameters in Archimedean case:  [GL_n case
 
 July 16th, 2023: prepare for the exams of global analysis and topology II.
 
-August 13th, 2023: found many materials in [Joshua Ruiter's Homepage](https://users.math.msu.edu/users/ruiterj2/). There are many interesting notes which can be a potential topic in this program. Especially, I read his notes [Group cohomology, Brauer groups, and algebraic K-theory](https://users.math.msu.edu/users/ruiterj2/math/Documents/Spring%202019/Comprehensive%20exam/Group\%20cohomology,%20Brauer%20groups,%20and%20algebraic%20K-theory.pdf). I learned a lot!
+August 13th, 2023: found many materials in [Joshua Ruiter's Homepage](https://users.math.msu.edu/users/ruiterj2/). There are many interesting notes which can be a potential topic in this program. Especially, I read his notes [Group cohomology, Brauer groups, and algebraic K-theory](https://users.math.msu.edu/users/ruiterj2/math/Documents/Spring%202019/Comprehensive%20exam/Group%20cohomology,%20Brauer%20groups,%20and%20algebraic%20K-theory.pdf). I learned a lot!
 
 August 20th-September 10th, 2023: I am sorry that I'm doing bad in this program these weeks. In fact, I have thought carefully about the topics of these four weeks, and should definitely clean them up (despite not before the KleinAG). To remind myself, the 4(+4) topics are: 
 
