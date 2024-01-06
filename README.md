@@ -123,3 +123,14 @@ November 5th, 2023: Read Laurenţiu G. Maxim's book "[Intersection Homology & Pe
 - $IC^{\cdot}_{\bar{p}}$ lies naturally in the category of (derived category of) **constructable sheaves**, and it even lies in the heart. Therefore, $IC^{\cdot}_{\bar{p}}$ becomes a buiding object of the **perverse sheaf**.
 - Cohomology provides valuable information. **Kähler package**, Hodge structure, **Characteristic class**, ... These can all be generalized in the study of singular spaces.
 
+
+December 24th-31st, 2023: Christmas break! Got ill and recovered.
+
+January 7th, 2024: try to compute equations on computers, using [singular](https://www.singular.uni-kl.de:8003/). With the help of [Computational Aspects of Singularities](https://indico.ictp.it/event/a04204/session/81/contribution/49/material/0/0.pdf), we are able to compute:
+
+- varieties defined by equations, intersection and union of varieties
+- Jacobian matrix and minors
+- ideal of singular locus (and its radical)
+- Milnor and Tjurina Numbers
+- Type of hypersurface singularities
+- intersection matrix of exceptional divisors
