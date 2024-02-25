@@ -134,3 +134,7 @@ January 7th, 2024: try to compute equations on computers, using [singular](https
 - Milnor and Tjurina Numbers
 - Type of hypersurface singularities
 - intersection matrix of exceptional divisors
+
+February 11th-25th, 2024: These days I'm having a really long holiday with people I know. I got a little bored with the current program: after all, not many people will see my drafts, and it become harder to identify the knowledge and the corresponding reference. 
+
+I'm thinking to reschedule my references in a more efficient way. My schoolmate recommends me to use the software called "zotero". I'm learning about it these days.
