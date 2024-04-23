@@ -141,5 +141,5 @@ I'm thinking to reschedule my references in a more efficient way. My schoolmate 
 
 March 3rd-10th: stayed in USTC. Don't have computer to write notes. :-< Focusing on discussions and communications instead. 
 
-March 17th-April 14th: Tourism. Have a great rest. Try to work on Zotero, to make the learning flow smoother. Try to learn the name of mathematical journals.
+March 24th-April 14th: Tourism. Have a great rest. Try to work on Zotero, to make the learning flow smoother. Try to learn the name of mathematical journals.
 
