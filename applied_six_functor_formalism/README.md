@@ -22,4 +22,9 @@ https://arxiv.org/abs/2105.13069
 [KS90] Masaki Kashiwara, Pierre Schapira. Sheaves on Manifolds. With a Short History “Les Débuts de La Théorie Des Faisceaux” by Christian Houzel. Grundlehren Math. Wiss. Berlin etc.: Springer-Verlag, 1990.
 [Achar21] Achar, Pramod N. Perverse Sheaves and Applications to Representation Theory. Math. Surv. Monogr. Providence, RI: American Mathematical Society (AMS), 2021. https://doi.org/10.1090/surv/258.
 
+[HT07]  Hotta, Ryoshi and Toshiyuki Tanisaki. *D-modules, perverse sheaves, and representation theory*. Springer Science & Business Media, 2007. 
+
 https://mathoverflow.net/questions/32689/how-should-a-homotopy-theorist-think-about-sheaf-cohomology
+
+
+
