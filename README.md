@@ -143,3 +143,9 @@ March 3rd-10th: stayed in USTC. Don't have computer to write notes. :-< Focusing
 
 March 24th-April 14th: Tourism. Have a great rest. Try to work on Zotero, to make the learning flow smoother. Try to learn the name of mathematical journals.
 
+June 24th: this week I was learning some combinatorical numerical results about Lie algebra representations. I really thought that someone can easily make this tables through sage, so I just don't want to copy it manually. I have some naive codes for computing the following stuffs:
+
+- fundamental/minuscule/quasi-minuscule/adjoint rep
+- weight multiplication
+- symmetric product and exterior product 
+
