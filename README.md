@@ -149,3 +149,5 @@ June 24th: this week I was learning some combinatorical numerical results about 
 - weight multiplication
 - symmetric product and exterior product 
 
+
+After lost my ipad, I regret and will record some combinatorical numerical results in the new document.
