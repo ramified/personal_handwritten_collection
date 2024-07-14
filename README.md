@@ -151,3 +151,9 @@ June 24th: this week I was learning some combinatorical numerical results about 
 
 
 After lost my ipad, I regret and will record some combinatorical numerical results in the new document.
+
+July 14th-Augest 4th: I want to make a video about six functors, but have no idea if I can do it. For this I need more than 4 weeks. 
+
+I saw one interesting integration result from 3B1B, which can be the "homework" for maverick genius:
+
+https://en.wikipedia.org/wiki/Borwein_integral
