@@ -152,8 +152,16 @@ June 24th: this week I was learning some combinatorical numerical results about 
 
 After lost my ipad, I regret and will record some combinatorical numerical results in the new document.
 
-July 14th-Augest 4th: I want to make a video about six functors, but have no idea if I can do it. For this I need more than 4 weeks. 
+July 14th-Sep 27th: I want to make a video about six functors, but have no idea if I can do it. For this I need more than 4 weeks. (In fact, spent (6-1-1) weeks on doing this -- 1 week learning - 1 week playing video games. Also, I spent 1 week making the poster)
 
 I saw one interesting integration result from 3B1B, which can be the "homework" for maverick genius:
 
 https://en.wikipedia.org/wiki/Borwein_integral
+
+The gap in writing has been a bit too long. Except for two conferences I took part in, I learned about something in this period:
+- basic example of D-modules, shown by Renzhi Liang
+- Relation between representations of sl_{n}(C) (for n>>0) and S_n (for any n), plethysm. These combinatorics are powerful but deep.
+- Special value of L-functions: http://faculty.bicmr.pku.edu.cn/~lxiao/2024fall/2024fall.htm
+- Motives: *Lectures on the Theory of Pure Motives*. The yoga of motive looks like some generalization of the yoga of six functors.
+
+I hope that (as well as reimbursement+insurance+illness) can explain the very long gap. Anyhow, I should stop this gap now.
