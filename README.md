@@ -165,3 +165,5 @@ The gap in writing has been a bit too long. Except for two conferences I took pa
 - Motives: *Lectures on the Theory of Pure Motives*. The yoga of motive looks like some generalization of the yoga of six functors.
 
 I hope that (as well as reimbursement+insurance+illness) can explain the very long gap. Anyhow, I should stop this gap now.
+
+Nov 17th-24th: Participate in the conference in Singapore. Stayed in the flight.
