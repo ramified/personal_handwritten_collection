@@ -139,11 +139,11 @@ February 11th-25th, 2024: These days I'm having a really long holiday with peopl
 
 I'm thinking to reschedule my references in a more efficient way. My schoolmate recommends me to use the software called "zotero". I'm learning about it these days.
 
-March 3rd-10th: stayed in USTC. Don't have computer to write notes. :-< Focusing on discussions and communications instead. 
+March 3rd-10th, 2024: stayed in USTC. Don't have computer to write notes. :-< Focusing on discussions and communications instead. 
 
-March 24th-April 14th: Tourism. Have a great rest. Try to work on Zotero, to make the learning flow smoother. Try to learn the name of mathematical journals.
+March 24th-April 14th, 2024: Tourism. Have a great rest. Try to work on Zotero, to make the learning flow smoother. Try to learn the name of mathematical journals.
 
-June 24th: this week I was learning some combinatorical numerical results about Lie algebra representations. I really thought that someone can easily make this tables through sage, so I just don't want to copy it manually. I have some naive codes for computing the following stuffs:
+June 24th, 2024: this week I was learning some combinatorical numerical results about Lie algebra representations. I really thought that someone can easily make this tables through sage, so I just don't want to copy it manually. I have some naive codes for computing the following stuffs:
 
 - fundamental/minuscule/quasi-minuscule/adjoint rep
 - weight multiplication
@@ -152,7 +152,7 @@ June 24th: this week I was learning some combinatorical numerical results about 
 
 After lost my ipad, I regret and will record some combinatorical numerical results in the new document.
 
-July 14th-Sep 27th: I want to make a video about six functors, but have no idea if I can do it. For this I need more than 4 weeks. (In fact, spent (6-1-1) weeks on doing this -- 1 week learning - 1 week playing video games. Also, I spent 1 week making the poster)
+July 14th-Sep 27th, 2024: I want to make a video about six functors, but have no idea if I can do it. For this I need more than 4 weeks. (In fact, spent (6-1-1) weeks on doing this -- 1 week learning - 1 week playing video games. Also, I spent 1 week making the poster)
 
 I saw one interesting integration result from 3B1B, which can be the "homework" for maverick genius:
 
@@ -166,4 +166,6 @@ The gap in writing has been a bit too long. Except for two conferences I took pa
 
 I hope that (as well as reimbursement+insurance+illness) can explain the very long gap. Anyhow, I should stop this gap now.
 
-Nov 17th-24th: Participate in the conference in Singapore. Stayed in the flight.
+Nov 17th-24th, 2024: Participate in the conference in Singapore. Stayed in the flight.
+
+Dec 22nd, 2024 - Jan 5th, 2025: Merry Christmas and Happy new year!
