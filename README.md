@@ -171,3 +171,7 @@ Nov 17th-24th, 2024: Participate in the conference in Singapore. Stayed in the f
 Dec 22nd, 2024 - Jan 5th, 2025: Merry Christmas and Happy new year!
 
 Jan 23rd-Feb 9th, 2025: Participate in the conference in Barcelona. Try to make a revision for my first paper.  
+
+
+
+Suppose $X$ and $Y$ are compact topological space, $U$ is a subset of $X$, and we have a map $f:U -> Y$. Viewing $U$ as a subset of $X \times Y$, how could I express the homology class of $\bar{U}$ in $H_*(X \times Y)$ through $f$?
