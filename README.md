@@ -170,7 +170,7 @@ Nov 17th-24th, 2024: Participate in the conference in Singapore. Stayed in the f
 
 Dec 22nd, 2024 - Jan 5th, 2025: Merry Christmas and Happy new year!
 
-Jan 23rd-Feb 9th, 2025: Participate in the conference in Barcelona. Try to make a revision for my first paper.  
+Feb 2nd-Feb 9th, 2025: Participate in the conference in Barcelona. Try to make a revision for my first paper.  
 
 
 
