@@ -179,3 +179,5 @@ Suppose $X$ and $Y$ are compact topological space, $U$ is a subset of $X$, and w
 June 1st-8th, 2025: Typing the list of questions.
 
 July 6th, 2025: Preparing for the extension of the scholarship.
+
+July 20th-27th, 2025: Preparing for the student seminar next semester (about classifications of vector bundles).
