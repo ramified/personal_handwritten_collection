@@ -181,3 +181,5 @@ June 1st-8th, 2025: Typing the list of questions.
 July 6th, 2025: Preparing for the extension of the scholarship.
 
 July 20th-27th, 2025: Preparing for the student seminar next semester (about classifications of vector bundles).
+
+August 24th-Sep 28th, 2025: I'm travelling and taking conferences. I'm sorry that I don't update anything here these days, but I watched some videos in [VBAC webinars](http://vbac.wikidot.com/past-seminars) and [2025 SRI Algebraic Geometry](https://www.youtube.com/@2025SRI-AG). 
