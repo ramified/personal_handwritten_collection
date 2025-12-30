@@ -34,5 +34,5 @@ https://arxiv.org/abs/2105.13069
 
 https://mathoverflow.net/questions/32689/how-should-a-homotopy-theorist-think-about-sheaf-cohomology
 
-
+[Car17]  James Carlson, Stefan Müller-Stach, and Chris Peters. Period Mappings and Period Domains. 2nd ed. Cambridge University Press, 2017. https://doi.org/10.1017/9781316995846.
 
