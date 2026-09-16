@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tangent Gauss Maps, Albanese Geometry, and Blow-ups — Discussion Archive</title>
+<script>
+window.MathJax = {
+  tex: {inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']], processEscapes: true},
+  options: {skipHtmlTags: ['script','noscript','style','textarea','pre','code']}
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+:root {
+ --bg:#faf9f6; --panel:#fff; --text:#242424; --muted:#6d6d6d;
+ --border:#ddd9d0; --accent:#50638e; --user:#edf3fc; --assistant:#f7f7f4;
+ --shadow:0 8px 30px rgba(0,0,0,.055);
+}
+[data-theme="dark"] {
+ --bg:#17181b; --panel:#202226; --text:#ededed; --muted:#adb0b6;
+ --border:#393c42; --accent:#a8b9e4; --user:#252f40; --assistant:#242529;
+ --shadow:0 8px 30px rgba(0,0,0,.24);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,"Times New Roman",serif;line-height:1.65}
+.layout{display:grid;grid-template-columns:310px minmax(0,1fr);min-height:100vh}
+aside{position:sticky;top:0;height:100vh;overflow:auto;padding:24px 18px;border-right:1px solid var(--border);background:var(--panel)}
+aside h1{font-size:18px;line-height:1.3;margin:0 0 10px}
+.meta{font:12px/1.45 system-ui,sans-serif;color:var(--muted);margin-bottom:16px}
+.controls{display:flex;gap:8px;margin-bottom:12px}
+button,input{border:1px solid var(--border);background:var(--bg);color:var(--text);border-radius:8px}
+button{padding:7px 10px;cursor:pointer}
+input{width:100%;padding:9px 10px;margin-bottom:14px}
+nav{display:flex;flex-direction:column;gap:5px}
+nav a{color:var(--text);text-decoration:none;font:13px/1.3 system-ui,sans-serif;padding:6px 8px;border-radius:7px}
+nav a:hover{background:var(--user)}
+main{width:min(1000px,100%);margin:auto;padding:48px 38px 90px}
+.hero,.summary{background:var(--panel);border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow);padding:28px;margin-bottom:32px}
+.hero h1{font-size:32px;line-height:1.2;margin:0 0 10px}
+.hero p{color:var(--muted)}
+.note{border-left:4px solid var(--accent);background:var(--assistant);padding:13px 16px;border-radius:0 9px 9px 0;margin-top:18px}
+section{margin:0 0 42px}
+section h2{font-size:24px;border-bottom:1px solid var(--border);padding-bottom:8px;margin-bottom:17px}
+.message{border:1px solid var(--border);border-radius:12px;margin:13px 0;overflow:hidden}
+.message.user{background:var(--user)}
+.message.assistant{background:var(--assistant)}
+.role{font:700 11px/1 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);padding:12px 17px 0}
+.content{padding:9px 18px 18px;white-space:pre-wrap}
+.content mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden;padding:3px 0}
+.hidden{display:none!important}
+footer{color:var(--muted);font:12px/1.5 system-ui,sans-serif;margin-top:55px}
+@media(max-width:850px){.layout{grid-template-columns:1fr}aside{position:relative;height:auto;border-right:0;border-bottom:1px solid var(--border)}main{padding:26px 17px 60px}}
+@media print{aside{display:none}.layout{display:block}main{width:auto;padding:0}.hero,.summary,.message{box-shadow:none;break-inside:avoid}body{background:#fff;color:#000}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside>
+<h1>Tangent Gauss Maps, Albanese Geometry, and Blow-ups — Discussion Archive</h1>
+<div class="meta">Generated 16 Sep 2026 · notation normalized to the user's conventions</div>
+<div class="controls"><button id="theme">Toggle theme</button><button onclick="window.print()">Print</button></div>
+<input id="search" type="search" placeholder="Search archive…">
+<nav><a href="#setup">1. General setup and notation</a>
+<a href="#smoothness">2. Smoothness and generic immersivity</a>
+<a href="#albanese">3. Albanese specialization</a>
+<a href="#cdf">4. Castelnuovo–de Franchis</a>
+<a href="#fano">5. The Fano surface</a>
+<a href="#schoen">6. The Schoen surface</a>
+<a href="#schubert">7. General strategy via the Gauss cycle</a>
+<a href="#movingH">8. Moving hyperplanes and conormal monodromy</a>
+<a href="#chern">9. Geometric meaning of \(c_r\) and \(c_1^r\)</a>
+<a href="#generic">10. Generically immersive maps: the real subtlety</a>
+<a href="#exact">11. Exact tangent and conormal formulas with excess</a>
+<a href="#maxminors">12. Why the maximal-minor ideal appears</a>
+<a href="#fitting">13. Fitting ideals, in elementary language</a>
+<a href="#imphi">14. What \(I_B\) remembers about \(\operatorname{Im}arphi\)</a>
+<a href="#blowupnotes">15. Blow-up notation from the handwritten notes</a>
+<a href="#idealpullback">16. Pullback of an ideal under a ring map</a>
+<a href="#charts">17. Explicit local-chart comparison on the blow-up of \(\mathbf A^2\)</a>
+<a href="#convention">18. Final notation convention</a></nav>
+</aside>
+<main>
+<div class="hero">
+<h1>Tangent Gauss Maps, Albanese Geometry, and Blow-ups — Discussion Archive</h1>
+<p>A structured archive of the discussion on tangent Gauss maps, Albanese geometry, Fano and Schoen surfaces, conormal incidence, excess terms, and blow-ups.</p>
+<div class="note"><strong>Notation fixed here.</strong> We write \(\mu^*I_Z\) for the pulled-back/extended ideal sheaf generated by the pulled-back functions. If the tensor-product pullback is needed, it is written explicitly as \(I_Z\otimes_{\mathcal O_Z}\mathcal O_{\widetilde Z}\).</div>
+</div>
+<div class="summary"><h2>Compact summary</h2>
+<ul>
+<li>\(\iota_Z:Z^r\to A^n\), \(V=T_0A\), \(\varphi:V^\vee\otimes\mathcal O_Z\to\Omega_Z^1\).</li>
+<li>\(\gamma_Z:Z\dashrightarrow\operatorname{Gr}(r,V)\) and \(\lambda_Z:\Lambda^rV^\vee\to H^0(Z,K_Z)\).</li>
+<li>For an immersion: \(K_Z^r=\deg(\gamma_Z)\deg_{\rm Pl}(\gamma_Z(Z))\).</li>
+<li>For an immersion: \(\deg(\text{conormal Gauss})=\int_Zc_r(\Omega_Z^1)\).</li>
+<li>For a generically immersive map, tangent and conormal formulas acquire different excess corrections.</li>
+<li>The maximal-minor ideal satisfies \(\operatorname{Im}(\Lambda^r\varphi)=\mathcal I_BK_Z\).</li>
+<li>Notation convention: \(\mu^*I_Z\) means the extended/pulled-back ideal generated by the pulled-back functions.</li>
+</ul>
+</div>
+<section id="setup"><h2>1. General setup and notation</h2><div class="message user"><div class="role">User</div><div class="content">I would like to prepare a talk about the tangent Gauss map. I want a general theory first, then specialize to Albanese cases. I use
+\[
+\iota_Z:Z\to A,\qquad \dim Z=r,\quad \dim A=n,\qquad V=T_0A.
+\]</div></div><div class="message assistant"><div class="role">Assistant</div><div class="content">The tangent Gauss map is
+\[
+\gamma_Z:Z\dashrightarrow \operatorname{Gr}(r,V),\qquad
+z\mapsto d\iota_{Z,z}(T_zZ).
+\]
+The dual differential is
+\[
+\varphi:V^\vee\otimes\mathcal O_Z\to\Omega_Z^1.
+\]
+Taking the top wedge gives
+\[
+\lambda_Z:\Lambda^rV^\vee\to H^0(Z,K_Z).
+\]
+After Plücker, \(\operatorname{Pl}\circ\gamma_Z\) is the rational map defined by \(\operatorname{Im}\lambda_Z\). The basic invariants are \(\ker\lambda_Z\), the image \(Y_Z=\overline{\gamma_Z(Z)}\), and \(\deg(\gamma_Z)\).</div></div></section>
+<section id="smoothness"><h2>2. Smoothness and generic immersivity</h2><div class="message user"><div class="role">User</div><div class="content">Should I suppose \(Z\) to be smooth?</div></div><div class="message assistant"><div class="role">Assistant</div><div class="content">For the clean theory, assume \(Z\) smooth projective of dimension \(r\), and \(\operatorname{rk}(d\iota_Z)=r\) generically. Then \(\Omega_Z^1\) and \(K_Z\) are honest bundles. The Gauss map is rational in general and is a morphism if \(\iota_Z\) is immersive everywhere.</div></div></section>
+<section id="albanese"><h2>3. Albanese specialization</h2><div class="message user"><div class="role">User</div><div class="content">I want the general theory and then to specialize to the Albanese case.</div></div><div class="message assistant"><div class="role">Assistant</div><div class="content">When \(A=\operatorname{Alb}(Z)\), one has
+\[
+V^\vee\simeq H^0(Z,\Omega_Z^1),
+\]
+so
+\[
+\lambda_Z:\Lambda^rH^0(Z,\Omega_Z^1)\to H^0(Z,K_Z)
+\]
+is intrinsic. For a general map \(Z\to A\), the image
+\[
+W=\operatorname{Im}(V^\vee\to H^0(Z,\Omega_Z^1))
+\]
+is the selected space of \(1\)-forms coming from the chosen abelian target. This is the right framework for Abel–Prym and the spin quotient examples.</div></div></section>
+<section id="cdf"><h2>4. Castelnuovo–de Franchis</h2><div class="message user"><div class="role">User</div><div class="content">How is the Castelnuovo–de Franchis theorem stated formally?</div></div><div class="message assistant"><div class="role">Assistant</div><div class="content">If \(Z\) is smooth projective and there are linearly independent
+\[
+\alpha,\beta\in H^0(Z,\Omega_Z^1)
+\]
+with \(\alpha\wedge\beta=0\), then there is a surjective morphism with connected fibres
+\[
+f:Z\to C,\qquad g(C)\ge2,
+\]
+such that \(\alpha,\beta\in f^*H^0(C,K_C)\). For a surface, a nonzero decomposable element in the kernel of
+\[
+\Lambda^2H^0(\Omega_Z^1)\to H^0(K_Z)
+\]
+therefore produces an irrational pencil.</div></div></section>
+<section id="fano"><h2>5. The Fano surface</h2><div class="message user"><div class="role">User</div><div class="content">Why can we get \(\lambda_F\) an isomorphism, and how is the Gauss degree computed?</div></div><div class="message assistant"><div class="role">Assistant</div><div class="content">The dimension count alone is not enough. A classical theorem gives
+\[
+\Lambda^2H^1(F,\mathbf Q)\xrightarrow{\sim}H^2(F,\mathbf Q),
+\]
+hence on the \((2,0)\)-part
+\[
+\lambda_F:\Lambda^2H^0(F,\Omega_F^1)\xrightarrow{\sim}H^0(F,K_F).
+\]
+The tangent-bundle theorem identifies the Albanese Gauss map with the natural embedding
+\[
+F\hookrightarrow \operatorname{Gr}(2,5),
+\]
+so \(\deg\gamma_F=1\).
+
+Classically, the Plücker/canonical degree \(45\) is obtained via incidence divisors. If \(D_K\) is the divisor of lines meeting a plane \(K\), then \(D_K\sim K_F\). For incidence divisors \(D_s,D_t\) attached to general lines one has \(D_sD_t=5\), and a special plane section gives \(D_K\equiv3D_s\). Thus
+\[
+K_F^2=D_K^2=9D_s^2=45.
+\]</div></div></section>
+<section id="schoen"><h2>6. The Schoen surface</h2><div class="message user"><div class="role">User</div><div class="content">Why is \(\lambda_S\) surjective, and how do we get the degree of the Gauss image?</div></div><div class="message assistant"><div class="role">Assistant</div><div class="content">For a Schoen surface,
+\[
+q=4,\qquad p_g=5,
+\]
+so the wedge map is \(\mathbf C^6\to\mathbf C^5\), hence its kernel has dimension at least \(1\).
+
+For a general Schoen surface, \(\rho(S)=1\), so there is no fibration onto a curve: a fibre would have square \(0\), impossible in a rank-one Néron–Severi group generated by an ample class. If \(\dim\ker\lambda_S\ge2\), then its projectivization contains a line in \(\mathbf P^5\), which meets the Klein quadric \(\operatorname{Gr}(2,4)\). That gives a decomposable kernel element and, by Castelnuovo–de Franchis, an irrational pencil. Therefore
+\[
+\dim\ker\lambda_S=1,\qquad \lambda_S\text{ is surjective},
+\]
+and the generator is non-decomposable.
+
+The Gauss/canonical image lies in a smooth quadric \(Q^3\subset\mathbf P^4\). A degeneration of the canonical image shows that it is a \((2,4)\) complete intersection of degree \(8\). Since \(K_S^2=16\),
+\[
+\deg\gamma_S=2.
+\]</div></div></section>
+<section id="schubert"><h2>7. General strategy via the Gauss cycle</h2><div class="message user"><div class="role">User</div><div class="content">Is there a common strategy to determine the degree of the Gauss image?</div></div><div class="message assistant"><div class="role">Assistant</div><div class="content">Compute the pushed-forward Gauss cycle
+\[
+(\gamma_Z)_*[Z]=d[Y]\in A_*(\operatorname{Gr}(r,V)).
+\]
+If \(\mathcal U\) is the tautological bundle, then for an immersion
+\[
+\gamma_Z^*\mathcal U=T_Z.
+\]
+Hence Schubert intersections on \(Y\) are Chern numbers on \(Z\):
+\[
+\int_Z s_\lambda(\Omega_Z^1)=d\int_Y\sigma_\lambda.
+\]
+The simplest case is
+\[
+K_Z^r=d\,\deg_{\rm Pl}(Y).
+\]
+One then uses example-specific geometry—incidence geometry for Fano, degeneration for Schoen—to identify \([Y]\) or enough of it to separate \(d\) from \([Y]\).</div></div></section>
+<section id="movingH"><h2>8. Moving hyperplanes and conormal monodromy</h2><div class="message user"><div class="role">User</div><div class="content">For monodromy I mean that \(H\subset V\) moves and
+\[
+\gamma_Z^{-1}(\operatorname{Gr}(r,H))
+\]
+is generically finite; these points permute.</div></div><div class="message assistant"><div class="role">Assistant</div><div class="content">For \([\alpha]\in\mathbf P(V^\vee)\), let \(H_\alpha=\ker\alpha\). Then
+\[
+\gamma_Z(z)\in\operatorname{Gr}(r,H_\alpha)
+\iff
+(\iota_Z^*\alpha)(z)=0.
+\]
+Hence
+\[
+\gamma_Z^{-1}(\operatorname{Gr}(r,H_\alpha))
+=
+Z(\iota_Z^*\alpha).
+\]
+For an immersion the corresponding incidence space is
+\[
+\mathbf P(N^*_{Z/A})\to\mathbf P(V^\vee),
+\]
+the conormal Gauss map, of degree
+\[
+\int_Zc_r(\Omega_Z^1).
+\]
+Under Plücker,
+\[
+\operatorname{Gr}(r,H_\alpha)
+=
+\operatorname{Gr}(r,V)\cap\mathbf P(\Lambda^rH_\alpha).
+\]</div></div></section>
+<section id="chern"><h2>9. Geometric meaning of \(c_r\) and \(c_1^r\)</h2><div class="message user"><div class="role">User</div><div class="content">So \(c_r\) and \(c_1^r\) have special geometrical meaning?</div></div><div class="message assistant"><div class="role">Assistant</div><div class="content">For an immersion,
+\[
+(-1)^r\int_Zc_r(T_Z)
+=
+\deg(\text{conormal Gauss map}),
+\]
+while
+\[
+(-1)^r\int_Zc_1(T_Z)^r
+=
+K_Z^r
+=
+\deg(\gamma_Z)\deg_{\rm Pl}(\gamma_Z(Z)).
+\]
+These correspond to the Schubert classes \(\sigma_{1^r}\) and \(\sigma_1^r\). The formulas hold for any immersion into an abelian variety, not only for the Albanese embedding.</div></div></section>
+<section id="generic"><h2>10. Generically immersive maps: the real subtlety</h2><div class="message user"><div class="role">User</div><div class="content">If \(\iota_Z\) is only generically immersive, I am afraid closure adds extra points.</div></div><div class="message assistant"><div class="role">Assistant</div><div class="content">The closure of the main conormal variety does not itself change the generic degree. The issue is that the full incidence
+\[
+\mathcal I=\{(z,[\alpha]):(\iota_Z^*\alpha)(z)=0\}
+\]
+may acquire additional components supported over the rank-drop locus. Those can dominate \(\mathbf P(V^\vee)\) and contribute to a general fibre.
+
+For a rank-\(k\) stratum \(R\subset Z\) of dimension \(s\), the incidence over \(R\) has dimension
+\[
+(n-1)+(s-k).
+\]
+Thus \(s-k\) is the excess dimension.</div></div></section>
+<section id="exact"><h2>11. Exact tangent and conormal formulas with excess</h2><div class="message user"><div class="role">User</div><div class="content">I would like exact formulas for the tangent Gauss/Plücker formula and the conormal degree in the generically immersive case.</div></div><div class="message assistant"><div class="role">Assistant</div><div class="content">Let
+\[
+\varphi:V^\vee\otimes\mathcal O_Z\to\Omega_Z^1
+\]
+and let \(B\) be the scheme defined by the maximal minors of \(\varphi\). Then
+\[
+\operatorname{Im}(\Lambda^r\varphi)=\mathcal I_BK_Z.
+\]
+
+Let
+\[
+\mu:\Gamma=\operatorname{Bl}_BZ\to Z,
+\qquad
+\mathcal I_B\mathcal O_\Gamma=\mathcal O_\Gamma(-E),
+\]
+and let \(\bar\gamma:\Gamma\to\operatorname{Gr}(r,V)\) be the resolved Gauss map. Then
+\[
+\bar\gamma^*\mathcal O_{\operatorname{Gr}}(1)
+\simeq
+\mu^*K_Z\otimes\mathcal O_\Gamma(-E).
+\]
+Therefore
+\[
+\boxed{
+\deg(\gamma_Z)\deg_{\rm Pl}(Y)
+=
+\int_\Gamma(\mu^*K_Z-E)^r.
+}
+\]
+
+On the conormal side, if \(\mathcal U\) denotes the pullback of the tautological rank-\(r\) bundle to \(\Gamma\), then
+\[
+\boxed{
+\deg(\text{main conormal Gauss map})
+=
+\int_\Gamma c_r(\mathcal U^\vee).
+}
+\]
+The difference from \(\int_Zc_r(\Omega_Z^1)\) is a localized top-Chern excess supported on the rank-drop locus.</div></div></section>
+<section id="maxminors"><h2>12. Why the maximal-minor ideal appears</h2><div class="message user"><div class="role">User</div><div class="content">Why is
+\[
+\operatorname{Im}(\Lambda^r\varphi)=\mathcal I_BK_Z?
+\]
+I do not know whether \(B\) has expected dimension.</div></div><div class="message assistant"><div class="role">Assistant</div><div class="content">No expected-dimension hypothesis is needed. Locally trivialize \(\Omega_Z^1\) and write \(\varphi\) as an \(r\times n\) matrix \(A\). If \(\eta\) is a local generator of \(K_Z\), then
+\[
+\Lambda^r\varphi(e_{i_1}\wedge\cdots\wedge e_{i_r})
+=
+\det(A_{i_1,\dots,i_r})\,\eta.
+\]
+So the image is exactly the ideal generated by all maximal minors, multiplied by \(\eta\):
+\[
+\operatorname{Im}(\Lambda^r\varphi)
+=
+I_r(A)\eta
+=
+\mathcal I_BK_Z.
+\]
+Expected codimension is relevant for Porteous-type formulas, not for this identity.</div></div></section>
+<section id="fitting"><h2>13. Fitting ideals, in elementary language</h2><div class="message user"><div class="role">User</div><div class="content">I don't know what \(\operatorname{Fitt}_0\) is.</div></div><div class="message assistant"><div class="role">Assistant</div><div class="content">If
+\[
+R^m\xrightarrow{A}R^r\to M\to0,
+\]
+then \(\operatorname{Fitt}_0(M)\) is the ideal generated by the \(r\times r\) minors of \(A\). It cuts out the support of \(M\), with scheme structure and multiplicity.
+
+In our situation,
+\[
+\mathcal I_B
+=
+\operatorname{Fitt}_0(\operatorname{coker}\varphi).
+\]
+This is simply a coordinate-free name for the maximal-minor ideal.</div></div></section>
+<section id="imphi"><h2>14. What \(I_B\) remembers about \(\operatorname{Im}arphi\)</h2><div class="message user"><div class="role">User</div><div class="content">Can we describe \(\operatorname{Im}\varphi\) from \(I_B\)?</div></div><div class="message assistant"><div class="role">Assistant</div><div class="content">Only its determinant defect. If
+\[
+E=\operatorname{Im}\varphi\subset\Omega_Z^1,
+\]
+then
+\[
+\operatorname{Im}(\Lambda^rE\to K_Z)=I_BK_Z.
+\]
+But \(I_B\) does not determine \(E\) itself. Over a DVR,
+\[
+E=t^{a_1}Re_1\oplus\cdots\oplus t^{a_r}Re_r
+\]
+has
+\[
+I_B=(t^{a_1+\cdots+a_r}),
+\]
+so the ideal remembers only the sum of the exponents, not the whole tuple.</div></div></section>
+<section id="blowupnotes"><h2>15. Blow-up notation from the handwritten notes</h2><div class="message user"><div class="role">User</div><div class="content">Please use my notation setting for the blow-up example.</div></div><div class="message assistant"><div class="role">Assistant</div><div class="content">In the handwritten notes, the blow-up of \(\mathbb C^n\) at \(0\) is written
+\[
+\pi_2:\mathcal E_n\to\mathbb C^n,
+\]
+with exceptional divisor
+\[
+L=\pi_2^{-1}(0)\simeq\mathbb{CP}^{n-1}.
+\]
+On the chart \(B_1\),
+\[
+\pi_2(x_1,y_2,\dots,y_n)
+=
+(x_1,x_1y_2,\dots,x_1y_n),
+\]
+and
+\[
+L\cap B_1=\{x_1=0\}.
+\]
+
+For \(I=(x_1,\dots,x_n)\),
+\[
+I\mathcal O_{B_1}
+=
+(x_1,x_1y_2,\dots,x_1y_n)
+=
+(x_1).
+\]
+Thus the pulled-back ideal becomes invertible on the blow-up.</div></div></section>
+<section id="idealpullback"><h2>16. Pullback of an ideal under a ring map</h2><div class="message user"><div class="role">User</div><div class="content">How do I compute the pullback of an ideal \((f_1,f_2,\dots)\) when the map is \(A\to B\)?</div></div><div class="message assistant"><div class="role">Assistant</div><div class="content">With the convention used in your notes, pull back the functions and generate an ideal in \(B\):
+\[
+I=(f_1,\dots,f_m)
+\quad\leadsto\quad
+IB=(\phi(f_1),\dots,\phi(f_m)).
+\]
+This is the ideal of the scheme-theoretic inverse image.
+
+There is another object,
+\[
+I\otimes_AB,
+\]
+the tensor-product pullback as a module. It can be larger because it may contain torsion. There is a natural map
+\[
+I\otimes_AB\to B
+\]
+whose image is \(IB\).</div></div></section>
+<section id="charts"><h2>17. Explicit local-chart comparison on the blow-up of \(\mathbf A^2\)</h2><div class="message user"><div class="role">User</div><div class="content">Could you explain explicitly, in local charts, the difference between the two pullbacks?</div></div><div class="message assistant"><div class="role">Assistant</div><div class="content">Take
+\[
+A=k[x,y],\qquad I=(x,y).
+\]
+On the \(x\)-chart of the blow-up,
+\[
+B=k[x,t],\qquad y=xt.
+\]
+The pulled-back/extended ideal is
+\[
+IB=(x,xt)=(x).
+\]
+
+For the tensor-product pullback, let \(e_x,e_y\) represent the generators \(x,y\). Downstairs the relation is
+\[
+-y e_x+x e_y=0.
+\]
+After tensoring with \(B\),
+\[
+x(e_y-te_x)=0.
+\]
+Thus \(e_y-te_x\) can survive as \(x\)-torsion supported on the exceptional divisor \(x=0\). The map
+\[
+I\otimes_AB\to B
+\]
+kills this torsion and has image \((x)\).
+
+The \(y\)-chart is analogous.</div></div></section>
+<section id="convention"><h2>18. Final notation convention</h2><div class="message user"><div class="role">User</div><div class="content">So in my local chart the pullback \(\mu^*I_Z\) is
+\[
+(x_1,x_1y_2,x_1y_3)=(x_1).
+\]
+Why not just call that the pullback?</div></div><div class="message assistant"><div class="role">Assistant</div><div class="content">We will. To match your notes and avoid unnecessary notation changes, from now on:
+\[
+\boxed{
+\mu^*I_Z
+:=
+I_Z\mathcal O_{\widetilde Z}
+=
+(\text{pulled-back generators}).
+}
+\]
+Thus on the chart
+\[
+\mu^*I_Z=(x_1,x_1y_2,x_1y_3)=(x_1),
+\]
+which is invertible.
+
+If the tensor-product object is ever needed, it will be written explicitly as
+\[
+I_Z\otimes_{\mathcal O_Z}\mathcal O_{\widetilde Z}.
+\]
+This avoids ambiguity and follows the notation used in the discussion.</div></div></section>
+<footer>This archive is organized from the conversation rather than written as a formal paper. MathJax is loaded from a CDN for formula rendering.</footer>
+</main>
+</div>
+<script>
+const root=document.documentElement;
+document.getElementById('theme').onclick=()=>root.setAttribute('data-theme',root.getAttribute('data-theme')==='dark'?'light':'dark');
+document.getElementById('search').addEventListener('input',e=>{
+ const q=e.target.value.trim().toLowerCase();
+ document.querySelectorAll('main section').forEach(s=>s.classList.toggle('hidden',q&&!s.innerText.toLowerCase().includes(q)));
+});
+</script>
+</body>
+</html>

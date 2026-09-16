@@ -1,0 +1,8244 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Tangent Gauss Map Discussion — Faithful Q&amp;A Archive</title>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    displayMath: [['\\[','\\]']],
+    processEscapes: true
+  },
+  options: {skipHtmlTags: ['script','noscript','style','textarea','pre','code']}
+};
+</script>
+<script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+:root{
+  --bg:#faf9f6;--panel:#fff;--text:#242424;--muted:#6d6d6d;
+  --border:#ddd9d0;--user:#edf3fc;--assistant:#f7f7f4;--accent:#50638e;
+  --shadow:0 8px 30px rgba(0,0,0,.055)
+}
+[data-theme="dark"]{
+  --bg:#17181b;--panel:#202226;--text:#ededed;--muted:#adb0b6;
+  --border:#393c42;--user:#252f40;--assistant:#242529;--accent:#a8b9e4;
+  --shadow:0 8px 30px rgba(0,0,0,.24)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,"Times New Roman",serif;line-height:1.64}
+.layout{display:grid;grid-template-columns:330px minmax(0,1fr);min-height:100vh}
+aside{position:sticky;top:0;height:100vh;overflow:auto;padding:24px 18px;border-right:1px solid var(--border);background:var(--panel)}
+aside h1{font-size:18px;line-height:1.3;margin:0 0 10px}
+.meta{font:12px/1.45 system-ui,sans-serif;color:var(--muted);margin-bottom:16px}
+.controls{display:flex;gap:8px;margin-bottom:12px}
+button,input{border:1px solid var(--border);background:var(--bg);color:var(--text);border-radius:8px}
+button{padding:7px 10px;cursor:pointer}
+input{width:100%;padding:9px 10px;margin-bottom:14px}
+nav{display:flex;flex-direction:column;gap:4px}
+nav a{color:var(--text);text-decoration:none;font:12px/1.35 system-ui,sans-serif;padding:6px 8px;border-radius:7px}
+nav a:hover{background:var(--user)}
+main{width:min(1080px,100%);margin:auto;padding:46px 38px 90px}
+.hero{background:var(--panel);border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow);padding:28px;margin-bottom:32px}
+.hero h1{font-size:31px;line-height:1.2;margin:0 0 10px}
+.hero p{color:var(--muted);margin:.5em 0}
+.note{border-left:4px solid var(--accent);background:var(--assistant);padding:13px 16px;border-radius:0 9px 9px 0;margin-top:18px}
+.turn{margin:0 0 44px}
+.turn h2{font-size:21px;border-bottom:1px solid var(--border);padding-bottom:7px;margin-bottom:17px}
+.message{border:1px solid var(--border);border-radius:12px;margin:13px 0;overflow:hidden}
+.message.user{background:var(--user)}
+.message.assistant{background:var(--assistant)}
+.role{font:700 11px/1 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);padding:12px 17px 0}
+.content{padding:10px 18px 19px;white-space:pre-wrap;overflow-wrap:anywhere}
+.content mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden;padding:3px 0}
+.hidden{display:none!important}
+footer{color:var(--muted);font:12px/1.5 system-ui,sans-serif;margin-top:55px}
+@media(max-width:880px){
+  .layout{grid-template-columns:1fr}
+  aside{position:relative;height:auto;border-right:0;border-bottom:1px solid var(--border)}
+  main{padding:26px 17px 60px}
+}
+@media print{
+  aside{display:none}.layout{display:block}main{width:auto;padding:0}
+  .hero,.message{box-shadow:none}.turn{break-inside:auto}body{background:#fff;color:#000}
+}
+
+.citation-context{
+  margin-top:14px;padding:12px 14px;border:1px solid var(--border);
+  border-left:4px solid var(--accent);border-radius:9px;background:var(--panel);
+  font-family:Georgia,"Times New Roman",serif
+}
+.citation-label{
+  font:700 10px/1.2 system-ui,sans-serif;text-transform:uppercase;
+  letter-spacing:.1em;color:var(--muted);margin-bottom:7px
+}
+.citation-excerpt{white-space:pre-wrap;font-size:.96em}
+.citation-button,.quoted-inline,.cited-by{
+  font-family:system-ui,sans-serif;color:var(--accent);text-decoration:none
+}
+.citation-button{
+  display:inline-block;margin-top:9px;padding:5px 8px;border:1px solid var(--border);
+  border-radius:7px;background:var(--bg);font-size:12px
+}
+.quoted-inline{
+  border-bottom:1px dotted var(--accent);cursor:pointer
+}
+.cited-by{
+  display:inline-block;margin-left:7px;font-size:10px;vertical-align:middle;
+  padding:2px 5px;border:1px solid var(--border);border-radius:999px;
+  background:var(--panel)
+}
+.source-anchor{
+  scroll-margin-top:24px;border-radius:4px;transition:background .2s,outline .2s
+}
+.source-anchor.citation-flash{
+  background:#fff0a8;outline:3px solid rgba(255,193,7,.35)
+}
+[data-theme="dark"] .source-anchor.citation-flash{
+  background:#66551f;outline-color:rgba(255,215,64,.35)
+}
+.external-citation{border-left-color:var(--muted)}
+
+.reply-context{border-left-style:double}
+.reply-source{scroll-margin-top:32px}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside>
+<h1>Tangent Gauss Map Discussion — Faithful Q&amp;A Archive</h1>
+<div class="meta">Chronological transcript · 30 Q&amp;A turns · generated 16 Sep 2026</div>
+<div class="controls">
+<button id="theme">Toggle theme</button>
+<button onclick="window.print()">Print</button>
+</div>
+<input id="search" placeholder="Search transcript…" type="search"/>
+<nav><a href="#turn-1">Turn 1: I would like to prepare a talk about the tangent Gauss map. I will give f...</a>
+<a href="#turn-2">Turn 2: I want to make a general theory and then specify to the Albanese cases, a...</a>
+<a href="#turn-3">Turn 3: I would like to use my own notation: \iota_Z: Z-&gt;A where Z is of dim r an...</a>
+<a href="#turn-4">Turn 4: Should I suppose Z to be smooth?</a>
+<a href="#turn-5">Turn 5: How is the Castelnuovo–de Franchis theorem stated formally? I think I am ...</a>
+<a href="#turn-6">Turn 6: Why can we get $\lambta_S$ iso for Fano and surj for Schoen? And I think ...</a>
+<a href="#turn-7">Turn 7: "these ten Plücker coordinates are precisely the images under  " this is ...</a>
+<a href="#turn-8">Turn 8: "Schoen surfaces have no such irrational pencil " I also wonder why</a>
+<a href="#turn-9">Turn 9: The cited article said "and this would imply that Alb.S/ is non–simple, c...</a>
+<a href="#turn-10">Turn 10: And how do we determine the degree of the image of Gauss map? Do we have ...</a>
+<a href="#turn-11">Turn 11: I mean the general strategy to determine the degree of the image, for Fan...</a>
+<a href="#turn-12">Turn 12: Could you tell me if we can also describe the monodromy group not from Gr...</a>
+<a href="#turn-13">Turn 13: No, for the monodromy group I mean the Gr(r,H) pullback by Gauss map is g...</a>
+<a href="#turn-14">Turn 14: So Chern number c_r and c_1^n have special geometrical meaning. I think a...</a>
+<a href="#turn-15">Turn 15: Then how do we determine the degree of the conormal Gauss map outside of ...</a>
+<a href="#turn-16">Turn 16: So if \iota_Z is only generically an immersion this formula fails?</a>
+<a href="#turn-17">Turn 17: The problem is, when \iota_Z is generically immersive, I'm afraid that th...</a>
+<a href="#turn-18">Turn 18: I would like to get an exact formula for tangent Gauss/Plücker formula an...</a>
+<a href="#turn-19">Turn 19: So I think I also need to check why the Albanese map for Fano/Schoen surf...</a>
+<a href="#turn-20">Turn 20: Why is that? I don't know if B has the expected dimension</a>
+<a href="#turn-21">Turn 21: Can we describe the im\varphi related with I_B?</a>
+<a href="#turn-22">Turn 22: I don't know what Fitt_0 is, please teach me in a nice way, like I'm the ...</a>
+<a href="#turn-23">Turn 23: I still don't understand this "hence"</a>
+<a href="#turn-24">Turn 24: Here I_B is the pullback of original I_B from \mu?</a>
+<a href="#turn-25">Turn 25: But as O_{\Gamma}=\mu^* O_Z, is the left-hand side just \mu^*I_B?</a>
+<a href="#turn-26">Turn 26: Could you explain the difference in the blow up of A^2 case, describing t...</a>
+<a href="#turn-27">Turn 27: How to compute the pullback of an ideal (f_1,f_2,...) of A, when the map ...</a>
+<a href="#turn-28">Turn 28: So in my local chart the pullback \mu^*I_Z is (x_1,x_1y_2,x_1y_3)=(x_1), ...</a>
+<a href="#turn-29">Turn 29: So you think \mu^*I_Z is not (x_1,x_1y_2,x_1y_3)? Why?</a>
+<a href="#turn-30">Turn 30: Good, can you record this discussion and export it as a html document lik...</a></nav>
+</aside>
+<main>
+<div class="hero">
+<h1>Tangent Gauss Map Discussion — Faithful Q&amp;A Archive</h1>
+<p>This version keeps the discussion in chronological question-and-answer form instead of rewriting it as polished notes.</p>
+<div class="note"><strong>Transcript policy.</strong> The mathematical prose, corrections, disagreements, and false starts are kept in the answers rather than reconciled. Hidden reasoning, tool calls, and short tool-status messages are not part of the archive. Markdown markers such as <code>**</code> are intentionally left visible when they occurred in the response; MathJax renders the TeX formulas. <strong>Citation links.</strong> When a later user question quotes an earlier assistant sentence, the quotation is cross-linked to its original position; the original sentence also links back to the citing turn. <strong>Reply-context links.</strong> A user message can cite an earlier passage even when the cited words are not repeated in the message text; those are now shown as “Replying to / cited from Turn …” cards when the reply target is known.</div>
+</div>
+<section class="turn" id="turn-1">
+<h2>Turn 1</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">I would like to prepare a talk about the tangent Gauss map. I will give five examples: AJ map, AP map, Fano surface in its Albanese, Schoen surface in its Albanese and the spin curve with an abelian threefold quotient J-&gt;A s.t. global differentials are the image of Sym^2 H^0(L)-&gt;H^0(K_X)</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Yes. Assuming **AJ = Abel–Jacobi** and **AP = Abel–Prym**, there is a very clean conceptual thread that makes these five examples into a single talk rather than a catalogue.
+
+### The organizing principle
+
+I would put one formula near the beginning and return to it throughout. Let
+\[
+f:X^n\longrightarrow A
+\]
+be an immersion into an abelian variety, and put
+\[
+V=H^0(A,\Omega_A^1).
+\]
+Translation identifies every \(T_{f(x)}A\) with \(T_0A=V^\vee\), so the differential gives the **tangent Gauss map**
+\[
+\gamma_f:X\longrightarrow \operatorname{Gr}(n,V^\vee),
+\qquad
+x\longmapsto df_x(T_xX).
+\]
+
+After the Plücker embedding, the crucial point is that
+\[
+X\xrightarrow{\gamma_f}\operatorname{Gr}(n,V^\vee)
+\hookrightarrow \mathbf P(\wedge^nV^\vee)
+\]
+is exactly the rational map defined by the image of
+\[
+\boxed{\quad
+\wedge^n V\longrightarrow H^0(X,K_X).
+\quad}
+\]
+
+That can be the thesis of the talk:
+
+&gt; **The tangent Gauss map is the projective geometry of the canonical forms obtained by wedging the invariant \(1\)-forms of the ambient abelian variety.**
+
+Then all five examples become variations on what this space of canonical forms looks like.
+
+| Example | Ambient forms | Tangent Gauss map |
+|---|---|---|
+| Abel–Jacobi \(C\to J(C)\) | \(H^0(K_C)\) | canonical map |
+| Abel–Prym | Prym differentials | Prym-canonical map |
+| Fano surface \(S\subset\operatorname{Alb}(S)\) | \(\wedge^2H^0(\Omega_S^1)\simeq H^0(K_S)\) | natural \(S\to \mathrm{Gr}(2,5)\) |
+| Schoen surface \(S\subset\operatorname{Alb}(S)\) | \(\wedge^2H^0(\Omega_S^1)\twoheadrightarrow H^0(K_S)\), kernel \(1\)-dimensional | canonical map inside a hyperplane section of \(\mathrm{Gr}(2,4)\) |
+| spin curve \(X\to A\) | \(W=\operatorname{Im}(\operatorname{Sym}^2H^0(L)\to H^0(K_X))\) | Veronese of the spin pencil |
+
+For the **AJ example**, this is almost the definition. For
+\[
+C\hookrightarrow J(C),
+\qquad
+T_0J(C)=H^0(K_C)^\vee,
+\]
+the tangent line at \(p\) corresponds to evaluation of canonical forms at \(p\). Thus
+\[
+\gamma_{AJ}:C\to \mathbf P(H^0(K_C)^\vee)
+\]
+is precisely the canonical map. This is the ideal first example because there is essentially no machinery: “differentiate Abel–Jacobi and get the canonical curve.”
+
+The **Abel–Prym example** should come immediately afterwards. For an étale double cover
+\[
+\pi:\widetilde C\to C
+\]
+with associated \(2\)-torsion \(\eta\), the relevant invariant differentials on the Prym correspond to
+\[
+H^0(C,K_C\otimes\eta).
+\]
+Differentiating the Abel–Prym map gives tangent directions that agree projectively at the two points over \(p\), so the tangent Gauss map factors through \(C\), and the resulting map
+\[
+C\longrightarrow
+\mathbf P H^0(K_C\otimes\eta)^\vee
+\]
+is the Prym-canonical map.
+
+Then I would say: **now increase the dimension of \(X\)**.
+
+For the **Fano surface** \(S=F(Y)\) of lines on a smooth cubic threefold \(Y\subset\mathbf P^4\), one has \(q(S)=5\), so
+\[
+\gamma_S:S\to \operatorname{Gr}(2,5).
+\]
+Here the beautiful point is that this abstract tangent Gauss map is the already familiar geometric map
+\[
+[\ell]\longmapsto [\ell]\in\operatorname{Gr}(2,5)
+\]
+coming from the fact that \(S\) parametrizes the lines of \(Y\). This is the tangent-bundle theorem. Moreover the Plücker composite
+\[
+S\to\operatorname{Gr}(2,5)\hookrightarrow\mathbf P^9
+\]
+is the canonical map of \(S\).
+
+That makes Fano a particularly strong example: the tangent Gauss map **recovers the original incidence geometry** from the Albanese embedding.
+
+The **Schoen surface** should probably be the climax of the surface part. Here
+\[
+q(S)=4,\qquad p_g(S)=5,
+\]
+so
+\[
+\dim\wedge^2H^0(\Omega_S^1)=6,
+\qquad
+\dim H^0(K_S)=5.
+\]
+The map
+\[
+\lambda:\wedge^2H^0(\Omega_S^1)\longrightarrow H^0(K_S)
+\]
+is surjective with a one-dimensional kernel, and its generator is **non-decomposable**.
+
+Consequently
+\[
+\gamma_S:S\to\operatorname{Gr}(2,4)\subset\mathbf P^5
+\]
+has Plücker image contained in the hyperplane
+\[
+\mathbf P(H^0(K_S)^\vee)\simeq\mathbf P^4.
+\]
+Because the kernel is generated by a non-decomposable \(2\)-form, that hyperplane cuts
+\[
+\operatorname{Gr}(2,4)\simeq Q^4\subset\mathbf P^5
+\]
+in a **smooth quadric threefold**
+\[
+Q^3\subset\mathbf P^4.
+\]
+
+And now the punchline:
+\[
+\boxed{\quad
+\mathrm{Pl}\circ\gamma_S=\varphi_{K_S}.
+\quad}
+\]
+For a general Schoen surface, the canonical map is degree \(2\) onto a \(40\)-nodal complete intersection
+\[
+X=Q^3\cap \{\text{quartic}\}\subset\mathbf P^4.
+\]
+
+So the contrast with Fano is especially elegant:
+\[
+\begin{array}{c|c}
+\text{Fano} &amp; \wedge^2H^0(\Omega^1)\overset{\sim}{\longrightarrow}H^0(K)\\[2mm]
+\text{Schoen} &amp; \ker(\wedge^2H^0(\Omega^1)\to H^0(K))=\mathbf C\omega
+\end{array}
+\]
+
+and that **single relation among wedges of \(1\)-forms becomes the quadric containing the canonical image**.
+
+Your **spin-curve example** then makes a very nice ending because it returns to dimension one, but now the ambient abelian variety is a quotient rather than the full Jacobian.
+
+Suppose
+\[
+L^2=K_X,\qquad h^0(L)=2
+\]
+and
+\[
+J(X)\twoheadrightarrow A,\qquad \dim A=3,
+\]
+is chosen so that the pullback of the invariant forms of \(A\) is
+\[
+W=
+\operatorname{Im}
+\left(
+\operatorname{Sym}^2H^0(L)
+\longrightarrow H^0(K_X)
+\right).
+\]
+Then the tangent Gauss map of
+\[
+X\longrightarrow J(X)\longrightarrow A
+\]
+is simply
+\[
+\gamma:X\longrightarrow\mathbf P(W^\vee)\simeq\mathbf P^2.
+\]
+
+If \(s_0,s_1\) is a basis of \(H^0(L)\), the three sections defining it are
+\[
+s_0^2,\qquad s_0s_1,\qquad s_1^2.
+\]
+Therefore
+\[
+\boxed{
+\gamma=
+\nu_2\circ\varphi_{|L|}:
+X\longrightarrow\mathbf P^1
+\overset{\nu_2}{\longrightarrow}\mathbf P^2.
+}
+\]
+
+So its image is a **conic**. If \(|L|\) is base-point-free, its degree onto that conic is
+\[
+\deg L=g(X)-1.
+\]
+
+I think that is an excellent final example because the audience sees the whole philosophy in its simplest possible form: choosing a quotient \(J(X)\to A\) chooses a subspace
+\[
+W\subset H^0(K_X),
+\]
+and the tangent Gauss map is exactly the projective map defined by \(W\). In your case the special origin
+\[
+W=\operatorname{Sym}^2H^0(L)
+\]
+forces a Veronese factorization.
+
+For a roughly **50–55 minute talk**, I would spend about 8 minutes on the general construction, 5 on AJ, 6 on AP, 9 on Fano, 12 on Schoen, and 8 on the spin example. The progression would then be
+\[
+\boxed{
+\text{canonical}
+\;\to\;
+\text{Prym-canonical}
+\;\to\;
+\text{Grassmannian/canonical}
+\;\to\;
+\text{one wedge relation}
+\;\to\;
+\text{special three-dimensional subsystem}.
+}
+\]
+
+A title I like for this structure is **“Tangent Gauss maps and canonical forms: five examples”**, or, a little more geometric, **“From Abel–Jacobi to Albanese surfaces: tangent Gauss maps in five examples.”**</div>
+</div>
+</section>
+<section class="turn" id="turn-2">
+<h2>Turn 2</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">I want to make a general theory and then specify to the Albanese cases, and in the process give these examples</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Yes. I would make the **general theory of a map to an abelian variety** the subject of the first half, and then present the examples as increasingly structured instances of that theory. The key distinction is:
+
+- **full Albanese examples:** Abel–Jacobi, Fano, Schoen;
+- **quotients of the Albanese:** Abel–Prym and your spin-curve \(J(X)\twoheadrightarrow A\).
+
+That gives the talk a very natural architecture.
+
+## 1. General setup: a map to an abelian variety
+
+Let \(X\) be a smooth projective \(n\)-fold and
+\[
+f:X\longrightarrow A
+\]
+a morphism to an abelian variety, assumed to have rank \(n\) generically. Put
+\[
+V_A=H^0(A,\Omega_A^1),\qquad
+W_f=\operatorname{Im}\bigl(f^*:V_A\to H^0(X,\Omega_X^1)\bigr).
+\]
+
+On the open set \(U\subset X\) where \(df\) has rank \(n\), evaluation gives
+\[
+W_f\otimes\mathcal O_U\twoheadrightarrow \Omega_U^1.
+\]
+This is, in my view, the best **definition** of the tangent Gauss map:
+\[
+\gamma_f:U\longrightarrow \operatorname{Gr}(n,W_f),
+\]
+where you use the quotient convention for the Grassmannian. Dually it sends
+\[
+x\longmapsto df_x(T_xX)\subset W_f^\vee.
+\]
+
+Already here I would emphasize:
+
+&gt; The tangent Gauss map depends only on the space of invariant differentials of the ambient abelian variety that survive on \(X\).
+
+So the central object is really the pair
+\[
+(X,W),\qquad W\subset H^0(X,\Omega_X^1),
+\]
+when \(W\) comes from a map to an abelian variety.
+
+---
+
+## 2. The fundamental Plücker proposition
+
+This should be your first proposition.
+
+Taking determinants of
+\[
+W_f\otimes\mathcal O_X\to\Omega_X^1
+\]
+gives
+\[
+\lambda_f:
+\bigwedge^n W_f\longrightarrow H^0(X,K_X),
+\qquad
+\omega_1\wedge\cdots\wedge\omega_n
+\longmapsto
+\omega_1\wedge\cdots\wedge\omega_n.
+\]
+
+Then:
+
+\[
+\boxed{
+\operatorname{Pl}\circ\gamma_f
+\text{ is the rational map defined by }
+\operatorname{Im}\lambda_f\subset H^0(K_X).
+}
+\]
+
+This is the basic dictionary for the entire talk.
+
+From it you immediately get three pieces of information:
+
+\[
+W_f
+\quad\rightsquigarrow\quad
+\bigwedge^nW_f
+\overset{\lambda_f}{\longrightarrow}
+H^0(K_X).
+\]
+
+The three things to study are therefore
+
+\[
+\boxed{
+W_f,\qquad
+\ker\lambda_f,\qquad
+\operatorname{Im}\lambda_f.
+}
+\]
+
+And geometrically:
+
+- \(W_f\) tells you which differentials are visible to \(A\);
+- \(\operatorname{Im}\lambda_f\) is the canonical subsystem defining the Plücker Gauss map;
+- \(\ker\lambda_f\) gives the **linear equations cutting the Gauss image inside the Plücker Grassmannian**.
+
+That last point will lead perfectly to Schoen.
+
+---
+
+# 3. Albanese universality
+
+Now bring in the Albanese, rather than starting with it.
+
+Choose a base point. Every
+\[
+f:X\to A
+\]
+factors, up to translation, as
+\[
+X\xrightarrow{a_X}\operatorname{Alb}(X)
+\xrightarrow{\varphi} A.
+\]
+
+Consequently,
+\[
+W_f
+=
+\operatorname{Im}
+\left(
+\varphi^*:H^0(A,\Omega_A^1)
+\to
+H^0(X,\Omega_X^1)
+\right).
+\]
+
+So you can formulate a principle:
+
+&gt; **The Albanese tangent Gauss map is universal; tangent Gauss maps associated with maps \(X\to A\) are obtained from it by restricting to the space of \(1\)-forms selected by the homomorphism \(\operatorname{Alb}(X)\to A\).**
+
+This is the conceptual place for both AP and the spin example.
+
+Translation is irrelevant, so everything depends on the homomorphism of abelian varieties and hence on the selected space \(W\).
+
+I would even draw
+\[
+\begin{array}{ccc}
+X&amp;\xrightarrow{a_X}&amp;\operatorname{Alb}(X)\\
+&amp;\searrow f&amp;\downarrow\varphi\\
+&amp;&amp;A
+\end{array}
+\]
+next to
+\[
+H^0(X,\Omega_X^1)
+\supset
+W_f=\varphi^*H^0(A,\Omega_A^1).
+\]
+
+That is essentially the whole philosophy on one slide.
+
+---
+
+# 4. The Albanese Gauss map
+
+Now specialize to \(A=\operatorname{Alb}(X)\). Suppose \(X\) has maximal Albanese dimension.
+
+Then
+\[
+V:=H^0(X,\Omega_X^1)
+\simeq
+H^0(\operatorname{Alb}(X),\Omega^1)
+\]
+and you obtain the intrinsic rational map
+\[
+\gamma_X:
+X\dashrightarrow
+\operatorname{Gr}(n,V^\vee).
+\]
+
+Its Plücker linear system is
+
+\[
+\lambda_X:
+\bigwedge^n H^0(X,\Omega_X^1)
+\longrightarrow H^0(X,K_X).
+\]
+
+This is the intrinsic object I would call, throughout the talk, something like the **Albanese canonical subsystem**
+\[
+\mathcal K_{\rm Alb}
+:=
+\operatorname{Im}\lambda_X
+\subseteq H^0(K_X).
+\]
+
+Then the general questions become extremely concrete:
+
+\[
+\begin{array}{ll}
+\text{(i)} &amp; \text{How large is }\mathcal K_{\rm Alb}?\\
+\text{(ii)} &amp; \text{What is }\ker\lambda_X?\\
+\text{(iii)} &amp; \text{What is the image of }\gamma_X\subset\operatorname{Gr}(n,q)?\\
+\text{(iv)} &amp; \text{What is the degree/fiber structure of }\gamma_X?\\
+\text{(v)} &amp; \text{What happens when we pass to an Albanese quotient?}
+\end{array}
+\]
+
+Those five questions can organize all five examples.
+
+---
+
+# 5. Dimension one: the theory collapses to linear series
+
+This is where I would insert **three** of your examples together.
+
+For \(X=C\) a curve, \(n=1\), so
+\[
+\bigwedge^1W=W
+\]
+and
+\[
+\lambda_f:W\hookrightarrow H^0(K_C).
+\]
+
+Thus there is essentially no extra machinery:
+
+\[
+\boxed{
+\text{For a curve }C\to A,\quad
+\gamma_f
+\text{ is simply the canonical subsystem }
+\mathbf P(W^\vee).
+}
+\]
+
+This single statement gives AJ, AP, and spin.
+
+### Example 1: Abel–Jacobi
+
+For
+\[
+C\xrightarrow{AJ}J(C)
+\]
+we have
+\[
+W=H^0(K_C).
+\]
+
+Therefore
+\[
+\gamma_{AJ}=\varphi_{K_C}.
+\]
+
+So the canonical map is literally the tangent Gauss map of the Albanese map.
+
+This should be a very short example: it verifies the general theory in its purest form.
+
+---
+
+### Example 2: Abel–Prym
+
+Let
+\[
+\pi:\widetilde C\to C
+\]
+be an étale double cover, with involution \(\iota\), and let \(P\) be the Prym.
+
+The Abel–Prym map
+\[
+\widetilde C\longrightarrow P
+\]
+comes from the homomorphism
+\[
+J(\widetilde C)\longrightarrow P.
+\]
+
+Thus it is exactly your first example of **postcomposing an Albanese map with a quotient**.
+
+The surviving differentials are
+\[
+W=
+H^0(K_{\widetilde C})^{-}
+\simeq
+H^0(K_C\otimes\eta).
+\]
+
+Therefore the tangent Gauss map is the map defined by the anti-invariant canonical differentials. Projectively it factors through the involution and gives
+\[
+C\longrightarrow
+\mathbf P H^0(K_C\otimes\eta)^\vee,
+\]
+the Prym-canonical map.
+
+So you can present AJ and AP as
+\[
+\begin{array}{c|c}
+J(C) &amp; H^0(K_C)\\
+P(\widetilde C/C) &amp; H^0(K_{\widetilde C})^{-}
+\end{array}
+\]
+
+or, conceptually,
+
+\[
+\boxed{
+\text{AJ = all canonical forms,\qquad
+AP = the anti-invariant canonical forms.}
+}
+\]
+
+---
+
+### Example 3: the spin quotient
+
+Now your spin example becomes a second, much less standard application of exactly the same principle.
+
+Suppose
+\[
+L^2=K_X,
+\qquad h^0(L)=2,
+\]
+and there is a quotient
+\[
+J(X)\twoheadrightarrow A,\qquad \dim A=3,
+\]
+such that
+\[
+W=
+\operatorname{Im}
+\left[
+\operatorname{Sym}^2H^0(L)
+\longrightarrow H^0(K_X)
+\right].
+\]
+
+Then, because \(X\) is a curve,
+\[
+\gamma_{X\to A}
+\]
+is simply the map defined by \(W\).
+
+If
+\[
+H^0(L)=\langle s_0,s_1\rangle,
+\]
+then
+\[
+W=\langle s_0^2,s_0s_1,s_1^2\rangle.
+\]
+
+Hence, assuming the pencil has no relevant base locus,
+
+\[
+X\xrightarrow{|L|}\mathbf P^1
+\xrightarrow{\nu_2}\mathbf P^2
+\]
+is exactly the tangent Gauss map.
+
+So your three curve examples tell a very nice story:
+
+\[
+\boxed{
+\begin{array}{rcl}
+\text{AJ}&amp;:&amp;W=H^0(K),\\
+\text{AP}&amp;:&amp;W=H^0(K)^-,\\
+\text{spin quotient}&amp;:&amp;W=\operatorname{Sym}^2H^0(L).
+\end{array}}
+\]
+
+In other words, **different abelian quotients produce distinguished canonical subsystems**.
+
+That is a substantial general principle, not merely three examples.
+
+---
+
+# 6. Dimension two: now the kernel becomes interesting
+
+Then say something like:
+
+&gt; For curves the wedge construction was invisible, because \(\wedge^1W=W\). For surfaces the new phenomenon appears: relations between wedge products of \(1\)-forms.
+
+Let \(S\) be a surface of maximal Albanese dimension. Then
+\[
+\lambda_S:
+\bigwedge^2H^0(S,\Omega_S^1)
+\longrightarrow
+H^0(S,K_S).
+\]
+
+And
+\[
+\gamma_S:S\dashrightarrow
+\operatorname{Gr}(2,q).
+\]
+
+Under Plücker,
+\[
+\operatorname{Pl}(\gamma_S(S))
+\subset
+\mathbf P\!\left((\wedge^2H^0(\Omega_S^1))^\vee\right)
+\]
+lies in the annihilator of
+\[
+\ker\lambda_S.
+\]
+
+This gives you a beautiful general statement:
+
+&gt; **Relations among wedges of global \(1\)-forms become linear equations on the Plücker image of the tangent Gauss map.**
+
+Now you can add Castelnuovo–de Franchis as a genuinely structural theorem.
+
+If
+\[
+0\ne\alpha\wedge\beta\in\ker\lambda_S
+\]
+is **decomposable**, then
+\[
+\alpha\wedge\beta=0
+\]
+as a canonical form, and Castelnuovo–de Franchis produces a fibration
+\[
+S\to B,\qquad g(B)\ge2.
+\]
+
+Thus the position of
+\[
+\mathbf P(\ker\lambda_S)
+\]
+relative to the Grassmannian of decomposable bivectors already detects fibrations.
+
+This prepares Schoen perfectly: its kernel exists, but is **not decomposable**.
+
+---
+
+# 7. Fano: no wedge relations
+
+For the Fano surface \(F\) of lines on a smooth cubic threefold,
+
+\[
+q(F)=5,\qquad p_g(F)=10.
+\]
+
+Therefore
+\[
+\dim\bigwedge^2H^0(\Omega_F^1)
+=
+\binom52=10
+=
+h^0(K_F),
+\]
+and in fact
+\[
+\lambda_F:
+\bigwedge^2H^0(\Omega_F^1)
+\xrightarrow{\sim}
+H^0(K_F).
+\]
+
+So in your general language,
+
+\[
+\boxed{\ker\lambda_F=0.}
+\]
+
+The entire canonical system comes from wedges of Albanese differentials.
+
+Hence
+\[
+F\longrightarrow \operatorname{Gr}(2,5)
+\hookrightarrow\mathbf P^9
+\]
+is simultaneously
+
+- the Albanese tangent Gauss map followed by Plücker;
+- the canonical map.
+
+And the tangent-bundle theorem identifies the first map with the geometric realization of \(F\) as the variety of lines on the cubic.
+
+This is the **maximal** case of your theory:
+\[
+\operatorname{Im}\lambda_F=H^0(K_F),\qquad
+\ker\lambda_F=0.
+\]
+
+---
+
+# 8. Schoen: exactly one wedge relation
+
+Then Schoen is the natural contrast.
+
+For a Schoen surface,
+\[
+q=4,\qquad p_g=5.
+\]
+Hence
+\[
+\dim\bigwedge^2H^0(\Omega_S^1)=6
+\]
+while
+\[
+h^0(K_S)=5.
+\]
+
+Thus
+\[
+\ker\lambda_S=\langle\omega\rangle
+\]
+is one-dimensional.
+
+The crucial fact is that \(\omega\) is **non-decomposable**.
+
+Now
+\[
+\operatorname{Gr}(2,4)
+\hookrightarrow
+\mathbf P(\wedge^2\mathbf C^4)
+=\mathbf P^5
+\]
+is the Klein quadric \(Q^4\), the relation
+\[
+\omega=0
+\]
+cuts it by a hyperplane.
+
+Because \(\omega\) is non-decomposable, the corresponding hyperplane is non-tangent to the Klein quadric, hence
+\[
+\operatorname{Gr}(2,4)\cap\mathbf P(\omega^\perp)
+=
+Q^3\subset\mathbf P^4.
+\]
+
+Therefore
+\[
+S\xrightarrow{\gamma_S}
+\operatorname{Gr}(2,4)
+\]
+has Plücker image in
+\[
+Q^3,
+\]
+and
+\[
+\operatorname{Pl}\circ\gamma_S
+\]
+is the canonical map.
+
+This is one of the nicest moments of the talk, because everything follows from the general formalism:
+
+\[
+\boxed{
+\dim\ker\lambda=1+
+\text{non-decomposable generator}
+\quad\Longrightarrow\quad
+\text{smooth quadric }Q^3.
+}
+\]
+
+And you can explicitly contrast:
+
+\[
+\begin{array}{c|c|c}
+ &amp; \ker\lambda &amp; \text{canonical Plücker geometry}\\
+\hline
+\text{Fano} &amp; 0 &amp; \operatorname{Gr}(2,5)\subset\mathbf P^9\\
+\text{Schoen} &amp; \langle\omega\rangle,\ \omega\text{ non-decomp.}
+&amp; Q^3=\operatorname{Gr}(2,4)\cap H
+\end{array}
+\]
+
+This comparison should probably be one of your final slides.
+
+---
+
+## 9. One genuinely geometric theorem for the “general theory”
+
+If you want the first part to contain more than the linear-algebra formalism, I would add one result about fibers.
+
+For a subvariety of an abelian variety, degeneracy of the tangent Gauss map is intimately tied to translation-invariance: positive-dimensional Gauss fibers arise from torus directions, and after quotienting by the appropriate subtorus one obtains a generically finite Gauss map.
+
+But I would keep this to **one slide**. Your examples are really driven by the differential-form/Plücker side, so I would not let the general theory drift into the conormal/theta-divisor theory.
+
+---
+
+# A possible 50-minute narrative
+
+I would structure the talk roughly as:
+
+**I. Tangent Gauss maps to abelian varieties — 15 min.** Define \(\gamma_f\) from the evaluation map; prove the Plücker/wedge proposition; establish factorization through Albanese and the “abelian quotient = selected space of \(1\)-forms” philosophy.
+
+**II. Curves — 10 min.** Explain once that \(n=1\) means the Gauss map is simply the linear system \(W\subset H^0(K)\). Then AJ \(\to\) canonical, AP \(\to\) Prym-canonical, spin quotient \(\to\) Veronese of the spin pencil.
+
+**III. Albanese surfaces — 18 min.** Introduce
+\[
+\wedge^2H^0(\Omega^1)\to H^0(K),
+\]
+explain decomposable kernel elements and Castelnuovo–de Franchis, then give Fano (\(\ker=0\)) and Schoen (\(\dim\ker=1\), non-decomposable).
+
+**IV. Synthesis — 5 min.** End not with another theorem but with the diagram
+\[
+\boxed{
+\begin{array}{ccc}
+\text{map to an abelian variety}
+&amp;\longleftrightarrow&amp;
+W\subset H^0(\Omega_X^1)
+\\[1mm]
+&amp;&amp;\downarrow\wedge^n\\
+\text{tangent Gauss map}
+&amp;\longleftrightarrow&amp;
+\operatorname{Im}\{\wedge^nW\to H^0(K_X)\}
+\\
+&amp;&amp;\\[-3mm]
+\text{geometry of Gauss image}
+&amp;\longleftrightarrow&amp;
+\ker\{\wedge^nW\to H^0(K_X)\}.
+\end{array}}
+\]
+
+That, I think, is the theorem-level message you want the audience to leave with. **AJ/AP/spin explain the choice of \(W\); Fano/Schoen explain the wedge map.** Together the five examples cover the two genuinely different pieces of the general theory.</div>
+</div>
+</section>
+<section class="turn" id="turn-3">
+<h2>Turn 3</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">I would like to use my own notation: \iota_Z: Z-&gt;A where Z is of dim r and A is of dim n, and V=T_0A. Please rewrite the architecture for me</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Absolutely. With your notation, the architecture becomes cleaner because the tangent space \(V=T_0A\) is present from the beginning.
+
+I would structure the talk as follows.
+
+## 1. General setup: \(Z\) inside an abelian variety
+
+Let
+\[
+\iota_Z:Z\longrightarrow A
+\]
+be a morphism, with
+\[
+\dim Z=r,\qquad \dim A=n,
+\]
+and set
+\[
+V:=T_0A.
+\]
+
+Using translations on \(A\), every tangent space \(T_{\iota_Z(z)}A\) is canonically identified with \(V\). Hence, wherever \(d\iota_Z\) has rank \(r\),
+\[
+d\iota_{Z,z}(T_zZ)\subset V
+\]
+is an \(r\)-dimensional subspace.
+
+This gives the **tangent Gauss map**
+\[
+\boxed{
+\gamma_Z:Z\dashrightarrow \operatorname{Gr}(r,V),
+\qquad
+z\longmapsto d\iota_{Z,z}(T_zZ).
+}
+\]
+
+This is the geometric object you want to study.
+
+---
+
+## 2. The cotangent description
+
+Since
+\[
+H^0(A,\Omega_A^1)=V^\vee,
+\]
+pullback gives
+\[
+\iota_Z^*:V^\vee\longrightarrow H^0(Z,\Omega_Z^1).
+\]
+
+Pointwise, the cotangent map is
+\[
+V^\vee\otimes\mathcal O_Z
+\longrightarrow
+\Omega_Z^1.
+\]
+
+Taking the \(r\)-th exterior power gives
+\[
+\bigwedge^r V^\vee\otimes\mathcal O_Z
+\longrightarrow
+K_Z.
+\]
+
+On global sections this gives the fundamental map
+\[
+\boxed{
+\lambda_Z:
+\bigwedge^r V^\vee
+\longrightarrow
+H^0(Z,K_Z).
+}
+\]
+
+This should be the central algebraic object of the talk.
+
+---
+
+## 3. Gauss map and canonical forms
+
+Now compose the tangent Gauss map with the Plücker embedding:
+\[
+Z\dashrightarrow
+\operatorname{Gr}(r,V)
+\hookrightarrow
+\mathbf P(\wedge^rV).
+\]
+
+The key proposition is:
+
+\[
+\boxed{
+\operatorname{Pl}\circ\gamma_Z
+\text{ is the rational map defined by }
+\operatorname{Im}(\lambda_Z)
+\subset H^0(Z,K_Z).
+}
+\]
+
+So there are really three related objects:
+\[
+\gamma_Z,\qquad
+\operatorname{Im}\lambda_Z,\qquad
+\ker\lambda_Z.
+\]
+
+I would formulate the philosophy as:
+
+&gt; The tangent Gauss map records the tangent spaces of \(Z\) in \(A\), while the Plücker realization of this map is controlled by the canonical forms obtained by wedging invariant \(1\)-forms of \(A\).
+
+And then:
+
+&gt; The kernel of \(\lambda_Z\) gives linear equations satisfied by the Plücker image of \(\gamma_Z\).
+
+That prepares both Fano and Schoen.
+
+---
+
+# 4. The Albanese specialization
+
+Only now specialize to
+\[
+A=\operatorname{Alb}(Z),
+\qquad
+\iota_Z=a_Z:Z\to\operatorname{Alb}(Z).
+\]
+
+Then
+\[
+V^\vee
+=
+H^0(A,\Omega_A^1)
+\simeq
+H^0(Z,\Omega_Z^1).
+\]
+
+Thus the fundamental map becomes intrinsic:
+\[
+\boxed{
+\lambda_Z:
+\bigwedge^rH^0(Z,\Omega_Z^1)
+\longrightarrow
+H^0(Z,K_Z).
+}
+\]
+
+So the Albanese tangent Gauss map is
+\[
+\gamma_Z:
+Z\dashrightarrow
+\operatorname{Gr}
+\left(
+r,H^0(Z,\Omega_Z^1)^\vee
+\right).
+\]
+
+This is the maximal or universal case.
+
+---
+
+## 5. Why the Albanese case is universal
+
+For an arbitrary
+\[
+\iota_Z:Z\to A,
+\]
+the universal property of the Albanese gives, up to translation,
+\[
+\begin{array}{ccc}
+Z&amp;\xrightarrow{a_Z}&amp;\operatorname{Alb}(Z)\\
+&amp;\searrow\iota_Z&amp;\downarrow\varphi\\
+&amp;&amp;A.
+\end{array}
+\]
+
+On differentials,
+\[
+V^\vee=H^0(A,\Omega_A^1)
+\xrightarrow{\varphi^*}
+H^0(\operatorname{Alb}(Z),\Omega^1)
+\simeq
+H^0(Z,\Omega_Z^1).
+\]
+
+Thus an arbitrary map to an abelian variety corresponds to selecting a subspace
+\[
+W_A:=
+\operatorname{Im}
+\left(
+V^\vee\to H^0(Z,\Omega_Z^1)
+\right).
+\]
+
+This gives a useful slogan:
+
+\[
+\boxed{
+\text{Passing from }\operatorname{Alb}(Z)\text{ to }A
+\text{ means selecting a space of global }1\text{-forms.}
+}
+\]
+
+Your Abel–Prym and spin examples belong precisely here.
+
+---
+
+# 6. First specialization: \(r=1\)
+
+Now suppose \(Z=C\) is a curve.
+
+Then
+\[
+\bigwedge^1V^\vee=V^\vee,
+\]
+so
+\[
+\lambda_C:V^\vee\longrightarrow H^0(C,K_C).
+\]
+
+Thus the tangent Gauss map of
+\[
+\iota_C:C\to A
+\]
+is simply the map associated with the linear subsystem
+\[
+\operatorname{Im}
+\left(
+V^\vee\to H^0(K_C)
+\right).
+\]
+
+In other words:
+
+\[
+\boxed{
+\text{For curves, tangent Gauss maps are canonical subsystems.}
+}
+\]
+
+This gives three examples.
+
+### Abel–Jacobi
+
+For
+\[
+\iota_C:C\to J(C)=\operatorname{Alb}(C),
+\]
+we have
+\[
+V^\vee=H^0(K_C).
+\]
+
+Hence
+\[
+\gamma_C:C\to\mathbf P(V)
+\]
+is the canonical map.
+
+This is the basic Albanese example.
+
+---
+
+### Abel–Prym
+
+For an Abel–Prym map
+\[
+\iota_{\widetilde C}:\widetilde C\to P,
+\]
+the abelian variety \(P\) is obtained from \(J(\widetilde C)\) by selecting the anti-invariant differentials.
+
+Thus
+\[
+V^\vee
+\simeq
+H^0(K_{\widetilde C})^-.
+\]
+
+The tangent Gauss map is therefore the canonical subsystem given by the anti-invariant canonical forms, hence it is related to the Prym-canonical map on the quotient curve.
+
+This illustrates:
+
+\[
+\operatorname{Alb}(\widetilde C)
+\longrightarrow P
+\quad\Longleftrightarrow\quad
+H^0(K_{\widetilde C})
+\supset H^0(K_{\widetilde C})^-.
+\]
+
+---
+
+### Spin curve and a three-dimensional quotient
+
+Suppose now
+\[
+L^2=K_C
+\]
+and there is a quotient
+\[
+J(C)\twoheadrightarrow A,
+\qquad
+\dim A=3,
+\]
+such that
+\[
+V^\vee
+=
+\operatorname{Im}
+\left(
+\operatorname{Sym}^2H^0(L)
+\longrightarrow H^0(K_C)
+\right).
+\]
+
+If
+\[
+h^0(L)=2,\qquad H^0(L)=\langle s_0,s_1\rangle,
+\]
+then
+\[
+V^\vee
+=
+\langle s_0^2,s_0s_1,s_1^2\rangle.
+\]
+
+Thus the tangent Gauss map
+\[
+\gamma_C:C\to\mathbf P(V)\simeq\mathbf P^2
+\]
+is
+\[
+C\xrightarrow{|L|}\mathbf P^1
+\xrightarrow{\nu_2}\mathbf P^2.
+\]
+
+So AJ, AP, and the spin example all illustrate the same general statement:
+
+\[
+\boxed{
+\text{for }r=1,\quad
+A\text{ determines a distinguished subspace of }H^0(K_C).
+}
+\]
+
+---
+
+# 7. Second specialization: \(r=2\)
+
+Now let \(Z=S\) be a surface.
+
+The basic map becomes
+\[
+\lambda_S:
+\bigwedge^2V^\vee
+\longrightarrow
+H^0(S,K_S).
+\]
+
+The tangent Gauss map is
+\[
+\gamma_S:S\dashrightarrow\operatorname{Gr}(2,V).
+\]
+
+This is where the theory becomes genuinely different from the curve case, because now
+\[
+\ker\lambda_S
+\]
+contains information.
+
+The Plücker image satisfies all the linear equations coming from
+\[
+\ker\lambda_S\subset\wedge^2V^\vee.
+\]
+
+So for surfaces the two natural questions are:
+
+\[
+\boxed{
+\text{How large is }\ker\lambda_S?
+\qquad
+\text{What type of bivectors does it contain?}
+}
+\]
+
+---
+
+## 8. Decomposable elements and fibrations
+
+A decomposable element
+\[
+\alpha\wedge\beta\in\bigwedge^2V^\vee
+\]
+lies in \(\ker\lambda_S\) precisely when
+\[
+\iota_S^*\alpha\wedge\iota_S^*\beta=0.
+\]
+
+In the Albanese case, Castelnuovo–de Franchis tells you that the presence of such a nonzero decomposable kernel element is related to a fibration of \(S\) over a curve of genus at least \(2\).
+
+So there is an important geometric distinction:
+
+\[
+\ker\lambda_S
+\cap
+\{\text{decomposable bivectors}\}
+\neq\varnothing
+\]
+versus
+\[
+\ker\lambda_S
+\text{ consisting only of non-decomposable directions}.
+\]
+
+This is exactly the right preparation for the Schoen surface.
+
+---
+
+# 9. Fano surface: no relations
+
+Let \(S\) be the Fano surface of lines on a smooth cubic threefold.
+
+Here
+\[
+A=\operatorname{Alb}(S),
+\qquad
+\dim A=5,
+\]
+so
+\[
+V=T_0A,\qquad \dim V=5.
+\]
+
+Moreover,
+\[
+\dim\bigwedge^2V^\vee=10
+\]
+and
+\[
+p_g(S)=10.
+\]
+
+The map
+\[
+\lambda_S:
+\bigwedge^2V^\vee
+\longrightarrow H^0(K_S)
+\]
+is an isomorphism.
+
+Therefore
+\[
+\boxed{\ker\lambda_S=0.}
+\]
+
+Consequently the Plücker composite
+\[
+S\to\operatorname{Gr}(2,V)
+\hookrightarrow\mathbf P(\wedge^2V)
+\]
+is the complete canonical map.
+
+The tangent-bundle theorem then identifies
+\[
+\gamma_S:S\to\operatorname{Gr}(2,V)
+\]
+with the geometric realization of \(S\) as the family of lines on the cubic threefold.
+
+So Fano represents the case
+\[
+\bigwedge^2V^\vee
+\simeq
+H^0(K_S).
+\]
+
+---
+
+# 10. Schoen surface: one relation
+
+For a Schoen surface,
+\[
+A=\operatorname{Alb}(S),
+\qquad
+\dim A=4,
+\]
+so
+\[
+\dim V=4.
+\]
+
+Then
+\[
+\dim\bigwedge^2V^\vee=6,
+\qquad
+p_g(S)=5.
+\]
+
+Hence
+\[
+\ker\lambda_S
+=
+\langle\omega\rangle
+\]
+is one-dimensional.
+
+The crucial fact is that
+\[
+\omega\in\bigwedge^2V^\vee
+\]
+is non-decomposable.
+
+Now
+\[
+\operatorname{Gr}(2,V)
+\hookrightarrow
+\mathbf P(\wedge^2V)\simeq\mathbf P^5
+\]
+is the Klein quadric.
+
+The equation
+\[
+\omega=0
+\]
+defines a hyperplane
+\[
+\mathbf P(\omega^\perp)\subset\mathbf P(\wedge^2V).
+\]
+
+Therefore
+\[
+\gamma_S(S)
+\subset
+\operatorname{Gr}(2,V)
+\cap
+\mathbf P(\omega^\perp).
+\]
+
+Since \(\omega\) is non-decomposable, this hyperplane section is a smooth quadric threefold
+\[
+Q^3\subset\mathbf P^4.
+\]
+
+And again the Plücker composite is the canonical map.
+
+Thus:
+
+\[
+\boxed{
+\text{Fano: }\ker\lambda_S=0,
+\qquad
+\text{Schoen: }\ker\lambda_S=\langle\omega\rangle,\quad
+\omega\text{ non-decomposable}.
+}
+\]
+
+---
+
+# 11. The architecture of the whole talk
+
+I would make the progression visibly:
+
+\[
+\boxed{
+\iota_Z:Z^r\to A^n,
+\qquad
+V=T_0A
+}
+\]
+
+followed by
+
+\[
+\boxed{
+\gamma_Z:
+Z\dashrightarrow\operatorname{Gr}(r,V)
+}
+\]
+
+and
+
+\[
+\boxed{
+\lambda_Z:
+\bigwedge^rV^\vee
+\longrightarrow
+H^0(K_Z).
+}
+\]
+
+Then organize everything around the dictionary
+
+\[
+\begin{array}{ccc}
+\iota_Z:Z\to A
+&amp;\longleftrightarrow&amp;
+V^\vee\to H^0(\Omega_Z^1)
+\\[2mm]
+\gamma_Z
+&amp;\longleftrightarrow&amp;
+\wedge^rV^\vee\to H^0(K_Z)
+\\[2mm]
+\text{Plücker image}
+&amp;\longleftrightarrow&amp;
+\operatorname{Im}\lambda_Z
+\\[2mm]
+\text{linear equations on the image}
+&amp;\longleftrightarrow&amp;
+\ker\lambda_Z.
+\end{array}
+\]
+
+Then your examples divide beautifully into two groups:
+
+\[
+\boxed{
+\begin{array}{c|c}
+r=1 &amp; \text{Which subspace of }H^0(K_C)\text{ comes from }A?\\
+\hline
+\text{AJ} &amp; H^0(K_C)\\
+\text{AP} &amp; \text{anti-invariant forms}\\
+\text{spin quotient} &amp; \operatorname{Sym}^2H^0(L)
+\end{array}}
+\]
+
+and
+
+\[
+\boxed{
+\begin{array}{c|c}
+r=2 &amp; \text{What relations exist among wedges of }1\text{-forms?}\\
+\hline
+\text{Fano} &amp; \ker\lambda_S=0\\
+\text{Schoen} &amp; \ker\lambda_S=\langle\omega\rangle,\quad
+\omega\text{ non-decomposable}.
+\end{array}}
+\]
+
+That gives you a particularly clean narrative: **curves illustrate the choice of ambient differentials; surfaces illustrate relations among their exterior products.**</div>
+</div>
+</section>
+<section class="turn" id="turn-4">
+<h2>Turn 4</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">Should I suppose Z to be smooth?</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Yes. For this talk I would **assume \(Z\) smooth**, at least in the main setup. It makes the theory much cleaner and matches all of your examples.
+
+I would state the standing assumptions as
+\[
+\iota_Z:Z\longrightarrow A,
+\qquad
+Z \text{ smooth projective of dimension }r,
+\qquad
+\dim A=n,
+\]
+with
+\[
+V=T_0A,
+\]
+and assume that \(\iota_Z\) has generic rank \(r\) (in particular, this holds if \(Z\subset A\) is a smooth subvariety).
+
+Then you have globally
+\[
+\Omega_Z^1,\qquad K_Z=\bigwedge^r\Omega_Z^1,
+\]
+and the differential gives
+\[
+V^\vee\otimes\mathcal O_Z\longrightarrow \Omega_Z^1,
+\]
+hence
+\[
+\lambda_Z:\bigwedge^rV^\vee\longrightarrow H^0(Z,K_Z).
+\]
+
+The Gauss map itself is defined on the locus where \(d\iota_Z\) has maximal rank:
+\[
+\gamma_Z:Z\dashrightarrow \operatorname{Gr}(r,V).
+\]
+If \(\iota_Z\) is an immersion everywhere, then of course \(\gamma_Z\) is a morphism.
+
+I would actually distinguish these two hypotheses explicitly:
+
+\[
+\boxed{
+Z\text{ smooth},\qquad \operatorname{rk}(d\iota_Z)=r\text{ generically}.
+}
+\]
+
+You do **not** need to assume that \(\iota_Z\) is an embedding for the general theory.
+
+There is also a good one-sentence remark you can make after the definition:
+
+&gt; If \(Z\) is singular, one can define the tangent Gauss map on \(Z_{\mathrm{reg}}\), and replace \(K_Z\) and differential forms by suitable dualizing/reflexive objects; we will avoid these technicalities here.
+
+That is enough unless singular varieties themselves become important later.
+
+For the **Albanese specialization**, smoothness is especially natural, because then
+\[
+H^0(\operatorname{Alb}(Z),\Omega^1)
+\simeq H^0(Z,\Omega_Z^1)
+\]
+without qualification, and the map
+\[
+\bigwedge^r H^0(Z,\Omega_Z^1)\to H^0(Z,K_Z)
+\]
+is exactly the clean intrinsic object you want.
+
+So I would begin the talk with something like:
+
+&gt; Let \(Z\) be a smooth projective variety of dimension \(r\), let \(A\) be an abelian variety of dimension \(n\), and let \(\iota_Z:Z\to A\) be a morphism of generic rank \(r\). We set \(V=T_0A\).
+
+That is probably the right level of generality.</div>
+</div>
+</section>
+<section class="turn" id="turn-5">
+<h2>Turn 5</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">How is the Castelnuovo–de Franchis theorem stated formally? I think I am not so familiar with that theorem</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">For your talk, the version you want is very clean.
+
+Let \(Z\) be a smooth projective variety (more generally, a compact Kähler manifold). Suppose there exist two linearly independent holomorphic \(1\)-forms
+\[
+\alpha,\beta\in H^0(Z,\Omega_Z^1)
+\]
+such that
+\[
+\alpha\wedge\beta=0
+\qquad\text{in }H^0(Z,\Omega_Z^2).
+\]
+
+Then the Castelnuovo–de Franchis theorem says that there exists a surjective morphism with connected fibres
+\[
+f:Z\longrightarrow C
+\]
+onto a smooth projective curve \(C\) of genus
+\[
+g(C)\ge 2,
+\]
+such that
+\[
+\alpha,\beta\in f^*H^0(C,K_C).
+\]
+
+Equivalently, there are
+\[
+\eta_1,\eta_2\in H^0(C,K_C)
+\]
+with
+\[
+\alpha=f^*\eta_1,\qquad
+\beta=f^*\eta_2.
+\]
+
+For your setting, this means the following. In the Albanese case,
+\[
+V^\vee=H^0(Z,\Omega_Z^1),
+\]
+and you have
+\[
+\lambda_Z:\bigwedge^2V^\vee\longrightarrow H^0(Z,\Omega_Z^2).
+\]
+If the kernel contains a nonzero **decomposable** element
+\[
+0\neq\alpha\wedge\beta\in\ker\lambda_Z,
+\]
+then
+\[
+\alpha\wedge\beta=0
+\]
+as a holomorphic \(2\)-form on \(Z\), so Castelnuovo–de Franchis produces a fibration
+\[
+Z\longrightarrow C,\qquad g(C)\ge2.
+\]
+
+The linear independence of \(\alpha,\beta\) matters: if they were dependent, then \(\alpha\wedge\beta=0\) trivially and there would be no geometric conclusion.
+
+There is also a very useful converse. If
+\[
+f:Z\to C,\qquad g(C)\ge2,
+\]
+is a fibration, choose two independent forms
+\[
+\eta_1,\eta_2\in H^0(C,K_C).
+\]
+Then
+\[
+f^*\eta_1\wedge f^*\eta_2
+=
+f^*(\eta_1\wedge\eta_2)
+=0,
+\]
+because \(C\) has dimension \(1\). Thus the existence of such a fibration produces decomposable elements in the kernel.
+
+So, informally:
+
+\[
+\boxed{
+\text{decomposable relation among holomorphic }1\text{-forms}
+\quad\Longleftrightarrow\quad
+\text{a map to a curve of genus }\ge2
+}
+\]
+
+with the usual proviso that the reverse implication gives a whole isotropic subspace of forms.
+
+For your Schoen discussion, this is exactly why the phrase **“the generator of the kernel is non-decomposable”** is important. If its one-dimensional kernel were generated by
+\[
+\alpha\wedge\beta,
+\]
+Castelnuovo–de Franchis would force an irrational pencil. Instead the kernel is generated by a rank-\(4\) skew form, so this theorem does not produce such a fibration.
+
+One small notational point: for a surface \(S\),
+\[
+H^0(S,\Omega_S^2)=H^0(S,K_S),
+\]
+so your map is precisely
+\[
+\bigwedge^2H^0(S,\Omega_S^1)\longrightarrow H^0(S,K_S).
+\]
+For higher-dimensional \(Z\), Castelnuovo–de Franchis concerns the map to \(H^0(\Omega_Z^2)\), not your top-wedge map \(\bigwedge^rH^0(\Omega_Z^1)\to H^0(K_Z)\). That distinction is worth making explicitly in the talk.</div>
+</div>
+</section>
+<section class="turn" id="turn-6">
+<h2>Turn 6</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">Why can we get $\lambta_S$ iso for Fano and surj for Schoen? And I think partially my goal is also verifying the degree of the Gauss map to its image, this part is missing</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Yes. I would make **degree** part of the general theory itself, not an afterthought. It gives you a numerical invariant that ties the examples together beautifully.
+
+There are also two different reasons behind the Fano and Schoen statements about \(\lambda_S\).
+
+First, one correction to my earlier message: for a Schoen surface,
+\[
+K_S^2=16,\qquad p_g=5,\qquad q=4.
+\]
+Its canonical image is a \((2,4)\) complete intersection of degree \(8\) in \(\mathbf P^4\). For a general Schoen surface the canonical map has degree \(2\), so indeed
+\[
+16=2\cdot 8.
+\]
+
+## 1. Put the degree into the general theory
+
+Suppose
+\[
+\iota_Z:Z^r\hookrightarrow A^n
+\]
+is an immersion, and let
+\[
+V=T_0A.
+\]
+Then
+\[
+\gamma_Z:Z\longrightarrow \operatorname{Gr}(r,V).
+\]
+
+Let \(\mathcal U\) denote the tautological rank-\(r\) bundle on the Grassmannian. By definition of the Gauss map,
+\[
+\gamma_Z^*\mathcal U\simeq T_Z.
+\]
+Therefore
+\[
+\gamma_Z^*\mathcal O_{\operatorname{Gr}}(1)
+=
+\gamma_Z^*(\det\mathcal U^\vee)
+\simeq
+\det T_Z^\vee
+=
+K_Z.
+\]
+
+So you get the fundamental identity
+\[
+\boxed{\gamma_Z^*\mathcal O_{\operatorname{Gr}}(1)\simeq K_Z.}
+\]
+
+This is stronger than merely saying that the Plücker map is defined by
+\[
+\lambda_Z:\bigwedge^rV^\vee\to H^0(K_Z).
+\]
+
+Now suppose \(\gamma_Z\) is generically finite onto
+\[
+Y_Z:=\gamma_Z(Z)\subset\operatorname{Gr}(r,V)
+\]
+of degree \(d_Z\). Then
+\[
+\boxed{
+K_Z^r
+=
+d_Z\cdot \deg_{\mathrm{Pl}}(Y_Z).
+}
+\]
+
+This should be one of the main formulas of your talk.
+
+It gives two complementary questions:
+\[
+\boxed{
+\text{What is }Y_Z?
+\qquad\text{and}\qquad
+\deg(\gamma_Z)?
+}
+\]
+
+Once you know either the Plücker degree of the image or the degree of the Gauss map, the formula often determines the other.
+
+If \(\iota_Z\) is only generically immersive, one has to account for the degeneracy/base locus of the determinant system. For your Fano and Schoen Albanese embeddings, however, the clean formula above applies.
+
+---
+
+# 2. Why is \(\lambda_S\) an isomorphism for the Fano surface?
+
+Let \(S=F(X)\) be the Fano surface of lines on a smooth cubic threefold
+\[
+X\subset\mathbf P^4.
+\]
+
+Here
+\[
+q(S)=5,\qquad p_g(S)=10,
+\]
+so
+\[
+\dim \bigwedge^2H^0(\Omega_S^1)
+=
+\binom52=10
+=
+h^0(K_S).
+\]
+
+But, as you suspected, **this dimension equality by itself does not prove that**
+\[
+\lambda_S:
+\bigwedge^2H^0(\Omega_S^1)
+\longrightarrow H^0(K_S)
+\]
+is an isomorphism.
+
+The extra input is the classical tangent-bundle theorem.
+
+The natural realization of the Fano surface is
+\[
+S\hookrightarrow \operatorname{Gr}(2,5),
+\qquad
+[\ell]\longmapsto [\ell].
+\]
+
+The tangent-bundle theorem identifies this map with the tangent Gauss map of the Albanese embedding:
+\[
+\gamma_S:S\longrightarrow
+\operatorname{Gr}\bigl(2,T_0\operatorname{Alb}(S)\bigr)
+\simeq\operatorname{Gr}(2,5).
+\]
+
+Moreover, classically the Plücker embedding
+\[
+S\hookrightarrow\operatorname{Gr}(2,5)
+\hookrightarrow\mathbf P^9
+\]
+is the **canonical embedding** of \(S\).
+
+Therefore the ten Plücker coordinates give the full ten-dimensional canonical system. But <span class="source-anchor" id="cite-src-7">these ten Plücker coordinates are precisely the images under</span><a class="cited-by" href="#turn-7" title="Jump to the later question that cites this phrase">↩ cited in Turn 7</a>
+\[
+\lambda_S:
+\bigwedge^2V^\vee\to H^0(K_S).
+\]
+
+Hence
+\[
+\boxed{\lambda_S\text{ is an isomorphism}.}
+\]
+
+So for the talk I would present this as a **geometric theorem**, rather than deriving it just from the invariants:
+\[
+\text{tangent-bundle theorem}
++
+\text{canonical Plücker embedding}
+\Longrightarrow
+\lambda_S\simeq.
+\]
+
+There is also a more cohomological proof that the Fano surface is linearly nondegenerate in the Plücker \(\mathbf P^9\), followed by the dimension count \(10=10\), but that is probably unnecessary for your talk.
+
+---
+
+# 3. Why is \(\lambda_S\) surjective for a Schoen surface?
+
+This argument is actually very elegant and worth presenting.
+
+For a Schoen surface,
+\[
+q(S)=4,\qquad p_g(S)=5.
+\]
+Therefore
+\[
+\lambda_S:
+\bigwedge^2H^0(\Omega_S^1)\longrightarrow H^0(K_S)
+\]
+has
+\[
+\dim\bigwedge^2H^0(\Omega_S^1)=6,
+\qquad
+\dim H^0(K_S)=5.
+\]
+
+Thus automatically
+\[
+\dim\ker\lambda_S\ge1.
+\]
+
+Now suppose
+\[
+\dim\ker\lambda_S\ge2.
+\]
+Then
+\[
+\mathbf P(\ker\lambda_S)\subset
+\mathbf P\left(\bigwedge^2H^0(\Omega_S^1)\right)
+\simeq\mathbf P^5
+\]
+contains at least a projective line.
+
+But the decomposable \(2\)-forms form the Klein quadric
+\[
+\operatorname{Gr}(2,4)\subset\mathbf P^5.
+\]
+
+Every projective line in \(\mathbf P^5\) meets a quadric hypersurface over \(\mathbf C\). Hence
+\[
+\mathbf P(\ker\lambda_S)\cap\operatorname{Gr}(2,4)\neq\varnothing.
+\]
+
+So there would exist independent
+\[
+\alpha,\beta\in H^0(\Omega_S^1)
+\]
+such that
+\[
+0\ne\alpha\wedge\beta\in\ker\lambda_S,
+\]
+i.e.
+\[
+\alpha\wedge\beta=0
+\quad\text{as a holomorphic }2\text{-form}.
+\]
+
+By Castelnuovo–de Franchis, this gives an irrational pencil
+\[
+S\to B,\qquad g(B)\ge2.
+\]
+
+<span class="source-anchor" id="cite-src-8">But Schoen surfaces have no such irrational pencil.</span><a class="cited-by" href="#turn-8" title="Jump to the later question that cites this sentence">↩ cited in Turn 8</a> Therefore
+\[
+\dim\ker\lambda_S=1.
+\]
+
+Since the source has dimension \(6\) and the target dimension \(5\),
+\[
+\boxed{\lambda_S\text{ is surjective and }\dim\ker\lambda_S=1.}
+\]
+
+Furthermore, its generator must be non-decomposable; otherwise Castelnuovo–de Franchis would again produce a pencil.
+
+---
+
+# 4. And now the degree: Fano versus Schoen
+
+This gives a very clean comparison.
+
+### Fano
+
+For a Fano surface,
+\[
+K_S^2=45.
+\]
+
+The Gauss map
+\[
+\gamma_S:S\to\operatorname{Gr}(2,5)
+\]
+is identified by the tangent-bundle theorem with the natural map sending a line on the cubic to that line in the Grassmannian. This map is an embedding.
+
+Hence
+\[
+\boxed{\deg\gamma_S=1.}
+\]
+
+Its Plücker image therefore has degree
+\[
+\deg_{\mathrm{Pl}}\gamma_S(S)=K_S^2=45.
+\]
+
+One warning is worth making in the talk: the **cotangent map**
+\[
+\mathbf P(T_S)\to\mathbf P^4
+\]
+has degree \(6\), because through a general point of the cubic threefold there pass six lines. That is **not** the degree of your tangent Gauss map
+\[
+S\to\operatorname{Gr}(2,5),
+\]
+whose degree is \(1\).
+
+That distinction could otherwise cause confusion.
+
+---
+
+### Schoen
+
+For the Schoen surface,
+\[
+\lambda_S:\wedge^2V^\vee\twoheadrightarrow H^0(K_S)
+\]
+has a one-dimensional kernel generated by a non-decomposable bivector \(\omega\).
+
+Therefore the Plücker image lies in the corresponding hyperplane
+\[
+\mathbf P(\omega^\perp)\simeq\mathbf P^4.
+\]
+
+Since \(\omega\) is non-decomposable,
+\[
+\operatorname{Gr}(2,4)\cap\mathbf P(\omega^\perp)
+\]
+is a smooth quadric
+\[
+Q^3\subset\mathbf P^4.
+\]
+
+Because \(\lambda_S\) is surjective,
+\[
+\operatorname{Pl}\circ\gamma_S
+\]
+is the **complete canonical map**.
+
+For a general Schoen surface, the canonical image is
+\[
+Y=Q^3\cap Q_4\subset\mathbf P^4,
+\]
+a \((2,4)\) complete intersection, hence
+\[
+\deg Y=8.
+\]
+The canonical map has degree \(2\).
+
+Since Plücker is an embedding, it does not change fibers. Thus
+\[
+\boxed{\deg\gamma_S=2.}
+\]
+
+And your numerical formula recovers it immediately:
+\[
+K_S^2
+=
+\deg\gamma_S\cdot\deg Y,
+\]
+so
+\[
+16=d\cdot8,
+\]
+hence
+\[
+\boxed{d=2.}
+\]
+
+This is perhaps the cleanest way to present the Schoen degree.
+
+---
+
+# 5. The degree in your three curve examples
+
+This same numerical philosophy works very nicely for \(r=1\).
+
+If
+\[
+\iota_C:C\to A
+\]
+is immersive and
+\[
+\gamma_C:C\to\mathbf P(V)
+\]
+is the tangent Gauss map, then
+\[
+\gamma_C^*\mathcal O_{\mathbf P(V)}(1)=K_C.
+\]
+
+Hence
+\[
+\boxed{
+2g(C)-2
+=
+\deg(\gamma_C)\cdot
+\deg(\gamma_C(C)).
+}
+\]
+
+That gives a common calculation for all three curve examples.
+
+For **Abel–Jacobi**, \(\gamma_C\) is the canonical map. Thus
+\[
+\deg\gamma_C=
+\begin{cases}
+1,&amp;C\text{ non-hyperelliptic},\\
+2,&amp;C\text{ hyperelliptic}.
+\end{cases}
+\]
+
+For **Abel–Prym**, let
+\[
+\pi:\widetilde C\to C
+\]
+be the étale double cover. The tangent direction at the two points over \(p\) gives the same point projectively, so
+\[
+\gamma_{\widetilde C}
+=
+\varphi_{K_C\otimes\eta}\circ\pi.
+\]
+
+Therefore, if the Prym-canonical map has degree \(\mu\) onto its image,
+\[
+\boxed{\deg\gamma_{\widetilde C}=2\mu.}
+\]
+
+In particular, when the Prym-canonical map is an embedding—or merely birational—
+\[
+\boxed{\deg\gamma_{\widetilde C}=2.}
+\]
+
+For your **spin curve**, assuming
+\[
+h^0(L)=2,\qquad L^2=K_C,
+\]
+and \(|L|\) is base-point-free,
+\[
+\gamma_C=
+\nu_2\circ\varphi_L:
+C\to\mathbf P^1\to\mathbf P^2.
+\]
+The image is a conic, hence has degree \(2\). Thus
+\[
+2g-2
+=
+\deg(\gamma_C)\cdot2,
+\]
+so
+\[
+\boxed{\deg\gamma_C=g-1.}
+\]
+
+Equivalently,
+\[
+\deg\gamma_C=\deg\varphi_L=\deg L=g-1.
+\]
+
+---
+
+# 6. I would revise the architecture around three questions
+
+For every
+\[
+\iota_Z:Z^r\to A^n,\qquad V=T_0A,
+\]
+introduce
+\[
+\lambda_Z:\bigwedge^rV^\vee\to H^0(K_Z)
+\]
+and
+\[
+\gamma_Z:Z\to\operatorname{Gr}(r,V),
+\]
+and then systematically ask:
+\[
+\boxed{
+\begin{array}{ll}
+\textbf{(A)}&amp;
+\ker\lambda_Z,\ \operatorname{Im}\lambda_Z:
+\quad\text{which canonical forms come from }A?\\[1mm]
+\textbf{(B)}&amp;
+Y_Z=\gamma_Z(Z):
+\quad\text{what is the Gauss image geometrically?}\\[1mm]
+\textbf{(C)}&amp;
+d_Z=\deg(Z\to Y_Z):
+\quad\text{how many points have the same tangent space?}
+\end{array}}
+\]
+
+Then the five examples become:
+
+| example | \(\lambda\) / linear system | Gauss image | degree |
+|---|---|---|---:|
+| AJ | full \(H^0(K_C)\) | canonical curve | \(1\) or \(2\) |
+| AP | \(H^0(K_C\otimes\eta)\) | Prym-canonical curve | \(2\mu\), usually \(2\) |
+| spin | \(\operatorname{Sym}^2H^0(L)\) | conic | \(g-1\) |
+| Fano | \(\lambda_S\) iso | Fano surface in \(\operatorname{Gr}(2,5)\) | \(1\) |
+| Schoen | \(\ker\lambda_S=\langle\omega\rangle\) | \((2,4)\) surface in \(Q^3\) | \(2\) |
+
+That gives the talk a sharper purpose: **the tangent Gauss map has three aspects—its canonical linear system, its image, and its degree—and your five examples exhibit very different behavior in all three.**</div>
+</div>
+</section>
+<section class="turn" id="turn-7">
+<h2>Turn 7</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content"><a class="quoted-inline citation-jump" data-source="cite-src-7" href="#cite-src-7">"these ten Plücker coordinates are precisely the images under"</a> this is as hard as the question I asked.
+<div class="citation-context">
+<div class="citation-label">Quoted from Turn 6</div>
+<div class="citation-excerpt">But these ten Plücker coordinates are precisely the images under
+\[
+\lambda_S:
+\bigwedge^2V^\vee\to H^0(K_S).
+\]</div>
+<a class="citation-jump citation-button" data-source="cite-src-7" href="#cite-src-7">Show cited position</a>
+</div></div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Yes — you are right. I had hidden the essential point inside the phrase “these are precisely the Plücker coordinates.” There are really **two separate issues**:
+
+1. a formal lemma identifying \(\lambda_S\) with pullback of Plücker sections;
+2. a nontrivial geometric/topological result proving that this map is an isomorphism for the Fano surface.
+
+The first one can and should be proved in the general theory.
+
+### The formal lemma
+
+Let
+\[
+\iota_S:S\to A,\qquad V=T_0A
+\]
+be an immersion, and
+\[
+\gamma_S:S\to G:=\operatorname{Gr}(2,V)
+\]
+its tangent Gauss map. Let
+\[
+\mathcal U\subset V\otimes\mathcal O_G
+\]
+be the tautological rank-\(2\) bundle.
+
+By definition of \(\gamma_S\),
+\[
+\boxed{\gamma_S^*\mathcal U=T_S.}
+\]
+
+Dualizing the universal inclusion and taking determinants gives
+\[
+\bigwedge^2V^\vee\otimes\mathcal O_G
+\longrightarrow
+\det\mathcal U^\vee
+=\mathcal O_G(1).
+\]
+Thus
+\[
+H^0(G,\mathcal O_G(1))\simeq\bigwedge^2V^\vee.
+\]
+
+Pull this evaluation map back by \(\gamma_S\). Since
+\[
+\gamma_S^*\det\mathcal U^\vee
+=\det T_S^\vee
+=K_S,
+\]
+we obtain
+\[
+\bigwedge^2V^\vee\otimes\mathcal O_S
+\longrightarrow K_S.
+\]
+
+But at \(s\in S\), for \(\alpha,\beta\in V^\vee\), this sends
+\[
+\alpha\wedge\beta
+\longmapsto
+\left.
+\alpha\right|_{T_sS}
+\wedge
+\left.\beta\right|_{T_sS}.
+\]
+That is exactly
+\[
+(\iota_S^*\alpha\wedge\iota_S^*\beta)(s).
+\]
+
+Therefore the diagram is literally
+\[
+\begin{array}{ccc}
+H^0(G,\mathcal O_G(1))
+&amp;\simeq&amp;
+\bigwedge^2V^\vee
+\\[2mm]
+\gamma_S^*\downarrow &amp;&amp;\downarrow\lambda_S\\[2mm]
+H^0(S,K_S)&amp;=&amp;H^0(S,K_S).
+\end{array}
+\]
+
+So
+\[
+\boxed{\lambda_S=\gamma_S^*:H^0(G,\mathcal O_G(1))\to H^0(S,K_S).}
+\]
+
+This is formal and holds for every immersed surface in an abelian variety. It is not special to Fano.
+
+---
+
+## What is genuinely nontrivial for the Fano surface?
+
+Let \(F\) be the Fano surface of a smooth cubic threefold. We know
+\[
+q(F)=5,\qquad p_g(F)=10.
+\]
+
+Thus
+\[
+\lambda_F:
+\bigwedge^2H^0(F,\Omega_F^1)\to H^0(F,K_F)
+\]
+is a map
+\[
+\mathbf C^{10}\longrightarrow\mathbf C^{10}.
+\]
+
+But dimensions do **not** tell us that it is an isomorphism.
+
+One clean independent input is a theorem of Clemens–Griffiths: the cup-product map
+\[
+\boxed{
+\bigwedge^2H^1(F,\mathbf Q)
+\longrightarrow H^2(F,\mathbf Q)
+}
+\]
+is an isomorphism.
+
+Now this is a morphism of Hodge structures. Taking its \((2,0)\)-part gives precisely
+\[
+\bigwedge^2H^{1,0}(F)
+\longrightarrow
+H^{2,0}(F).
+\]
+
+But
+\[
+H^{1,0}(F)=H^0(F,\Omega_F^1),
+\qquad
+H^{2,0}(F)=H^0(F,K_F),
+\]
+so the \((2,0)\)-piece is exactly
+\[
+\boxed{
+\lambda_F:
+\bigwedge^2H^0(F,\Omega_F^1)
+\xrightarrow{\sim}
+H^0(F,K_F).
+}
+\]
+
+That is, to my mind, the cleanest answer to “why is \(\lambda_F\) an isomorphism?”
+
+It also makes clear that this is **a real theorem about the Fano surface**, not a formal consequence of \(q=5,p_g=10\).
+
+Clemens–Griffiths then prove separately the tangent-bundle theorem identifying the Albanese Gauss map with the natural map
+\[
+F\hookrightarrow\operatorname{Gr}(2,5).
+\]
+They explicitly describe that as the stronger geometric statement.
+
+So logically I would arrange Fano as
+\[
+\boxed{
+\begin{array}{c}
+\Lambda^2H^1(F)\simeq H^2(F)\\
+\Downarrow\text{ take }(2,0)\\
+\lambda_F:\Lambda^2H^0(\Omega_F^1)\simeq H^0(K_F)
+\end{array}}
+\]
+and separately
+\[
+\boxed{
+\text{tangent-bundle theorem}
+\quad\Longrightarrow\quad
+\gamma_F:F\hookrightarrow \operatorname{Gr}(2,5)
+\text{ is the natural Fano embedding}.
+}
+\]
+
+Then your formal lemma tells you that its Plücker composite is the canonical map.
+
+---
+
+## Schoen is quite different — and easier
+
+For a Schoen surface \(S\),
+\[
+q(S)=4,\qquad p_g(S)=5.
+\]
+Therefore
+\[
+\lambda_S:
+\bigwedge^2H^0(\Omega_S^1)\to H^0(K_S)
+\]
+has dimensions
+\[
+6\longrightarrow5.
+\]
+
+So
+\[
+\dim\ker\lambda_S\ge1.
+\]
+
+The extra geometric input is that a Schoen surface has **no irrational pencil of genus \(\ge2\)**.
+
+Now suppose
+\[
+\dim\ker\lambda_S\ge2.
+\]
+Then
+\[
+\mathbf P(\ker\lambda_S)
+\]
+contains a projective line in
+\[
+\mathbf P\left(\bigwedge^2H^0(\Omega_S^1)\right)
+\simeq\mathbf P^5.
+\]
+
+But the decomposable bivectors form
+\[
+\operatorname{Gr}(2,4)\subset\mathbf P^5,
+\]
+which is a quadric hypersurface.
+
+Every projective line in \(\mathbf P^5\) meets a quadric hypersurface over \(\mathbf C\). Therefore \(\ker\lambda_S\) would contain
+\[
+0\neq\alpha\wedge\beta
+\]
+with \(\alpha,\beta\) independent.
+
+Then
+\[
+\alpha\wedge\beta=0
+\quad\text{on }S,
+\]
+and Castelnuovo–de Franchis would give a morphism
+\[
+S\to B,\qquad g(B)\ge2,
+\]
+contradiction.
+
+Hence
+\[
+\dim\ker\lambda_S\le1.
+\]
+Since it is already at least \(1\),
+\[
+\boxed{\dim\ker\lambda_S=1}
+\]
+and consequently
+\[
+\boxed{\lambda_S\text{ is surjective}.}
+\]
+
+Moreover its generator is automatically **non-decomposable**.
+
+### And this connects directly to the degree question
+
+This is where I think your talk becomes particularly coherent.
+
+For any immersed
+\[
+\iota_Z:Z^r\to A
+\]
+we have
+\[
+\gamma_Z^*\mathcal O_{\operatorname{Gr}}(1)=K_Z.
+\]
+
+If \(\gamma_Z\) is generically finite onto
+\[
+Y=\gamma_Z(Z)
+\]
+of degree \(d\), then
+\[
+\boxed{
+K_Z^r=d\,\deg_{\mathrm{Pl}}Y.
+}
+\]
+
+So after studying \(\lambda_Z\), the next question should always be
+\[
+\boxed{\deg(\gamma_Z:Z\to\gamma_Z(Z))=?}
+\]
+
+For Fano, the tangent-bundle theorem says that
+\[
+\gamma_F:F\to\operatorname{Gr}(2,5)
+\]
+is the natural embedding of the Fano surface. Hence immediately
+\[
+\boxed{\deg\gamma_F=1.}
+\]
+
+For a **general Schoen surface**, surjectivity of \(\lambda_S\) means that
+\[
+\operatorname{Pl}\circ\gamma_S
+\]
+is the complete canonical map
+\[
+\varphi_{K_S}:S\to\mathbf P^4.
+\]
+The canonical map has degree \(2\) onto a \((2,4)\) complete intersection in \(\mathbf P^4\). Since the Plücker map is an embedding,
+\[
+\boxed{\deg\gamma_S=2.}
+\]
+
+Numerically this is particularly satisfying:
+\[
+K_S^2=16,
+\qquad
+\deg\varphi_{K_S}(S)=2\cdot4=8,
+\]
+so
+\[
+16=(\deg\gamma_S)\,8,
+\]
+hence
+\[
+\deg\gamma_S=2.
+\]
+
+So I would now build the general part around **three successive layers**:
+\[
+\boxed{
+\begin{array}{cl}
+1.&amp;\lambda_Z:\Lambda^rV^\vee\to H^0(K_Z)
+\quad\text{(which canonical forms?)}\\[1mm]
+2.&amp;Y_Z=\gamma_Z(Z)\subset\operatorname{Gr}(r,V)
+\quad\text{(what is the image?)}\\[1mm]
+3.&amp;d_Z=\deg(\gamma_Z:Z\to Y_Z)
+\quad\text{(how many points share a tangent space?)}
+\end{array}}
+\]
+
+That is stronger than the architecture we had before. The five examples can then each answer **all three questions** rather than merely identify the canonical subsystem.</div>
+</div>
+</section>
+<section class="turn" id="turn-8">
+<h2>Turn 8</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content"><a class="quoted-inline citation-jump" data-source="cite-src-8" href="#cite-src-8">"Schoen surfaces have no such irrational pencil"</a> I also wonder why
+<div class="citation-context">
+<div class="citation-label">Quoted from Turn 6</div>
+<div class="citation-excerpt">But Schoen surfaces have no such irrational pencil.</div>
+<a class="citation-jump citation-button" data-source="cite-src-8" href="#cite-src-8">Show cited position</a>
+</div></div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">The clean reason is not numerical; it uses the **simplicity of the Albanese variety** of a general Schoen surface.
+
+Let \(S\) be a general Schoen surface. Then
+\[
+q(S)=4,
+\]
+\(S\) has maximal Albanese dimension, and Schoen proves that
+\[
+A=\operatorname{Alb}(S)
+\]
+is simple.
+
+Now suppose there were an irrational pencil
+\[
+f:S\longrightarrow B
+\]
+with connected fibres and
+\[
+b:=g(B)\ge2.
+\]
+
+The map \(f\) induces a surjective homomorphism of abelian varieties
+\[
+f_{\operatorname{Alb}}:\operatorname{Alb}(S)\longrightarrow J(B).
+\]
+Equivalently, on \(1\)-forms,
+\[
+f^*:H^0(B,K_B)\hookrightarrow H^0(S,\Omega_S^1).
+\]
+
+The key point is that actually
+\[
+b&lt;q(S)=4.
+\]
+
+Indeed, if \(b=4\), then
+\[
+\dim H^0(B,K_B)=4=q(S),
+\]
+so the injective map
+\[
+f^*:H^0(B,K_B)\to H^0(S,\Omega_S^1)
+\]
+would be an isomorphism. Thus **every holomorphic \(1\)-form on \(S\) would come from \(B\)**. The Albanese map of \(S\) would then factor through the curve \(B\), so its image would have dimension at most \(1\). But a Schoen surface has Albanese dimension \(2\). Contradiction.
+
+Therefore
+\[
+2\le b\le3.
+\]
+
+Now
+\[
+\dim J(B)=b&lt;4=\dim\operatorname{Alb}(S),
+\]
+so the surjection
+\[
+\operatorname{Alb}(S)\twoheadrightarrow J(B)
+\]
+has a positive-dimensional kernel:
+\[
+0\longrightarrow K\longrightarrow\operatorname{Alb}(S)
+\longrightarrow J(B)\longrightarrow0,
+\qquad \dim K=4-b&gt;0.
+\]
+
+But \(K\) is an abelian subvariety of \(\operatorname{Alb}(S)\). Hence \(\operatorname{Alb}(S)\) is **not simple**, contradicting Schoen's theorem that the Albanese variety of the general Schoen surface is simple.
+
+So the argument is
+\[
+\boxed{
+\begin{aligned}
+f:S\to B,\ g(B)\ge2
+&amp;\Longrightarrow g(B)\le3\\
+&amp;\Longrightarrow
+\operatorname{Alb}(S)\twoheadrightarrow J(B)
+\text{ with positive-dimensional kernel}\\
+&amp;\Longrightarrow \operatorname{Alb}(S)\text{ not simple},
+\end{aligned}}
+\]
+contradicting simplicity.
+
+There is a nice general lemma hiding here:
+
+&gt; If \(Z\) has maximal Albanese dimension and \(\operatorname{Alb}(Z)\) is simple, then \(Z\) admits no morphism with connected fibres onto a curve \(B\) with
+&gt; \[
+&gt; 2\le g(B)&lt;q(Z).
+&gt; \]
+&gt; Moreover \(g(B)=q(Z)\) is impossible by maximal Albanese dimension.
+
+Hence a variety of maximal Albanese dimension with **simple Albanese** has no irrational pencil of genus \(\ge2\).
+
+For Schoen surfaces, the literature first obtains this for the general member from simplicity; it then uses deformation invariance of the existence of such irrational pencils to conclude it for every Schoen surface in the family.
+
+This also makes your \(\lambda_S\) argument much more transparent:
+\[
+\operatorname{Alb}(S)\ \text{simple}
+\Longrightarrow
+\text{no irrational pencil}
+\overset{\mathrm{CdF}}{\Longrightarrow}
+\ker\lambda_S\text{ contains no decomposable bivector}.
+\]
+Since \(\dim\ker\lambda_S\ge1\) and any projective line in \(\mathbf P^5\) meets the Klein quadric, it follows that
+\[
+\dim\ker\lambda_S=1,
+\]
+and hence \(\lambda_S\) is surjective.</div>
+</div>
+</section>
+<section class="turn" id="turn-9">
+<h2>Turn 9</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">The cited article said "and this would imply that Alb.S/ is non–simple, contradicting [24, Theorem 6.1, (i)]  ", but there is nothing about simpleness: "Theorem6.1.Thereexistsa familyof abelian fourfolds, F :A→B,with the followingproperties: (i) ∃b0∈BsuchthatF−1(b0)≃AlbV.  
+<div class="citation-context external-citation">
+<div class="citation-label">External quotation</div>
+<div class="citation-excerpt">The quoted sentence about \(\operatorname{Alb}(S)\) being non-simple and the quoted statement of Theorem 6.1(i) are quotations from the cited article/source, not from an earlier chat turn.</div>
+</div></div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Yes. Your reading is correct, and I would **not use the simplicity argument in the talk** on the basis of that citation.
+
+In fact, there is an even stronger reason to be suspicious. In Schoen's construction the central reducible surface \(V\) has
+\[
+\operatorname{Alb}(V)\simeq J(C)\times J(C),
+\]
+so the abelian fourfold occurring in Theorem 6.1(i),
+\[
+F^{-1}(b_0)\simeq \operatorname{Alb}(V),
+\]
+is itself **non-simple**. Thus Theorem 6.1(i), taken literally, cannot be the statement contradicting non-simplicity.
+
+Ciliberto–Mendes Lopes–Roulleau really do write that a fibration would make \(\operatorname{Alb}(S)\) non-simple, “contradicting [24, Theorem 6.1, (i)].” Given the actual content you found in Schoen, that reference seems at least incomplete and quite possibly a miscitation.
+
+Fortunately, the sentence immediately before it gives a much cleaner proof that does **not** use simplicity.
+
+For a **general Schoen surface** \(S\), they state in Remark 3.3 that
+\[
+\rho(S)=\operatorname{rk}NS(S)=1.
+\]
+They even point out that Schoen's original Proposition 10.1(ii) said \(2\), but that the correct value is \(1\).
+
+Now suppose there were an irrational pencil
+\[
+f:S\longrightarrow B
+\]
+with connected fibers. Let \(F\) be a general fiber. Then
+\[
+F^2=0.
+\]
+
+But if \(\rho(S)=1\), choose an ample divisor \(H\). In
+\[
+NS(S)_{\mathbf R}=\mathbf R[H],
+\]
+we must have
+\[
+[F]=a[H]
+\]
+for some \(a\neq0\): \(F\) certainly is not numerically trivial since
+\[
+H\cdot F&gt;0.
+\]
+Consequently
+\[
+F^2=a^2H^2&gt;0,
+\]
+because \(H^2&gt;0\). This contradicts \(F^2=0\).
+
+Hence
+\[
+\boxed{\rho(S)=1\quad\Longrightarrow\quad S\text{ admits no fibration onto a curve}.}
+\]
+
+This is presumably what the authors mean when they first say “This follows from Remark 3.3.” It is completely sufficient for your purposes.
+
+Then the argument for \(\lambda_S\) becomes self-contained and quite elegant. For a general Schoen surface,
+\[
+q=4,\qquad p_g=5,
+\]
+so
+\[
+\lambda_S:
+\bigwedge^2H^0(S,\Omega_S^1)\longrightarrow H^0(S,K_S)
+\]
+is a map
+\[
+\mathbf C^6\longrightarrow\mathbf C^5.
+\]
+Therefore
+\[
+\dim\ker\lambda_S\ge1.
+\]
+
+If instead
+\[
+\dim\ker\lambda_S\ge2,
+\]
+then
+\[
+\mathbf P(\ker\lambda_S)\subset
+\mathbf P(\Lambda^2H^0(\Omega_S^1))=\mathbf P^5
+\]
+contains a line. The decomposable bivectors form the Klein quadric
+\[
+\operatorname{Gr}(2,4)\subset\mathbf P^5.
+\]
+Every projective line over \(\mathbf C\) meets this quadric. Hence \(\ker\lambda_S\) contains a nonzero decomposable element
+\[
+\alpha\wedge\beta,
+\qquad \alpha,\beta\text{ independent}.
+\]
+Thus
+\[
+\alpha\wedge\beta=0\in H^0(K_S),
+\]
+and Castelnuovo–de Franchis produces
+\[
+S\longrightarrow B,\qquad g(B)\ge2,
+\]
+contradicting the absence of irrational pencils.
+
+Therefore
+\[
+\dim\ker\lambda_S=1,
+\]
+and hence
+\[
+\boxed{\lambda_S\text{ is surjective}.}
+\]
+
+Moreover its generator is automatically **non-decomposable**.
+
+So for the talk I would use exactly this chain:
+\[
+\boxed{
+\rho(S)=1
+\Rightarrow
+\text{no irrational pencil}
+\Rightarrow
+\ker\lambda_S\text{ has no decomposable elements}
+\Rightarrow
+\dim\ker\lambda_S=1
+\Rightarrow
+\lambda_S\text{ surjective}.
+}
+\]
+
+There is one subtlety: \(\rho(S)=1\) is asserted for the **general** Schoen surface. The paper then says that absence of irrational pencils is deformation invariant and concludes it for every Schoen surface in the family. If your Gauss-map example is only the general Schoen surface—which is also where the degree-\(2\) canonical-map statement is most naturally introduced—you can avoid that deformation-invariance step entirely.
+
+So I would remove the “simple Albanese” claim from our architecture unless we independently establish precisely which Schoen Albaneses are simple and from which theorem.</div>
+</div>
+</section>
+<section class="turn" id="turn-10">
+<h2>Turn 10</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">And how do we determine the degree of the image of Gauss map? Do we have some strategy from these examples?</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Yes. I think the examples suggest a very clean **general strategy**, and it is worth distinguishing two numbers from the start:
+
+\[
+d_Z:=\deg\bigl(\gamma_Z:Z\dashrightarrow \gamma_Z(Z)\bigr)
+\]
+
+and
+
+\[
+\delta_Z:=\deg_{\mathrm{Pl}}\gamma_Z(Z).
+\]
+
+They are related, but determining them usually requires different input.
+
+For an immersion
+\[
+\iota_Z:Z^r\hookrightarrow A,\qquad V=T_0A,
+\]
+we have
+\[
+\gamma_Z^*\mathcal O_{\operatorname{Gr}(r,V)}(1)\simeq K_Z.
+\]
+Hence, if \(\gamma_Z\) is generically finite,
+
+\[
+\boxed{K_Z^r=d_Z\,\delta_Z.}
+\]
+
+This is probably the basic numerical formula you want to emphasize.
+
+So in every example, the problem naturally breaks into:
+
+\[
+\boxed{
+\text{determine }d_Z
+\quad\text{or}\quad
+\delta_Z;
+\qquad
+\text{the other follows from }K_Z^r=d_Z\delta_Z.
+}
+\]
+
+## Three strategies for determining \(\delta_Z\)
+
+The examples suggest three different methods.
+
+### 1. Identify the image geometrically
+
+This is the most direct approach. If you can recognize
+\[
+Y_Z:=\gamma_Z(Z)\subset\operatorname{Gr}(r,V),
+\]
+then compute its Plücker degree by ordinary projective/intersection theory.
+
+For the Schoen surface, for example,
+\[
+Y_S\subset
+\operatorname{Gr}(2,4)\cap H
+=
+Q^3\subset\mathbf P^4.
+\]
+Once one knows that the canonical/Gauss image is a \((2,4)\) complete intersection,
+\[
+Y_S=Q^3\cap Q_4,
+\]
+one gets immediately
+\[
+\delta_S=\deg Y_S=2\cdot4=8.
+\]
+
+Then
+\[
+K_S^2=16
+\]
+gives
+\[
+d_S=\frac{16}{8}=2.
+\]
+
+So Schoen follows the pattern
+
+\[
+\boxed{
+\ker\lambda
+\Rightarrow
+\text{ambient variety containing }Y
+\Rightarrow
+\text{equations of }Y
+\Rightarrow
+\delta
+\Rightarrow
+d.
+}
+\]
+
+This is perhaps your most interesting model.
+
+---
+
+### 2. Determine the degree of the Gauss map geometrically
+
+Sometimes the fibers of \(\gamma_Z\) are easier to understand than its image.
+
+For the Fano surface, the tangent-bundle theorem identifies
+\[
+\gamma_F:F\to\operatorname{Gr}(2,5)
+\]
+with the natural map
+\[
+[\ell]\mapsto[\ell].
+\]
+
+This is an embedding. Therefore
+\[
+d_F=1.
+\]
+
+Since
+\[
+K_F^2=45,
+\]
+you get
+\[
+\boxed{\delta_F=45.}
+\]
+
+So Fano follows the opposite pattern:
+
+\[
+\boxed{
+\text{geometric identification of }\gamma
+\Rightarrow
+d
+\Rightarrow
+\delta=\frac{K^2}{d}.
+}
+\]
+
+You do not need to compute the degree \(45\) of the Fano surface independently.
+
+---
+
+### 3. For curves, use the degree of the linear series
+
+When \(r=1\), everything becomes classical.
+
+If
+\[
+\gamma_C:C\to Y\subset\mathbf P(V)
+\]
+is defined by the ambient differentials and is base-point-free, then
+\[
+\gamma_C^*\mathcal O_Y(1)=K_C.
+\]
+Therefore
+\[
+\boxed{
+2g(C)-2=d_C\,\deg Y.
+}
+\]
+
+So all your curve examples fit exactly the same scheme.
+
+For Abel–Jacobi, if \(C\) is non-hyperelliptic,
+\[
+d_C=1,
+\qquad
+\deg Y=2g-2.
+\]
+
+If \(C\) is hyperelliptic,
+\[
+d_C=2,
+\qquad
+\deg Y=g-1,
+\]
+and \(Y\) is the rational normal curve.
+
+For the spin example,
+\[
+\gamma_C=
+\nu_2\circ\varphi_L
+\]
+and therefore
+\[
+Y=\nu_2(\mathbf P^1)
+\]
+is a conic:
+\[
+\delta_C=2.
+\]
+Consequently
+\[
+d_C=\frac{2g-2}{2}=g-1.
+\]
+
+This is a particularly nice demonstration of the formula.
+
+---
+
+## Abel–Prym also fits
+
+Suppose
+\[
+\pi:\widetilde C\to C
+\]
+is an étale double cover, with \(g(C)=g\), and the Gauss map factors as
+\[
+\widetilde C
+\xrightarrow{\pi}
+C
+\xrightarrow{\varphi_{K_C\otimes\eta}}
+Y.
+\]
+
+If the Prym-canonical map has generic degree \(\mu\), then
+\[
+d_{\widetilde C}=2\mu.
+\]
+
+Since
+\[
+g(\widetilde C)=2g-1,
+\]
+we have
+\[
+\deg K_{\widetilde C}=4g-4.
+\]
+Thus
+\[
+4g-4=(2\mu)\delta,
+\]
+and hence
+\[
+\boxed{
+\delta=\frac{2g-2}{\mu}.
+}
+\]
+
+Equivalently, this is simply the usual degree calculation for the Prym-canonical system
+\[
+|K_C\otimes\eta|,
+\qquad \deg(K_C\otimes\eta)=2g-2.
+\]
+
+If the Prym-canonical map is birational,
+\[
+d_{\widetilde C}=2,
+\qquad
+\delta=2g-2.
+\]
+
+---
+
+# What does \(\ker\lambda_Z\) tell us about the degree?
+
+There is an important limitation here.
+
+Knowing
+\[
+\ker\lambda_Z
+\]
+usually tells you **linear equations containing the Gauss image**, but it does not by itself determine its degree.
+
+For instance, in the Schoen case,
+\[
+\dim\ker\lambda_S=1
+\]
+tells you that the image lies in
+\[
+Q^3=
+\operatorname{Gr}(2,4)\cap H.
+\]
+
+But it does **not** yet tell you that the image has degree \(8\). You need one additional equation—the quartic—or alternatively independent knowledge that the Gauss/canonical map has degree \(2\).
+
+So conceptually:
+
+\[
+\ker\lambda_Z
+\quad\rightsquigarrow\quad
+\text{linear span / ambient linear section of the Grassmannian},
+\]
+whereas determining
+\[
+\deg Y_Z
+\]
+requires more geometry.
+
+That distinction is important for your general theory.
+
+---
+
+## There is also a Schubert-calculus formulation
+
+Since
+\[
+Y=\gamma_Z(Z)\subset\operatorname{Gr}(r,V),
+\]
+one could try to determine not merely its degree but its cycle class
+\[
+[Y]\in A^*(\operatorname{Gr}(r,V)).
+\]
+
+If
+\[
+\sigma_1=c_1(\mathcal O_{\operatorname{Gr}}(1))
+\]
+is the Plücker hyperplane class, then
+\[
+\delta_Z
+=
+\int_Y\sigma_1^r.
+\]
+
+If \(\gamma_Z\) has degree \(d_Z\), projection formula gives
+\[
+d_Z\int_Y\sigma_1^r
+=
+\int_Z\gamma_Z^*(\sigma_1)^r
+=
+\int_Zc_1(K_Z)^r.
+\]
+
+So
+\[
+\boxed{
+d_Z\,\deg_{\mathrm{Pl}}Y=K_Z^r
+}
+\]
+is really the first and simplest Schubert-calculus identity associated with the Gauss map.
+
+Potentially, one can do more. Since
+\[
+\gamma_Z^*\mathcal U=T_Z,
+\]
+pulling back **all** Schubert classes gives characteristic classes of \(T_Z\). Thus, if \(\gamma_Z\) is generically finite, there is in principle a relationship between
+
+\[
+\text{Chern numbers of }Z
+\]
+and
+\[
+\text{Schubert intersection numbers of }Y.
+\]
+
+This could be a very interesting piece of your “general theory” if you want to take it one step beyond just the Plücker degree.
+
+For example, because
+\[
+\gamma_Z^*c_i(\mathcal U)=c_i(T_Z),
+\]
+if you know \(d_Z\), then intersection numbers of Schubert classes on \(Y\) can sometimes be recovered from the Chern numbers of \(Z\). Conversely, if you can geometrically determine the cycle class of \(Y\), this may constrain \(d_Z\).
+
+---
+
+## So I would formulate the general strategy as a triangle
+
+For every example you have three pieces of information:
+
+\[
+\boxed{
+\begin{array}{ccc}
+&amp; K_Z^r &amp;\\[-1mm]
+/&amp;&amp;\backslash\\
+d_Z&amp;&amp;\delta_Z\\
+\backslash&amp;&amp;/\\[-1mm]
+&amp;Y_Z\subset\operatorname{Gr}(r,V)&amp;
+\end{array}}
+\]
+
+with
+\[
+K_Z^r=d_Z\delta_Z.
+\]
+
+Then there are two directions of attack:
+
+\[
+\boxed{
+\begin{array}{l}
+\textbf{Fiber method: }
+\text{understand when two points have the same tangent }r\text{-plane}\\
+\hspace{31mm}\Longrightarrow d_Z
+\Longrightarrow\delta_Z;\\[2mm]
+\textbf{Image method: }
+\text{determine equations/cycle class of }Y_Z\\
+\hspace{31mm}\Longrightarrow\delta_Z
+\Longrightarrow d_Z.
+\end{array}}
+\]
+
+Your examples divide almost perfectly between these.
+
+| Example | easiest input | consequence |
+|---|---|---|
+| AJ | degree of canonical map | degree of canonical image |
+| AP | factorization through involution + Prym-canonical map | \(d\), then image degree |
+| spin | image is a conic | \(d=g-1\) |
+| Fano | Gauss map is an embedding | image degree \(45\) |
+| Schoen | image is \((2,4)\) in \(\mathbf P^4\) | Gauss degree \(2\) |
+
+That could actually become one of the main messages of the talk: **the wedge map tells you the projective linear system, while the geometry of either its fibers or its image determines the two numerical invariants \(d_Z\) and \(\delta_Z\).**</div>
+</div>
+</section>
+<section class="turn" id="turn-11">
+<h2>Turn 11</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">I mean the general strategy to determine the degree of the image, for Fano and Schon you should really check the proof in their input, but not from the superficial way, I think there are some common strategies</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Yes. After looking at the actual proofs more carefully, I think there is a genuinely useful common strategy, and it is stronger than the formula
+\[
+K_Z^r=\deg(\gamma_Z)\deg(\gamma_Z(Z)).
+\]
+
+The right object to compute first is not merely the degree, but the **Gauss cycle**
+\[
+(\gamma_Z)_*[Z]
+=
+d\,[Y]\in A_*(\operatorname{Gr}(r,V)),
+\qquad
+Y=\gamma_Z(Z),\quad d=\deg(\gamma_Z).
+\]
+
+That gives a natural piece of “general theory” for your talk.
+
+### 1. The intrinsic Schubert calculation
+
+Let
+\[
+G=\operatorname{Gr}(r,V),\qquad \mathcal U\subset V\otimes\mathcal O_G
+\]
+be the tautological bundle. For an immersion,
+\[
+\gamma_Z^*\mathcal U=T_Z,
+\qquad
+\gamma_Z^*\mathcal U^\vee=\Omega_Z^1.
+\]
+
+Hence for every Schubert class
+\[
+\sigma_\lambda=s_\lambda(\mathcal U^\vee)
+\]
+we have
+\[
+\boxed{\gamma_Z^*\sigma_\lambda=s_\lambda(\Omega_Z^1).}
+\]
+
+Consequently, by projection formula,
+\[
+\boxed{
+\int_Z s_\lambda(\Omega_Z^1)
+=
+d\int_Y\sigma_\lambda .
+}
+\]
+
+Thus the Chern numbers of \(Z\) determine
+\[
+\boxed{\gamma_{Z*}[Z]=d[Y]}
+\]
+as a cycle in the Grassmannian.
+
+This is more informative than just
+\[
+K_Z^r=d\,\deg Y,
+\]
+which is only the equation obtained from \(\sigma_1^r\).
+
+For a surface this is particularly simple. On \(G(2,V)\),
+\[
+\sigma_{1,1}=c_2(\mathcal U^\vee),\qquad
+\sigma_2=c_1(\mathcal U^\vee)^2-c_2(\mathcal U^\vee),
+\]
+so
+\[
+\boxed{
+\int_S\gamma^*\sigma_{1,1}=c_2(S),\qquad
+\int_S\gamma^*\sigma_2=K_S^2-c_2(S).
+}
+\]
+
+This is, I think, a very useful general statement to put in the talk.
+
+---
+
+## 2. What actually happens for the Fano surface
+
+The original Clemens–Griffiths argument is more geometric than the superficial statement “the canonical embedding has degree \(45\).”
+
+They first work with the **natural**
+\[
+F\subset \operatorname{Gr}(2,5)
+\]
+before identifying it with the Albanese Gauss map.
+
+For a plane \(K\subset\mathbf P^4\), they define
+\[
+D_K=\{\ell\in F:\ell\cap K\neq\varnothing\}.
+\]
+This is precisely the restriction of a Plücker hyperplane. They prove that no Plücker hyperplane contains \(F\), and, crucially, Fano's result that
+\[
+\boxed{D_K\sim K_F.}
+\]
+
+Then they use the incidence divisor
+\[
+D_s=\{\ell:\ell\cap L_s\neq\varnothing\}.
+\]
+For general \(s,t\),
+\[
+D_sD_t=5,
+\]
+because on the cubic surface spanned by two skew lines there are exactly five lines meeting both. They then choose a plane \(K\) for which
+\[
+K\cap X=L_{s_1}+L_{s_2}+L_{s_3}.
+\]
+This gives
+\[
+D_K\sim D_{s_1}+D_{s_2}+D_{s_3}\equiv3D_s.
+\]
+Therefore
+\[
+K_F^2=D_K^2=9D_s^2=45.
+\]
+
+Only after this do they conclude that the Plücker embedding is the canonical embedding. Later, the tangent-bundle theorem identifies this natural Grassmannian map with the tangent Gauss map of the Albanese embedding.
+
+So their strategy is:
+\[
+\boxed{
+\text{Plücker hyperplane}
+\rightsquigarrow
+\text{geometric incidence divisor}
+\rightsquigarrow
+\text{special incidence configuration}
+\rightsquigarrow
+\text{intersection number}.
+}
+\]
+
+That is much more informative than just invoking \(K_F^2=45\).
+
+There is also a modern intersection-theoretic packaging. A cubic equation defines a section of
+\[
+\operatorname{Sym}^3\mathcal U^\vee
+\]
+on \(G(2,5)\), and its zero locus is exactly the Fano surface. Hence
+\[
+[F]=c_4(\operatorname{Sym}^3\mathcal U^\vee).
+\]
+If \(x,y\) are the Chern roots of \(\mathcal U^\vee\),
+\[
+c_4(\operatorname{Sym}^3\mathcal U^\vee)
+=(3x)(2x+y)(x+2y)(3y),
+\]
+which becomes
+\[
+\boxed{[F]=18\sigma_{3,1}+27\sigma_{2,2}.}
+\]
+
+Now compare this with the intrinsic Gauss-cycle computation. Since
+\[
+K_F^2=45,\qquad c_2(F)=27,
+\]
+we obtain
+\[
+\gamma_{F*}[F]
+=
+18\sigma_{3,1}+27\sigma_{2,2}.
+\]
+It is exactly the class of the Fano surface itself. Therefore
+\[
+d=1.
+\]
+
+That is a very nice reformulation of the example.
+
+---
+
+# 3. What the Schoen proof actually does
+
+The Schoen proof is different in execution, but structurally very similar.
+
+Ciliberto–Mendes Lopes–Roulleau do **not** start from
+\[
+16=2\cdot8
+\]
+and declare the image degree to be \(8\). Rather, they first construct the image geometrically by degeneration.
+
+They take Schoen's reducible surface
+\[
+V=A\cup(C\times C)
+\]
+and construct a line bundle \(L\) which is a **limit of the canonical bundle** in a smoothing. They show
+\[
+h^0(V,L)=5
+\]
+and that \(|L|\) is base-point-free.
+
+The map is composed with a natural involution. After quotienting and resolving, they obtain a reducible surface \(Z'\) with a limit canonical system \(N\). On its components, the map is very explicit:
+
+- one component maps to a **quartic Kummer surface**
+  \[
+  \Sigma\subset\mathbf P^3;
+  \]
+- another maps to a **quadric counted twice**;
+- they meet along a conic.
+
+Thus the limiting image is
+\[
+\bar Z=\Sigma\cup 2Q.
+\]
+
+Its degree is already visible:
+\[
+\deg\Sigma+2\deg Q
+=
+4+2\cdot2
+=
+8.
+\]
+
+But they do more: they write equations and prove that this reducible surface is exactly
+\[
+\boxed{
+(\Pi\cup\Pi')\cap\{\text{quartic}\}\subset\mathbf P^4,
+}
+\]
+i.e. a degeneration of a \((2,4)\) complete intersection.
+
+They then deform this surface inside the moduli of \((2,4)\) complete intersections. Degree is constant in the flat family, so the general image still has
+\[
+\boxed{\deg Y=8.}
+\]
+
+Only subsequently do they use the even \(40\) nodes to construct the double cover
+\[
+S\longrightarrow Y,
+\]
+with
+\[
+\pi^*\omega_Y=\omega_S,
+\]
+which produces the general Schoen surface and shows that its canonical map has degree \(2\).
+
+So logically their proof is
+\[
+\boxed{
+\begin{array}{c}
+\text{degenerate canonical system}\\
+\downarrow\\
+\text{explicit reducible image}\\
+\downarrow\\
+\text{compute its cycle/degree}\\
+\downarrow\\
+\text{deform the image}\\
+\downarrow\\
+\text{construct the double cover}.
+\end{array}}
+\]
+
+The degree \(8\) of the image is obtained **before** the degree \(2\) of the map.
+
+---
+
+# 4. Now the common strategy becomes visible
+
+The common idea in Fano and Schoen is:
+
+&gt; **Do not attack the generic Gauss image directly. Replace the question by an intersection/cycle computation that can be performed on a special geometric model.**
+
+For Fano, the special objects are planes, incidence divisors, and special plane sections of the cubic.
+
+For Schoen, the special object is a degeneration of the source and of its canonical linear system.
+
+So I would formulate a general strategy in your talk as:
+\[
+\boxed{
+\begin{array}{ll}
+\text{Step 1.}&amp;
+\text{Compute }d[Y]=\gamma_{Z*}[Z]\text{ in the Chow ring of the Grassmannian};\\[1mm]
+\text{Step 2.}&amp;
+\text{find an independent geometric description or degeneration of }Y;\\[1mm]
+\text{Step 3.}&amp;
+\text{compute }[Y]\text{ on that special model};\\[1mm]
+\text{Step 4.}&amp;
+\text{compare }d[Y]\text{ with }[Y]\text{ to obtain }d\text{ and }\deg Y.
+\end{array}}
+\]
+
+This is the unifying mechanism I was missing before.
+
+---
+
+## 5. It is especially nice for the Schoen surface
+
+Let me show how neatly the abstract cycle calculation packages the Schoen case.
+
+Here
+\[
+G=\operatorname{Gr}(2,4),
+\qquad
+K_S^2=16.
+\]
+Since
+\[
+\chi(\mathcal O_S)=2,
+\]
+Noether gives
+\[
+c_2(S)=12\chi-K^2=24-16=8.
+\]
+
+Therefore
+\[
+\int_S\gamma^*\sigma_2
+=
+K^2-c_2=8,
+\qquad
+\int_S\gamma^*\sigma_{1,1}=8.
+\]
+
+In \(A^2(G(2,4))\), this says
+\[
+\boxed{
+\gamma_*[S]
+=
+8\sigma_2+8\sigma_{1,1}
+=
+8\sigma_1^2.
+}
+\]
+
+Now \(\ker\lambda_S\) is one-dimensional and non-decomposable, so
+\[
+Y\subset G(2,4)\cap H=Q^3.
+\]
+
+Since
+\[
+\operatorname{Pic}(Q^3)=\mathbf Z[H],
+\]
+the surface \(Y\), being a divisor in \(Q^3\), has
+\[
+Y\sim mH.
+\]
+Consequently, as a class in \(G(2,4)\),
+\[
+[Y]=m\sigma_1^2.
+\]
+
+Comparing with
+\[
+\gamma_*[S]=d[Y]
+\]
+gives the extremely useful equation
+\[
+\boxed{dm=8.}
+\]
+
+Furthermore,
+\[
+\deg Y
+=
+m\deg Q^3
+=
+2m.
+\]
+
+So purely from the general theory you reduce everything to one integer \(m\):
+\[
+d=\frac8m,\qquad
+\deg Y=2m.
+\]
+
+The degeneration proves
+\[
+m=4,
+\]
+because the limiting image is a quartic section of a quadric. Therefore
+\[
+\boxed{d=2,\qquad \deg Y=8.}
+\]
+
+I think **this is exactly the presentation you want**: the general Gauss/Schubert theory reduces the problem to \(dm=8\), and their degeneration supplies the missing geometric integer \(m=4\).
+
+---
+
+## 6. Fano in the same language
+
+For \(F\),
+\[
+G=\operatorname{Gr}(2,5),\qquad
+K_F^2=45,\qquad c_2(F)=27.
+\]
+
+Thus
+\[
+\int_F\gamma^*\sigma_2=45-27=18,
+\qquad
+\int_F\gamma^*\sigma_{1,1}=27.
+\]
+
+Using Poincaré duality in \(G(2,5)\),
+\[
+\sigma_2^\vee=\sigma_{3,1},
+\qquad
+\sigma_{1,1}^\vee=\sigma_{2,2},
+\]
+so
+\[
+\boxed{
+\gamma_*[F]
+=
+18\sigma_{3,1}
++
+27\sigma_{2,2}.
+}
+\]
+
+Independently, the cubic-threefold geometry gives
+\[
+[F(X)]
+=
+c_4(\operatorname{Sym}^3\mathcal U^\vee)
+=
+18\sigma_{3,1}+27\sigma_{2,2}.
+\]
+
+Therefore comparison yields
+\[
+d=1,\qquad
+Y=F(X).
+\]
+
+And
+\[
+\deg Y
+=
+\int_G[Y]\sigma_1^2
+=
+18+27
+=
+\boxed{45}.
+\]
+
+So the two examples become strikingly parallel:
+\[
+\boxed{
+\begin{array}{c|c|c}
+ &amp; d[Y]\text{ from }c(T_Z)
+ &amp; [Y]\text{ from geometry}\\
+\hline
+\text{Fano}
+&amp;
+18\sigma_{31}+27\sigma_{22}
+&amp;
+c_4(\operatorname{Sym}^3\mathcal U^\vee)
+\\[1mm]
+\text{Schoen}
+&amp;
+8\sigma_1^2
+&amp;
+4\sigma_1^2\ \text{from degeneration}
+\end{array}}
+\]
+
+and hence
+\[
+\begin{array}{c|c|c}
+&amp;d&amp;\deg Y\\
+\hline
+\text{Fano}&amp;1&amp;45\\
+\text{Schoen}&amp;2&amp;8.
+\end{array}
+\]
+
+This feels to me like a genuinely worthwhile piece of the **general theory** in your talk: the tangent Gauss map is a classifying map for \(T_Z\), so **Schubert calculus turns Chern numbers of \(Z\) into the cycle \(d[\gamma_Z(Z)]\)**. The remaining problem is geometric: find enough information about the image—often by incidence geometry, equations, symmetry, or degeneration—to divide that cycle by \(d\).</div>
+</div>
+</section>
+<section class="turn" id="turn-12">
+<h2>Turn 12</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">Could you tell me if we can also describe the monodromy group not from Gr(r,V) but from P\Lambta^r V?</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Yes. In fact, for monodromy it is often cleaner to forget the Grassmannian after using it to construct the map.
+
+Let
+\[
+\gamma_Z:Z\dashrightarrow Y:=\gamma_Z(Z)\subset \operatorname{Gr}(r,V)
+\]
+be generically finite of degree \(d\), and let
+\[
+\mathrm{Pl}:\operatorname{Gr}(r,V)\hookrightarrow \mathbf P(\Lambda^rV)
+\]
+be the Plücker embedding. Put
+\[
+\bar Y:=\mathrm{Pl}(Y)\subset \mathbf P(\Lambda^rV).
+\]
+Then
+\[
+\mathrm{Pl}|_Y:Y\xrightarrow{\sim}\bar Y
+\]
+is an isomorphism. Therefore
+\[
+Z\dashrightarrow Y
+\qquad\text{and}\qquad
+Z\dashrightarrow\bar Y
+\]
+define exactly the same function-field extension:
+\[
+\mathbf C(Y)=\mathbf C(\bar Y)\subset \mathbf C(Z).
+\]
+
+Hence
+\[
+\boxed{
+\operatorname{Mon}(\gamma_Z)
+=
+\operatorname{Mon}(\mathrm{Pl}\circ\gamma_Z).
+}
+\]
+
+So the monodromy group can be studied entirely from the projective realization
+\[
+Z\dashrightarrow \bar Y\subset\mathbf P(\Lambda^rV).
+\]
+
+More invariantly, if
+\[
+E_Z:=\operatorname{Im}\left(
+\lambda_Z:\Lambda^rV^\vee\to H^0(Z,K_Z)
+\right),
+\]
+then \(\mathrm{Pl}\circ\gamma_Z\) is the rational map
+\[
+\phi_{E_Z}:Z\dashrightarrow \mathbf P(E_Z^\vee).
+\]
+The Plücker image actually lies in
+\[
+\mathbf P(E_Z^\vee)
+\simeq
+\mathbf P\bigl((\ker\lambda_Z)^\perp\bigr)
+\subset
+\mathbf P(\Lambda^rV).
+\]
+
+Thus one can say even more succinctly:
+\[
+\boxed{
+\text{The monodromy of the tangent Gauss map is the monodromy of the canonical subsystem }E_Z.
+}
+\]
+
+That is quite attractive for your talk because it removes the Grassmannian from the monodromy discussion.
+
+### Formal definition
+
+Suppose
+\[
+\phi_{E_Z}:Z\dashrightarrow \bar Y
+\]
+is generically finite of degree \(d\). Choose an open subset
+\[
+\bar Y^\circ\subset\bar Y_{\mathrm{reg}}
+\]
+over which the map is finite étale. Then
+\[
+\phi^{-1}(\bar Y^\circ)\to\bar Y^\circ
+\]
+is a \(d\)-sheeted covering, giving
+\[
+\rho:
+\pi_1(\bar Y^\circ,y)\longrightarrow S_d.
+\]
+The image
+\[
+G_Z:=\operatorname{Im}\rho\subset S_d
+\]
+is the monodromy group.
+
+Equivalently,
+\[
+G_Z
+\]
+is the Galois group of the Galois closure of
+\[
+\mathbf C(Z)/\mathbf C(\bar Y).
+\]
+
+Nothing here remembers whether \(\bar Y\) was first regarded as a subvariety of a Grassmannian or just as a projective variety.
+
+There is, however, one important caveat. You can replace the Grassmannian by the **Plücker image**
+\[
+\bar Y\subset\mathbf P(\Lambda^rV),
+\]
+but not generally by the whole projective space \(\mathbf P(\Lambda^rV)\). Usually
+\[
+\dim\bar Y=r\ll \dim\mathbf P(\Lambda^rV),
+\]
+so there is no generically finite map
+\[
+Z\to\mathbf P(\Lambda^rV)
+\]
+onto the whole projective space. The base of the covering remains \(\bar Y\).
+
+This viewpoint fits your examples especially well.
+
+For the Fano surface,
+\[
+E_F=H^0(K_F),
+\]
+so the projective Gauss map is the canonical embedding
+\[
+F\hookrightarrow\mathbf P^9.
+\]
+Its degree is \(1\), hence the monodromy is trivial.
+
+For a general Schoen surface,
+\[
+E_S=H^0(K_S),
+\]
+and
+\[
+\phi_{E_S}:S\to Y\subset\mathbf P^4
+\]
+is the canonical double cover of its \((2,4)\) canonical image. Hence
+\[
+\boxed{G_S\simeq \mathbf Z/2.}
+\]
+
+For the spin curve,
+\[
+E_C=\operatorname{Sym}^2H^0(L),
+\]
+and
+\[
+C\xrightarrow{|L|}\mathbf P^1
+\xrightarrow{\nu_2}Q\subset\mathbf P^2.
+\]
+Since \(\nu_2:\mathbf P^1\to Q\) is an isomorphism, the monodromy of the Gauss map is exactly the monodromy of the covering
+\[
+C\to\mathbf P^1
+\]
+defined by \(|L|\).
+
+This suggests adding a fourth item to your general framework:
+\[
+\boxed{
+\begin{array}{ll}
+(1)&amp;E_Z=\operatorname{Im}\lambda_Z,\\
+(2)&amp;Y_Z=\gamma_Z(Z),\\
+(3)&amp;d_Z=\deg\gamma_Z,\\
+(4)&amp;G_Z=\operatorname{Mon}(\gamma_Z)\subset S_{d_Z}.
+\end{array}}
+\]
+
+And importantly, items (3) and (4) can be studied entirely through the projective map defined by \(E_Z\), after the Grassmannian has done its job of producing that linear system.</div>
+</div>
+</section>
+<section class="turn" id="turn-13">
+<h2>Turn 13</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">No, for the monodromy group I mean the Gr(r,H) pullback by Gauss map is generically finite, and when H moves these fiber may permutes.</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Yes. Now I understand the monodromy you mean, and there is a very nice formulation in \(\mathbf P(\Lambda^rV)\). In fact, this gives a second natural “Gauss monodromy” invariant which is different from the monodromy of the finite map \(Z\to\gamma_Z(Z)\).
+
+Let
+\[
+\iota_Z:Z^r\hookrightarrow A^n,\qquad V=T_0A,
+\]
+and
+\[
+\gamma_Z:Z\to G:=\operatorname{Gr}(r,V).
+\]
+For \([\alpha]\in\mathbf P(V^\vee)\), set
+\[
+H_\alpha=\ker(\alpha)\subset V.
+\]
+Then
+\[
+\Sigma_\alpha:=\operatorname{Gr}(r,H_\alpha)\subset G
+\]
+has codimension \(r\). Thus, for general \(\alpha\),
+\[
+\gamma_Z^{-1}(\Sigma_\alpha)
+\]
+is zero-dimensional.
+
+The important observation is
+\[
+\gamma_Z(z)\in\operatorname{Gr}(r,H_\alpha)
+\iff
+d\iota_Z(T_zZ)\subset H_\alpha
+\iff
+(\iota_Z^*\alpha)(z)=0.
+\]
+
+So your moving finite set is exactly
+\[
+\boxed{
+\gamma_Z^{-1}\bigl(\operatorname{Gr}(r,H_\alpha)\bigr)
+=
+Z(\iota_Z^*\alpha).
+}
+\]
+
+This is the zero set of a varying invariant \(1\)-form.
+
+### The natural covering whose monodromy you want
+
+Consider
+\[
+\mathcal C_Z
+=
+\left\{
+(z,[\alpha])\in Z\times\mathbf P(V^\vee)
+\; ;\;
+(\iota_Z^*\alpha)(z)=0
+\right\}.
+\]
+
+There is a projection
+\[
+p_Z:\mathcal C_Z\longrightarrow\mathbf P(V^\vee).
+\]
+
+If \(\iota_Z\) is an immersion, the conormal sequence is
+\[
+0\longrightarrow N^*_{Z/A}
+\longrightarrow
+V^\vee\otimes\mathcal O_Z
+\longrightarrow
+\Omega_Z^1
+\longrightarrow0,
+\]
+so
+\[
+\boxed{\mathcal C_Z\simeq\mathbf P(N^*_{Z/A}).}
+\]
+
+Thus your monodromy is literally the monodromy of the **conormal Gauss map**
+\[
+\boxed{
+p_Z:\mathbf P(N^*_{Z/A})\longrightarrow\mathbf P(V^\vee).
+}
+\]
+
+If this map is generically finite, then its degree is
+\[
+\boxed{
+N_Z=\int_Z c_r(\Omega_Z^1).
+}
+\]
+
+Indeed, a general \(\alpha\) gives a section of \(\Omega_Z^1\), and its zero scheme represents \(c_r(\Omega_Z^1)\).
+
+So for surfaces,
+\[
+N_Z=c_2(Z),
+\]
+while for curves
+\[
+N_C=\deg K_C=2g-2.
+\]
+
+The monodromy representation is therefore
+\[
+\rho_Z:
+\pi_1\bigl(\mathbf P(V^\vee)\setminus\Delta_Z\bigr)
+\longrightarrow S_{N_Z},
+\]
+where \(\Delta_Z\) is the discriminant where the zero scheme ceases to consist of \(N_Z\) distinct points.
+
+---
+
+## Now put this entirely in \(\mathbf P(\Lambda^rV)\)
+
+For
+\[
+\alpha\in V^\vee
+\]
+consider contraction
+\[
+\iota_\alpha:
+\Lambda^rV\longrightarrow\Lambda^{r-1}V.
+\]
+
+If \(H_\alpha=\ker\alpha\), then
+\[
+\ker(\iota_\alpha)=\Lambda^rH_\alpha.
+\]
+
+Therefore, under the Plücker embedding,
+\[
+\boxed{
+\operatorname{Gr}(r,H_\alpha)
+=
+\operatorname{Gr}(r,V)
+\cap
+\mathbf P(\Lambda^rH_\alpha).
+}
+\]
+
+Equivalently,
+\[
+\operatorname{Gr}(r,H_\alpha)
+=
+G\cap\mathbf P(\ker\iota_\alpha).
+\]
+
+So if
+\[
+\phi_Z=\operatorname{Pl}\circ\gamma_Z:
+Z\longrightarrow\mathbf P(\Lambda^rV),
+\]
+then
+\[
+\boxed{
+\gamma_Z^{-1}\bigl(\operatorname{Gr}(r,H_\alpha)\bigr)
+=
+\phi_Z^{-1}\bigl(\mathbf P(\Lambda^rH_\alpha)\bigr).
+}
+\]
+
+This gives exactly the projective-space version you were asking about.
+
+The parameter space remains
+\[
+\mathbf P(V^\vee),
+\]
+but every \([\alpha]\) determines a distinguished linear subspace
+\[
+L_\alpha:=\mathbf P(\Lambda^r\ker\alpha)
+\subset\mathbf P(\Lambda^rV).
+\]
+
+Thus your monodromy is:
+
+&gt; the monodromy of the points obtained by intersecting the Plücker Gauss image with the moving special linear spaces \(L_\alpha\).
+
+There is even a natural map
+\[
+\mathbf P(V^\vee)
+\longrightarrow
+\operatorname{Gr}\left(
+\binom{n-1}{r},
+\Lambda^rV
+\right),
+\qquad
+[\alpha]\longmapsto\Lambda^r\ker\alpha,
+\]
+and you are restricting the usual linear-section incidence correspondence to this special family of linear spaces.
+
+### But there is an important subtlety
+
+These are **not general linear sections** of
+\[
+\phi_Z(Z)\subset\mathbf P(\Lambda^rV).
+\]
+
+Indeed,
+\[
+\operatorname{codim}_{\mathbf P(\Lambda^rV)}
+\mathbf P(\Lambda^rH_\alpha)
+=
+\binom{n-1}{r-1},
+\]
+whereas inside the Grassmannian
+\[
+\operatorname{codim}_{G}
+\operatorname{Gr}(r,H_\alpha)=r.
+\]
+
+The reason the intersection behaves correctly is precisely that both the image and these linear spaces have special Plücker geometry.
+
+In Schubert notation,
+\[
+[\operatorname{Gr}(r,H)]
+=
+c_r(\mathcal U^\vee)
+=
+\sigma_{1^r},
+\]
+not \(\sigma_1^r\).
+
+This gives another numerical identity:
+\[
+\boxed{
+\int_Zc_r(\Omega_Z^1)
+=
+d_Z\int_{Y_Z}\sigma_{1^r},
+}
+\]
+where
+\[
+d_Z=\deg(Z\to Y_Z),
+\qquad
+Y_Z=\gamma_Z(Z).
+\]
+
+Compare this with our previous identity
+\[
+K_Z^r
+=
+d_Z\int_{Y_Z}\sigma_1^r.
+\]
+
+These are **two different Schubert numbers**:
+\[
+\boxed{
+\begin{aligned}
+K_Z^r
+&amp;=d_Z\,[Y_Z]\cdot\sigma_1^r,\\
+c_r(\Omega_Z^1)
+&amp;=d_Z\,[Y_Z]\cdot\sigma_{1^r}.
+\end{aligned}}
+\]
+
+I think this is very valuable for your general theory.
+
+---
+
+# The Fano example becomes spectacular
+
+For the Fano surface \(F\),
+\[
+r=2,\qquad n=5.
+\]
+
+So
+\[
+\mathbf P(\Lambda^2V)=\mathbf P^9.
+\]
+
+For \(H\subset V\) a hyperplane,
+\[
+\mathbf P(\Lambda^2H)=\mathbf P^5,
+\]
+and
+\[
+\operatorname{Gr}(2,H)
+=
+\operatorname{Gr}(2,5)\cap\mathbf P^5.
+\]
+
+By the tangent-bundle theorem,
+\[
+F\to\operatorname{Gr}(2,5)
+\]
+is the natural map sending a line on the cubic threefold \(X\subset\mathbf P(V)\) to that line.
+
+Therefore
+\[
+F\cap\operatorname{Gr}(2,H)
+\]
+is simply
+\[
+\{\text{lines on }X\text{ contained in }\mathbf P(H)\}.
+\]
+
+But
+\[
+X\cap\mathbf P(H)
+\]
+is a general cubic surface.
+
+Hence the fiber consists of its
+\[
+\boxed{27\text{ lines}.}
+\]
+
+And indeed
+\[
+c_2(F)=27.
+\]
+
+So your monodromy problem is **exactly the classical monodromy of the 27 lines on cubic surfaces**.
+
+For a Lefschetz pencil of hyperplane sections of a cubic threefold, this degree-\(27\) covering has monodromy
+\[
+\boxed{W(E_6)\subset S_{27}.}
+\]
+
+This is much richer than the tangent Gauss map itself, whose degree is \(1\).
+
+So for Fano you have two very different numbers/groups:
+\[
+\begin{array}{c|c}
+\gamma_F:F\to\gamma_F(F) &amp; \deg=1\\
+\hline
+\mathbf P(N^*_{F/A})\to\mathbf P(V^\vee)
+&amp;\deg=27,\quad \operatorname{Mon}=W(E_6).
+\end{array}
+\]
+
+That is an excellent example for the talk.
+
+---
+
+# Schoen has an equally nice projective picture
+
+For a Schoen surface,
+\[
+r=2,\qquad n=4.
+\]
+
+Then
+\[
+G=\operatorname{Gr}(2,4)=Q^4\subset\mathbf P^5.
+\]
+
+For a hyperplane \(H\subset V\), \(\dim H=3\), and therefore
+\[
+\mathbf P(\Lambda^2H)=\mathbf P^2.
+\]
+
+In fact
+\[
+\operatorname{Gr}(2,H)=\mathbf P(\Lambda^2H)
+\]
+because every \(2\)-vector in a \(3\)-dimensional space is decomposable. These \(\mathbf P^2\)'s form one of the families of maximal linear spaces in the Klein quadric.
+
+For Schoen, the Gauss/canonical image lies in a hyperplane
+\[
+\mathbf P^4\subset\mathbf P^5,
+\]
+whose intersection with \(Q^4\) is
+\[
+Q^3.
+\]
+
+Thus for general \(\alpha\),
+\[
+\mathbf P(\Lambda^2H_\alpha)\cap\mathbf P^4
+\]
+is a line
+\[
+\ell_\alpha\subset Q^3.
+\]
+
+The canonical image is
+\[
+Y=Q^3\cap\{\text{quartic}\}.
+\]
+Hence
+\[
+Y\cap\mathbf P(\Lambda^2H_\alpha)
+=
+Y\cap\ell_\alpha
+\]
+consists generically of
+\[
+\boxed{4\text{ points}.}
+\]
+
+But
+\[
+S\to Y
+\]
+has degree \(2\). Consequently the original fiber on \(S\) contains
+\[
+2\cdot4=8
+\]
+points, exactly as predicted by
+\[
+c_2(S)=8.
+\]
+
+So here the monodromy has a natural **block structure**
+\[
+\{\underbrace{2}_{y_1},
+\underbrace{2}_{y_2},
+\underbrace{2}_{y_3},
+\underbrace{2}_{y_4}\}.
+\]
+
+Thus its group is naturally contained in a wreath product
+\[
+\boxed{
+\operatorname{Mon}_S
+\subset
+(\mathbf Z/2)^4\rtimes \operatorname{Mon}_{4}
+=
+\mathbf Z/2\wr\operatorname{Mon}_{4},
+}
+\]
+where \(\operatorname{Mon}_4\) is the monodromy of the four points
+\[
+\ell_\alpha\cap Y.
+\]
+
+I would **not yet claim** that this is the full wreath product; that requires a separate analysis of the discriminant and local monodromy. But the Plücker picture immediately exposes the system of four \(2\)-element blocks.
+
+---
+
+So I think you have uncovered a very nice second thread for the talk. Alongside
+\[
+\gamma_Z:Z\to\operatorname{Gr}(r,V)
+\]
+and its image/degree, introduce the incidence covering
+\[
+\boxed{
+p_Z:\mathbf P(N^*_{Z/A})\to\mathbf P(V^\vee).
+}
+\]
+
+Its fiber over \([\alpha]\) is
+\[
+Z(\iota_Z^*\alpha)
+=
+\gamma_Z^{-1}\operatorname{Gr}(r,\ker\alpha),
+\]
+its degree is
+\[
+\int_Zc_r(\Omega_Z^1),
+\]
+and its monodromy measures how the zeros of a general invariant \(1\)-form permute.
+
+Under Plücker, the same fiber is
+\[
+\boxed{
+\phi_Z^{-1}\!\left(
+\mathbf P(\Lambda^r\ker\alpha)
+\right).
+}
+\]
+
+This gives a remarkably unified picture: **ordinary degree of the Gauss image comes from \(\sigma_1^r\), while your moving-\(H\) monodromy comes from the top Schubert class \(\sigma_{1^r}\).** For Fano those two sides give \(45\) versus \(27\), with the \(27\)-point monodromy being the classical \(W(E_6)\) action.</div>
+</div>
+</section>
+<section class="turn" id="turn-14">
+<h2>Turn 14</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">So Chern number c_r and c_1^n have special geometrical meaning. I think as (-1)^r c_r is the degree and (-1)^r c_1^r is deg \gamma_Z mult with degree of the image, they are both non-negative given certain conditions? And do we have similar formulas when the map is not Albanese map?</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Exactly. For an immersion into an abelian variety, these two Chern numbers have especially clean—and slightly different—Gauss-theoretic meanings.
+
+Let
+\[
+\iota_Z:Z^r\hookrightarrow A^n,\qquad V=T_0A,
+\]
+with \(Z\) smooth. Then
+\[
+0\to N_{Z/A}^*\to V^\vee\otimes\mathcal O_Z\to \Omega_Z^1\to0,
+\]
+so \(\Omega_Z^1\) is globally generated.
+
+### 1. The top Chern class: zeros of a general invariant \(1\)-form
+
+For \([\alpha]\in\mathbf P(V^\vee)\), the pullback
+\[
+\iota_Z^*\alpha\in H^0(Z,\Omega_Z^1)
+\]
+has, for general \(\alpha\), a zero scheme representing
+\[
+c_r(\Omega_Z^1).
+\]
+
+Hence, when the zeros are finite,
+\[
+\# Z(\iota_Z^*\alpha)
+=
+\int_Zc_r(\Omega_Z^1)
+=
+(-1)^r\int_Zc_r(T_Z).
+\]
+
+Equivalently this is the degree of the conormal incidence map
+\[
+\mathbf P(N_{Z/A}^*)\longrightarrow\mathbf P(V^\vee).
+\]
+
+Thus
+\[
+\boxed{
+(-1)^rc_r(Z)
+=
+\deg\bigl(\mathbf P(N_{Z/A}^*)\to\mathbf P(V^\vee)\bigr)
+}
+\]
+when that map is generically finite.
+
+And since
+\[
+\int_Zc_r(T_Z)=\chi_{\mathrm{top}}(Z),
+\]
+this gives
+\[
+\boxed{(-1)^r\chi_{\mathrm{top}}(Z)\ge0.}
+\]
+
+For your examples:
+\[
+c_2(F)=27,\qquad c_2(S_{\rm Schoen})=8,
+\]
+which are precisely the sizes of the moving-\(H\) fibers we discussed.
+
+---
+
+### 2. The first Chern class: degree of the tangent Gauss image
+
+For the tangent Gauss map
+\[
+\gamma_Z:Z\to\operatorname{Gr}(r,V),
+\]
+we have
+\[
+\gamma_Z^*\mathcal U=T_Z,
+\]
+hence
+\[
+\gamma_Z^*\mathcal O_{\operatorname{Gr}}(1)
+=
+\det\Omega_Z^1
+=
+K_Z.
+\]
+
+Therefore
+\[
+\int_Zc_1(\Omega_Z^1)^r
+=
+K_Z^r
+=
+(-1)^r\int_Zc_1(T_Z)^r.
+\]
+
+If \(\gamma_Z\) is generically finite of degree \(d_Z\) onto
+\[
+Y_Z=\gamma_Z(Z),
+\]
+then
+\[
+\boxed{
+(-1)^rc_1(Z)^r
+=
+K_Z^r
+=
+d_Z\,\deg_{\rm Pl}(Y_Z).
+}
+\]
+
+Thus your two numbers are indeed
+\[
+\boxed{
+\begin{aligned}
+(-1)^rc_r(Z)
+&amp;=\text{degree of the conormal/zero-of-1-form covering},\\
+(-1)^rc_1(Z)^r
+&amp;=\deg(\gamma_Z)\,\deg_{\rm Pl}(\gamma_Z(Z)).
+\end{aligned}}
+\]
+
+This parallel is, I think, worth emphasizing in the talk.
+
+### 3. Why are both nonnegative?
+
+Because \(\Omega_Z^1\) is a quotient of the trivial bundle
+\[
+V^\vee\otimes\mathcal O_Z\twoheadrightarrow\Omega_Z^1.
+\]
+
+In particular:
+
+- \(\Omega_Z^1\) is globally generated;
+- \(K_Z=\det\Omega_Z^1\) is globally generated, hence nef;
+- therefore
+  \[
+  K_Z^r\ge0;
+  \]
+- \(c_r(\Omega_Z^1)\) is represented by the zero scheme of a general section, hence
+  \[
+  \int_Zc_r(\Omega_Z^1)\ge0.
+  \]
+
+So
+\[
+\boxed{
+(-1)^rc_r(T_Z)\ge0,\qquad
+(-1)^rc_1(T_Z)^r\ge0.
+}
+\]
+
+There is an even sharper statement:
+\[
+K_Z^r&gt;0
+\quad\Longleftrightarrow\quad
+\gamma_Z\text{ is generically finite},
+\]
+because
+\[
+K_Z=\gamma_Z^*\mathcal O_G(1)
+\]
+and \(\mathcal O_G(1)\) is ample.
+
+Similarly,
+\[
+\int_Zc_r(\Omega_Z^1)&gt;0
+\]
+exactly when the conormal map
+\[
+\mathbf P(N^*_{Z/A})\to\mathbf P(V^\vee)
+\]
+is dominant/generically finite.
+
+So the vanishing of the two numbers detects two different degeneracies.
+
+---
+
+## 4. This has nothing specifically to do with the Albanese map
+
+This is perhaps the most important answer to your last question.
+
+Everything above holds for **any immersion**
+\[
+\iota_Z:Z\hookrightarrow A
+\]
+into any abelian variety.
+
+You do not need
+\[
+A=\operatorname{Alb}(Z).
+\]
+
+The Albanese case is special only because
+\[
+V^\vee
+\simeq H^0(Z,\Omega_Z^1),
+\]
+so you are using **all** holomorphic \(1\)-forms.
+
+For a general map to an abelian variety, you are using only
+\[
+W:=\operatorname{Im}\left(
+V^\vee\to H^0(Z,\Omega_Z^1)
+\right).
+\]
+
+But if \(\iota_Z\) is an immersion, this smaller space still globally generates \(\Omega_Z^1\):
+\[
+W\otimes\mathcal O_Z\twoheadrightarrow\Omega_Z^1.
+\]
+
+Consequently the exact same formulas hold:
+\[
+\boxed{
+\int_Zc_r(\Omega_Z^1)
+=
+\deg\left[\text{zeros of a general }\omega\in W\right],
+}
+\]
+and
+\[
+\boxed{
+K_Z^r
+=
+\deg(\gamma_{\iota_Z})
+\,\deg_{\rm Pl}\gamma_{\iota_Z}(Z).
+}
+\]
+
+So AJ versus AP versus your spin quotient do not change the intrinsic Chern numbers; they give different realizations of those Chern numbers through different spaces \(W\) of \(1\)-forms.
+
+---
+
+## 5. In fact there is a whole family of such formulas
+
+The two you noticed are the extremes of a broader Schubert-theoretic statement.
+
+For
+\[
+\gamma_Z:Z\to G(r,V)
+\]
+and any Schubert class \(\sigma_\lambda\) of codimension \(r\),
+\[
+\gamma_Z^*\sigma_\lambda
+=
+s_\lambda(\Omega_Z^1).
+\]
+
+Hence, if \(\gamma_Z\) is generically finite of degree \(d\),
+\[
+\boxed{
+\int_Z s_\lambda(\Omega_Z^1)
+=
+d\int_{\gamma_Z(Z)}\sigma_\lambda.
+}
+\]
+
+So:
+
+- \(\sigma_{1^r}=c_r(\mathcal U^\vee)\) gives
+  \[
+  c_r(\Omega_Z^1);
+  \]
+- \(\sigma_1^r=c_1(\mathcal U^\vee)^r\) gives
+  \[
+  c_1(\Omega_Z^1)^r=K_Z^r.
+  \]
+
+Your \(c_r\) and \(c_1^r\) are therefore two distinguished Schubert intersection numbers of the Gauss cycle.
+
+This may be a very good conceptual centerpiece:
+\[
+\boxed{
+\text{Chern numbers of }Z
+\quad\leftrightarrow\quad
+\text{Schubert intersection numbers of its tangent Gauss image}.
+}
+\]
+
+### One caveat
+
+If \(\iota_Z\) is only **generically immersive**, rather than immersive everywhere, then the clean identities need correction. The map
+\[
+V^\vee\otimes\mathcal O_Z\to\Omega_Z^1
+\]
+has a degeneracy/base locus. Its determinant linear system may have a fixed divisorial part \(D\), and the moving Plücker system is roughly
+\[
+K_Z-D
+\]
+rather than all of \(K_Z\). Then
+\[
+K_Z^r=d\,\deg Y
+\]
+need not hold without accounting for that degeneracy locus.
+
+So for the clean general theory I would assume:
+\[
+\boxed{\iota_Z:Z\to A\text{ is an immersion}}
+\]
+and later remark that a generically immersive map requires ramification/degeneracy corrections.
+
+I think this observation gives you a very natural progression for the talk: **the two most basic Schubert classes, \(\sigma_{1^r}\) and \(\sigma_1^r\), produce the two numerical invariants \((-1)^rc_r\) and \((-1)^rc_1^r\), corresponding respectively to zeros of invariant \(1\)-forms and to the Plücker degree of the tangent Gauss map.**</div>
+</div>
+</section>
+<section class="turn" id="turn-15">
+<h2>Turn 15</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">Then how do we determine the degree of the conormal Gauss map outside of albanese map? in Albanese case we can express that as top Chern class</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Yes. The important correction is:
+\[
+\boxed{\text{The top-Chern formula does not require }A=\operatorname{Alb}(Z).}
+\]
+
+What matters is the linear system of \(1\)-forms supplied by the map \(Z\to A\), and whether a general such form has isolated zeros.
+
+Let
+\[
+\iota_Z:Z^r\to A^n,\qquad V=T_0A,
+\]
+and let
+\[
+W:=\operatorname{Im}\!\left(V^\vee\to H^0(Z,\Omega_Z^1)\right).
+\]
+It is actually cleaner to parameterize by \(\mathbf P(W)\), since directions in the kernel of \(V^\vee\to W\) give the zero form identically.
+
+Define the incidence variety
+\[
+\mathcal I_W
+=
+\{(z,[\omega])\in Z\times\mathbf P(W):\omega(z)=0\}.
+\]
+There is a projection
+\[
+q:\mathcal I_W\to\mathbf P(W).
+\]
+
+If a general \(\omega\in W\) has only isolated zeros, then \(q\) is generically finite and
+\[
+\boxed{
+\deg q
+=
+\operatorname{length}Z(\omega)
+=
+\int_Z c_r(\Omega_Z^1)
+=
+(-1)^r\chi_{\mathrm{top}}(Z).
+}
+\]
+
+So this is just as true for Abel–Prym, your spin quotient, or any other map to an abelian variety, provided the generic zero scheme is finite.
+
+### Why this is independent of the chosen \(W\)
+
+On
+\[
+Z\times\mathbf P(W)
+\]
+the universal element of \(W\) gives a section
+\[
+s_{\mathrm{univ}}
+\in
+H^0\!\left(
+Z\times\mathbf P(W),
+p_Z^*\Omega_Z^1\otimes
+p_{\mathbf P}^*\mathcal O_{\mathbf P(W)}(1)
+\right).
+\]
+Its zero locus is precisely \(\mathcal I_W\).
+
+If it has the expected codimension \(r\), then
+\[
+[\mathcal I_W]
+=
+c_r\!\left(
+p_Z^*\Omega_Z^1\otimes\mathcal O(1)
+\right).
+\]
+
+To calculate the degree over \(\mathbf P(W)\), intersect with a point of \(\mathbf P(W)\). Only the term
+\[
+p_Z^*c_r(\Omega_Z^1)
+\]
+contributes, giving
+\[
+\deg q=\int_Zc_r(\Omega_Z^1).
+\]
+
+So the number of zeros is intrinsic to \(Z\); changing the abelian quotient changes **which family of \(1\)-forms you use and therefore the monodromy**, but not the number of zeros of a general member, as long as those zeros remain isolated.
+
+That distinction is quite interesting for your talk:
+\[
+\boxed{
+\text{degree }=(-1)^r\chi(Z)\text{ is intrinsic,}
+\qquad
+\text{monodromy may depend strongly on }W.
+}
+\]
+
+For example, two different quotients of \(\operatorname{Alb}(Z)\) could give two quite different permutation representations on the same number
+\[
+(-1)^r\chi(Z)
+\]
+of zeros.
+
+## If \(\iota_Z\) is an immersion
+
+Then you recover the classical conormal Gauss map literally. There is an exact sequence
+\[
+0\to N^*_{Z/A}
+\to V^\vee\otimes\mathcal O_Z
+\to\Omega_Z^1
+\to0,
+\]
+and
+\[
+\mathcal I\simeq\mathbf P(N^*_{Z/A}).
+\]
+
+Thus
+\[
+q:\mathbf P(N^*_{Z/A})\to\mathbf P(V^\vee)
+\]
+is the conormal Gauss map. Its degree can also be computed directly:
+
+\[
+\deg q
+=
+\int_{\mathbf P(N^*_{Z/A})}
+c_1(\mathcal O(1))^{n-1}.
+\]
+
+By the projective bundle formula this is
+\[
+\int_Z s_r(N^*_{Z/A}).
+\]
+Since
+\[
+c(N^*_{Z/A})\,c(\Omega_Z^1)=1,
+\]
+we have
+\[
+s(N^*_{Z/A})
+=
+c(N^*_{Z/A})^{-1}
+=
+c(\Omega_Z^1),
+\]
+and hence
+\[
+\boxed{
+\deg q
+=
+\int_Zs_r(N^*_{Z/A})
+=
+\int_Zc_r(\Omega_Z^1).
+}
+\]
+
+This derivation makes it completely clear that **nothing Albanese-specific is being used**.
+
+## What is special about the Albanese case?
+
+Only that
+\[
+W=H^0(Z,\Omega_Z^1).
+\]
+
+For a different map
+\[
+Z\to A,
+\]
+you have a proper subspace
+\[
+W\subsetneq H^0(Z,\Omega_Z^1)
+\]
+in general.
+
+So:
+\[
+\begin{array}{c|c}
+\text{Albanese} &amp; W=H^0(\Omega_Z^1)\\
+\text{general abelian target} &amp; W=\operatorname{Im}(V^\vee\to H^0(\Omega_Z^1))
+\end{array}
+\]
+but the generic zero count is still \(c_r(\Omega_Z^1)\).
+
+### Where the formula can fail in its naïve form
+
+If the general form
+\[
+\omega\in W
+\]
+has a positive-dimensional zero locus, then the incidence map is not generically finite, so there is no finite “degree” to count.
+
+This can happen when \(W\) is too small or when the map \(\iota_Z\) has substantial degeneracy.
+
+Then
+\[
+c_r(\Omega_Z^1)
+\]
+still exists, but it must be interpreted through **localized/excess intersection** rather than as the number of points in a general fiber.
+
+So I would formulate the general statement in your talk as:
+
+&gt; Let \(W\subset H^0(Z,\Omega_Z^1)\) be the space of \(1\)-forms induced by a map \(Z\to A\). If the zero locus of a general \(\omega\in W\) is zero-dimensional, then
+&gt; \[
+&gt; \#Z(\omega)=\int_Zc_r(\Omega_Z^1)=(-1)^r\chi_{\mathrm{top}}(Z).
+&gt; \]
+&gt; Equivalently, the associated incidence/conormal Gauss map has this degree.
+
+This gives you a pleasing contrast with the tangent Gauss map:
+\[
+\boxed{
+\begin{aligned}
+\text{conormal incidence degree}
+&amp;=(-1)^rc_r(T_Z),\\[1mm]
+\text{tangent Gauss degree}\times
+\text{Plücker degree of image}
+&amp;=(-1)^rc_1(T_Z)^r.
+\end{aligned}}
+\]
+
+And both formulas hold for arbitrary immersions \(Z\to A\), not only for the Albanese embedding.</div>
+</div>
+</section>
+<section class="turn" id="turn-16">
+<h2>Turn 16</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">So if \iota_Z is only generically an immersion this formula fails?</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Not necessarily. The immersion hypothesis guarantees the cleanest statement, but the top-Chern formula can survive under a generically immersive map.
+
+Let
+\[
+\iota_Z:Z^r\to A^n,\qquad V=T_0A,
+\]
+and suppose only that \(d\iota_Z\) has rank \(r\) generically. We still have
+\[
+V^\vee\otimes\mathcal O_Z\longrightarrow \Omega_Z^1,
+\]
+so every \(\alpha\in V^\vee\) gives a holomorphic \(1\)-form
+\[
+\omega_\alpha=\iota_Z^*\alpha\in H^0(Z,\Omega_Z^1).
+\]
+
+Now the basic intersection-theoretic fact is:
+\[
+\boxed{
+\text{If a general }\omega_\alpha\text{ has a zero scheme of pure dimension }0,
+\quad
+\operatorname{length} Z(\omega_\alpha)
+=
+\int_Z c_r(\Omega_Z^1).
+}
+\]
+
+This does **not** require \(\iota_Z\) to be immersive everywhere. It is simply the fact that the zero locus of a regular section of the rank-\(r\) bundle \(\Omega_Z^1\) represents its top Chern class.
+
+So the issue is not “immersion versus generically immersion” per se. The real issue is whether the family of pulled-back invariant forms has the expected zero locus.
+
+What fails when \(\iota_Z\) is not an immersion is the very clean conormal-bundle interpretation. If \(\iota_Z\) is immersive,
+\[
+0\to N^*_{Z/A}
+\to V^\vee\otimes\mathcal O_Z
+\to\Omega_Z^1\to0
+\]
+is an exact sequence of vector bundles, and the incidence variety is simply
+\[
+\mathbf P(N^*_{Z/A})\to\mathbf P(V^\vee).
+\]
+
+If \(d\iota_Z\) drops rank, then
+\[
+\ker\bigl(V^\vee\otimes\mathcal O_Z\to\Omega_Z^1\bigr)
+\]
+is generally not locally free. Its fiber dimension jumps on the ramification/degeneracy locus. Thus there is no honest vector bundle \(N^*_{Z/A}\) whose projectivization gives the whole incidence variety.
+
+Instead one should define directly
+\[
+\mathcal I_Z
+=
+\{(z,[\alpha]):(\iota_Z^*\alpha)(z)=0\}
+\subset Z\times\mathbf P(V^\vee).
+\]
+
+Then
+\[
+q:\mathcal I_Z\to\mathbf P(V^\vee)
+\]
+is still the object of interest. If its general fiber is finite of the expected length, then
+\[
+\boxed{\deg q=\int_Zc_r(\Omega_Z^1).}
+\]
+
+So the numerical formula remains.
+
+The possible problem is that rank-drop strata can create **excess components** of \(\mathcal I_Z\). For example, if there is a subvariety \(R\subset Z\) such that the induced forms vanish too much along \(R\), then a general \(\omega_\alpha\) may have a positive-dimensional zero locus. In that case
+\[
+q:\mathcal I_Z\to\mathbf P(V^\vee)
+\]
+is not generically finite, and one cannot interpret
+\[
+\int_Zc_r(\Omega_Z^1)
+\]
+simply as its degree. One needs localized/excess Chern-class machinery.
+
+There is a particularly useful sufficient condition. Let
+\[
+W=\operatorname{Im}
+\bigl(V^\vee\to H^0(Z,\Omega_Z^1)\bigr).
+\]
+If the evaluation map
+\[
+W\otimes\mathcal O_Z\to\Omega_Z^1
+\]
+has enough sections that a general \(\omega\in W\) has isolated zeros, then the top-Chern formula works, whether or not \(d\iota_Z\) drops rank somewhere.
+
+So I would separate the two statements in your talk:
+\[
+\boxed{
+\begin{array}{ll}
+\iota_Z\text{ immersion}
+&amp;
+\Rightarrow
+\mathcal I_Z=\mathbf P(N^*_{Z/A})
+\text{ and }
+\deg q=(-1)^rc_r(Z);
+\\[2mm]
+\iota_Z\text{ generically immersive}
+&amp;
+\Rightarrow
+\deg q=(-1)^rc_r(Z)
+\text{ provided a general induced }1\text{-form has isolated zeros}.
+\end{array}}
+\]
+
+And this is an interesting contrast with the **tangent Gauss/Plücker formula**. For a generically immersive map, the latter is more delicate: the rational Gauss map can have a base/ramification divisor, so one cannot automatically write
+\[
+K_Z^r=\deg(\gamma_Z)\deg\gamma_Z(Z).
+\]
+The moving line bundle of the Gauss map may be \(K_Z\) minus a fixed degeneracy contribution.
+
+For the conormal zero-count, however, \(c_r(\Omega_Z^1)\) remains the natural class; the question is whether it is realized by a finite zero scheme of a general induced \(1\)-form.</div>
+</div>
+</section>
+<section class="turn" id="turn-17">
+<h2>Turn 17</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">The problem is, when \iota_Z is generically immersive, I'm afraid that the image is not closed, and the closure will add some extra number</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Yes. Your concern is exactly the right one, but there is an important distinction:
+
+&gt; **Taking the closure of the main conormal variety does not itself change the generic degree.**
+&gt; The possible extra contribution comes from **additional components of the full incidence variety supported over the rank-drop locus**.
+
+Let
+\[
+\iota_Z:Z^r\to A^n,\qquad V=T_0A,
+\]
+be generically immersive, and let
+\[
+U=\{z\in Z:\operatorname{rk}d\iota_z=r\},\qquad R=Z\setminus U.
+\]
+
+On \(U\) there is an honest conormal bundle
+\[
+N^*_{U/A}
+=
+\ker\!\left(V^\vee\otimes\mathcal O_U\to\Omega_U^1\right),
+\]
+so define
+\[
+\mathcal C_U:=\mathbf P(N^*_{U/A})
+\subset U\times\mathbf P(V^\vee).
+\]
+
+Its closure
+\[
+\mathcal C:=\overline{\mathcal C_U}
+\subset Z\times\mathbf P(V^\vee)
+\]
+is the natural **main conormal variety**.
+
+Now
+\[
+\dim\mathcal C=n-1=\dim\mathbf P(V^\vee).
+\]
+If
+\[
+q:\mathcal C\to\mathbf P(V^\vee)
+\]
+is dominant, it has a well-defined generic degree.
+
+Crucially,
+\[
+\mathcal C\setminus\mathcal C_U
+\]
+is a proper closed subset of the irreducible \((n-1)\)-dimensional variety \(\mathcal C\), hence has dimension at most \(n-2\). Therefore its image cannot dominate \(\mathbf P(V^\vee)\).
+
+So:
+\[
+\boxed{\text{The boundary added when closing }\mathcal C_U
+\text{ contributes nothing to a general fiber.}}
+\]
+
+Thus closure itself does **not** add an “extra number” to the generic degree.
+
+The actual issue is the full incidence variety
+\[
+\mathcal I
+=
+\{(z,[\alpha]) :
+(\iota_Z^*\alpha)(z)=0\}
+\subset Z\times\mathbf P(V^\vee).
+\]
+
+Over \(U\),
+\[
+\mathcal I|_U=\mathcal C_U,
+\]
+but over \(R\) the kernel of
+\[
+V^\vee\to T_z^*Z
+\]
+gets larger. Hence \(\mathcal I\) may have **additional irreducible components**
+\[
+\mathcal E_j\subset \mathcal I,\qquad
+\mathcal E_j\subset R\times\mathbf P(V^\vee),
+\]
+which are not contained in the closure \(\mathcal C\).
+
+Some of these \(\mathcal E_j\) can have dimension \(n-1\) and dominate \(\mathbf P(V^\vee)\). Those really do contribute extra points to a general zero scheme.
+
+Schematically:
+\[
+\boxed{
+\mathcal I
+=
+\mathcal C
+\ \cup\
+\text{extra components over }R.
+}
+\]
+
+And this is why
+\[
+\int_Zc_r(\Omega_Z^1)
+\]
+need not equal the degree of the **main conormal map**
+\[
+\mathcal C\to\mathbf P(V^\vee).
+\]
+
+Rather, in a clean situation one has
+\[
+\boxed{
+\int_Zc_r(\Omega_Z^1)
+=
+\deg(\mathcal C/\mathbf P(V^\vee))
++
+\text{contributions from the rank-drop locus}.
+}
+\]
+
+In full generality, those latter terms are naturally expressed by localized/excess Chern classes.
+
+### A very transparent curve example
+
+Take
+\[
+\iota:C\to A
+\]
+with \(A\) an abelian surface, and suppose \(\iota\) is generically immersive but
+\[
+d\iota_p=0
+\]
+at finitely many points \(p\).
+
+Away from those points, the conormal space is one-dimensional, so
+\[
+\mathcal C_U\to\mathbf P(V^\vee)\simeq\mathbf P^1
+\]
+is the ordinary moving conormal map.
+
+But at a ramification point \(p\),
+\[
+d\iota_p=0,
+\]
+so **every**
+\[
+\alpha\in V^\vee
+\]
+vanishes on \(d\iota_p(T_pC)\). Hence
+\[
+\{p\}\times\mathbf P(V^\vee)
+\subset\mathcal I.
+\]
+
+This is an entire extra component dominating \(\mathbf P(V^\vee)\). Thus \(p\) occurs as a zero of \(\iota^*\alpha\) for every \(\alpha\).
+
+If \(R\) is the common zero divisor of the induced \(1\)-forms, then
+\[
+V^\vee\otimes\mathcal O_C\to K_C
+\]
+has image
+\[
+K_C(-R).
+\]
+
+Therefore
+\[
+\deg K_C
+=
+\deg K_C(-R)+\deg R.
+\]
+
+Geometrically,
+\[
+\boxed{
+2g-2
+=
+\deg(\text{main conormal map})
++
+\deg R.
+}
+\]
+
+That is exactly the phenomenon you are anticipating.
+
+### A useful criterion for there to be no correction
+
+Let
+\[
+R_k=\{z\in Z:\operatorname{rk}d\iota_z\le k\},
+\qquad k&lt;r.
+\]
+
+Over a point of rank \(k\), the projective annihilator has dimension
+\[
+n-k-1.
+\]
+Hence the incidence lying over \(R_k\) has dimension at most
+\[
+\dim R_k+n-k-1.
+\]
+
+For it to contain an extra component dominating
+\[
+\mathbf P(V^\vee),\qquad \dim=n-1,
+\]
+one needs at least
+\[
+\dim R_k\ge k.
+\]
+
+Therefore a convenient sufficient condition excluding extra generic contributions is
+\[
+\boxed{
+\dim R_k&lt;k
+\quad\text{for every }k&lt;r,
+}
+\]
+or equivalently
+\[
+\operatorname{codim}_Z R_k&gt;r-k.
+\]
+
+Under such a condition, no incidence component supported on the rank-drop locus can dominate \(\mathbf P(V^\vee)\), and then
+\[
+\boxed{
+\deg(\mathcal C\to\mathbf P(V^\vee))
+=
+\int_Zc_r(\Omega_Z^1).
+}
+\]
+
+So I would revise our general theory this way:
+\[
+\begin{array}{c|c}
+\iota_Z\text{ immersive} &amp;
+\deg(\text{conormal Gauss map})=(-1)^rc_r(Z)
+\\[1mm]
+\iota_Z\text{ generically immersive} &amp;
+(-1)^rc_r(Z)
+=
+\deg(\text{main conormal})
++\text{ramification/degeneracy contributions}.
+\end{array}
+\]
+
+This distinction is mathematically significant. For a singular image, the **closure of the genuine conormal variety** is more naturally tied to polar degrees/Chern–Mather theory, whereas the ordinary \(c_r(\Omega_Z^1)\) counts the zeros on the smooth source, including contributions created by the degeneracy of \(d\iota_Z\).
+
+So your instinct was right: once \(\iota_Z\) ceases to be an immersion, **ordinary Chern classes and the degree of the closed conormal variety separate**, and the difference is precisely where the rank-drop geometry enters.</div>
+</div>
+</section>
+<section class="turn" id="turn-18">
+<h2>Turn 18</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">I would like to get an exact formula for tangent Gauss/Plücker formula and the degree of conormal Gauss map formula for the generically immersive case, and explain me the excess terms in detail to me.</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Yes. There is a clean exact package for the generically immersive case. The right device is the **Gauss graph/Nash transform**; then the two excess corrections become parallel but not identical.
+
+Let
+\[
+\iota=\iota_Z:Z^r\longrightarrow A^n,\qquad V=T_0A,
+\]
+with \(Z\) smooth projective and \(d\iota\) of rank \(r\) at the general point. Write
+\[
+\varphi:V^\vee\otimes\mathcal O_Z\longrightarrow \Omega_Z^1
+\]
+for the dual differential, and let
+\[
+B=D_{r-1}(\varphi)
+\]
+be its degeneracy scheme, defined scheme-theoretically by the maximal minors.
+
+The determinant map
+\[
+\Lambda^rV^\vee\otimes\mathcal O_Z\longrightarrow K_Z
+\]
+has image
+\[
+\mathcal I_B\otimes K_Z.
+\]
+
+So \(B\) is simultaneously the rank-drop scheme and the base scheme of the Plücker linear system.
+
+## 1. Resolve the Gauss map once and for all
+
+Let
+\[
+\nu:\Gamma\longrightarrow Z
+\]
+be the closure of the graph of
+\[
+\gamma_Z:Z\dashrightarrow G:=\operatorname{Gr}(r,V).
+\]
+Under the Plücker embedding this is the blow-up of the base ideal \(\mathcal I_B\). Write
+\[
+\bar\gamma:\Gamma\longrightarrow G
+\]
+<span class="source-anchor reply-source" id="reply-src-24">for the resolved Gauss map and \(E\) for the exceptional Cartier divisor, normalized by
+\[
+\mathcal I_B\mathcal O_\Gamma=\mathcal O_\Gamma(-E).
+\]</span><a class="cited-by" href="#turn-24" title="Jump to the question replying to this passage">↩ replied to in Turn 24</a>
+
+Let
+\[
+0\to\mathcal U_G\to V\otimes\mathcal O_G\to\mathcal Q_G\to0
+\]
+be the tautological sequence, and set
+\[
+\mathcal U:=\bar\gamma^*\mathcal U_G,\qquad
+\mathcal Q:=\bar\gamma^*\mathcal Q_G.
+\]
+
+The crucial bundle is
+\[
+\boxed{\mathcal U^\vee.}
+\]
+
+Over the immersive locus it is just \(\Omega_Z^1\); over \(E\) it is the bundle of **limiting cotangent spaces**.
+
+There is a natural map
+\[
+\boxed{
+\mathcal U^\vee\longrightarrow \nu^*\Omega_Z^1
+}
+\]
+which is an isomorphism away from \(E\).
+
+Moreover,
+\[
+\boxed{
+\det\mathcal U^\vee
+\simeq
+\nu^*K_Z\otimes\mathcal O_\Gamma(-E).
+}
+\]
+
+Thus, if
+\[
+k=c_1(K_Z),\qquad e=[E],
+\]
+then
+\[
+c_1(\mathcal U^\vee)=\nu^*k-e.
+\]
+
+This one formula gives the tangent-Plücker correction.
+
+---
+
+# 2. Exact tangent Gauss/Plücker formula
+
+Let
+\[
+Y=\overline{\gamma_Z(Z)}\subset G
+\]
+and suppose \(\dim Y=r\). Let
+\[
+d_{\rm tan}
+=
+\deg(\Gamma\to Y)
+=
+\deg(\gamma_Z:Z\dashrightarrow Y).
+\]
+
+Since
+\[
+\det\mathcal U^\vee=\bar\gamma^*\mathcal O_G(1),
+\]
+projection formula gives exactly
+\[
+\boxed{
+d_{\rm tan}\,\deg_{\rm Pl}(Y)
+=
+\int_\Gamma c_1(\mathcal U^\vee)^r.
+}
+\]
+
+Hence
+\[
+\boxed{
+d_{\rm tan}\,\deg_{\rm Pl}(Y)
+=
+\int_\Gamma(\nu^*K_Z-E)^r.
+}
+\tag{T}
+\]
+
+This is the correct replacement for
+\[
+d_{\rm tan}\deg Y=K_Z^r
+\]
+when \(\iota\) is only generically immersive.
+
+So the tangent excess is
+\[
+\boxed{
+\operatorname{Exc}_{\rm tan}
+=
+K_Z^r-
+d_{\rm tan}\deg_{\rm Pl}(Y)
+=
+\int_\Gamma
+\left[
+(\nu^*K_Z)^r-(\nu^*K_Z-E)^r
+\right].
+}
+\]
+
+---
+
+## 3. Tangent excess entirely on \(Z\): Segre formula
+
+There is a useful exact formula without mentioning \(\Gamma\).
+
+Let
+\[
+i:B\hookrightarrow Z
+\]
+and write the push-forward of the Segre class as
+\[
+i_*s(B,Z)=S_1+S_2+\cdots+S_r,
+\qquad S_j\in A^j(Z).
+\]
+
+The blow-up formula is
+\[
+i_*s(B,Z)
+=
+\nu_*\left(\frac{E}{1+E}\right)
+=
+\nu_*(E-E^2+E^3-\cdots).
+\]
+
+Consequently,
+\[
+\nu_*(E^j)=(-1)^{j-1}S_j.
+\]
+
+Expanding (T) gives the exact formula
+\[
+\boxed{
+d_{\rm tan}\deg_{\rm Pl}(Y)
+=
+K_Z^r
+-
+\sum_{j=1}^r
+\binom rj
+\int_Z
+K_Z^{\,r-j}\cdot S_j.
+}
+\tag{T-Segre}
+\]
+
+Thus
+\[
+\boxed{
+\operatorname{Exc}_{\rm tan}
+=
+\sum_{j=1}^r
+\binom rj
+\int_ZK_Z^{\,r-j}S_j.
+}
+\]
+
+The Segre class is important: the correction is not determined merely by the support of the ramification locus. It remembers the scheme structure of the maximal-minor ideal, embedded components, multiplicities, and normal cone.
+
+For example, if \(B=D\) is a Cartier divisor,
+\[
+i_*s(D,Z)=D-D^2+D^3-\cdots,
+\]
+and the formula simply becomes
+\[
+d_{\rm tan}\deg Y=(K_Z-D)^r.
+\]
+
+If \(r=2\) and the base scheme is zero-dimensional of length \(\ell\), with no divisorial part, then
+\[
+\boxed{
+d_{\rm tan}\deg Y=K_Z^2-\ell.
+}
+\]
+
+So even isolated rank-drop points can lower the Plücker degree.
+
+---
+
+# 4. Exact formula for the **main conormal Gauss map**
+
+Now consider the conormal side.
+
+On \(\Gamma\),
+\[
+0\to\mathcal Q^\vee
+\to V^\vee\otimes\mathcal O_\Gamma
+\to\mathcal U^\vee
+\to0.
+\]
+
+Therefore
+\[
+\mathbf P_\Gamma(\mathcal Q^\vee)
+\longrightarrow
+\mathbf P(V^\vee)
+\]
+is the resolved **main conormal Gauss map**.
+
+It is the closure of the ordinary conormal incidence over the immersive locus.
+
+Suppose this map is dominant, hence generically finite; denote its degree by
+\[
+d_{\rm con}.
+\]
+
+Then, writing \(\xi=c_1(\mathcal O_{\mathbf P(\mathcal Q^\vee)}(1))\),
+\[
+d_{\rm con}
+=
+\int_{\mathbf P(\mathcal Q^\vee)}\xi^{n-1}.
+\]
+
+The projective bundle formula gives
+\[
+d_{\rm con}
+=
+\int_\Gamma s_r(\mathcal Q^\vee).
+\]
+
+But
+\[
+c(\mathcal Q^\vee)c(\mathcal U^\vee)=1,
+\]
+hence
+\[
+s(\mathcal Q^\vee)=c(\mathcal U^\vee).
+\]
+
+Therefore the exact conormal formula is
+\[
+\boxed{
+d_{\rm con}
+=
+\int_\Gamma c_r(\mathcal U^\vee).
+}
+\tag{C}
+\]
+
+Compare this with the tangent formula:
+\[
+\boxed{
+\begin{aligned}
+d_{\rm tan}\deg_{\rm Pl}Y
+&amp;=\int_\Gamma c_1(\mathcal U^\vee)^r,\\[1mm]
+d_{\rm con}
+&amp;=\int_\Gamma c_r(\mathcal U^\vee).
+\end{aligned}}
+\]
+
+This is, I think, the most conceptual formulation for your talk.
+
+When \(\iota\) is immersive everywhere,
+\[
+\Gamma=Z,\qquad \mathcal U^\vee=\Omega_Z^1,
+\]
+and we recover
+\[
+d_{\rm tan}\deg Y=K_Z^r,
+\qquad
+d_{\rm con}=\int_Zc_r(\Omega_Z^1).
+\]
+
+---
+
+# 5. Where exactly does the conormal excess come from?
+
+Define the virtual rank-zero defect class
+\[
+\boxed{
+\mathcal D
+:=
+[\nu^*\Omega_Z^1]-[\mathcal U^\vee]
+\in K^0(\Gamma).
+}
+\]
+
+It is supported, in the \(K\)-theoretic sense, on the exceptional/rank-drop locus: away from \(E\),
+\[
+\mathcal U^\vee\simeq\nu^*\Omega_Z^1.
+\]
+
+Its first Chern class is
+\[
+\boxed{c_1(\mathcal D)=E.}
+\]
+
+Indeed,
+\[
+\det\nu^*\Omega_Z^1
+=
+\nu^*K_Z,
+\]
+while
+\[
+\det\mathcal U^\vee
+=
+\nu^*K_Z(-E).
+\]
+
+Now
+\[
+c(\nu^*\Omega_Z^1)
+=
+c(\mathcal U^\vee)c(\mathcal D).
+\]
+
+Taking the degree-\(r\) component gives
+\[
+\nu^*c_r(\Omega_Z^1)
+=
+\sum_{j=0}^r
+c_{r-j}(\mathcal U^\vee)c_j(\mathcal D).
+\]
+
+Integrating,
+\[
+\boxed{
+\int_Zc_r(\Omega_Z^1)
+=
+d_{\rm con}
++
+\sum_{j=1}^r
+\int_\Gamma
+c_{r-j}(\mathcal U^\vee)c_j(\mathcal D).
+}
+\tag{C-excess}
+\]
+
+Therefore
+\[
+\boxed{
+\operatorname{Exc}_{\rm con}
+=
+\int_Zc_r(\Omega_Z^1)-d_{\rm con}
+=
+\sum_{j=1}^r
+\int_\Gamma
+c_{r-j}(\mathcal U^\vee)c_j(\mathcal D).
+}
+\]
+
+This is the exact analogue of the tangent correction.
+
+But notice a fundamental difference:
+
+&gt; **The tangent correction sees only the determinant defect \(c_1(\mathcal D)=E\).  
+&gt; The conormal correction sees the entire defect class
+&gt; \(c_1(\mathcal D),\ldots,c_r(\mathcal D)\).**
+
+That is why the conormal excess cannot in general be recovered simply from the divisor \(E\), or even from the top-minor base ideal alone.
+
+---
+
+# 6. The full incidence scheme explains the excess geometrically
+
+There is another description which makes the “extra points” you were worried about completely explicit.
+
+Set
+\[
+X:=Z\times\mathbf P(V^\vee),
+\]
+with projections \(p,q\), and put
+\[
+\mathscr E
+=
+p^*\Omega_Z^1\otimes q^*\mathcal O_{\mathbf P(V^\vee)}(1).
+\]
+
+The differential gives a universal section
+\[
+s\in H^0(X,\mathscr E),
+\]
+whose zero scheme is
+\[
+I
+=
+\left\{
+(z,[\alpha]):
+\iota^*\alpha(z)=0
+\right\}.
+\]
+
+Its expected dimension is
+\[
+\dim X-r=(r+n-1)-r=n-1.
+\]
+
+Over the immersive locus \(U\), \(I\) is exactly the usual conormal variety. Let
+\[
+C\subset I
+\]
+be its closure, the **main conormal component**.
+
+The section \(s\) has a localized top Chern class
+\[
+z(s)\in A_{n-1}(I)
+\]
+whose pushforward to \(X\) is
+\[
+c_r(\mathscr E)\cap[X].
+\]
+
+Since \(s\) is regular over \(U\), the main component occurs with multiplicity \(1\). Thus we can write
+\[
+\boxed{
+z(s)=[C]+\varepsilon,
+}
+\]
+where
+\[
+\varepsilon
+\]
+is supported over the rank-drop locus \(B\).
+
+Push this to \(\mathbf P(V^\vee)\). Since
+\[
+q_*\bigl(c_r(\mathscr E)\cap[X]\bigr)
+=
+\left(\int_Zc_r(\Omega_Z^1)\right)
+[\mathbf P(V^\vee)],
+\]
+we obtain
+\[
+\boxed{
+\int_Zc_r(\Omega_Z^1)
+=
+d_{\rm con}
++
+\deg q_*\varepsilon.
+}
+\tag{C-localized}
+\]
+
+Thus
+\[
+\boxed{
+\operatorname{Exc}_{\rm con}
+=
+\deg q_*\varepsilon.
+}
+\]
+
+This is precisely the “extra number” added by components living over the non-immersive locus.
+
+---
+
+# 7. A completely explicit Segre expression for the conormal excess
+
+One can write the whole localized class as
+\[
+\boxed{
+z(s)
+=
+\left\{
+c(\mathscr E|_I)\cap s(I,X)
+\right\}_{n-1}.
+}
+\]
+
+Therefore an exact formula is
+\[
+\boxed{
+\operatorname{Exc}_{\rm con}
+=
+\deg q_*
+\left(
+\left\{
+c(\mathscr E|_I)\cap s(I,X)
+\right\}_{n-1}
+-[C]
+\right).
+}
+\tag{C-Segre}
+\]
+
+This formula includes automatically:
+
+- extra irreducible components;
+- embedded components;
+- nonreduced multiplicities;
+- excess-dimensional components;
+- intersections of those components with the main conormal component.
+
+That is why the Segre/localized formulation is the safest exact one.
+
+---
+
+# 8. What happens along a rank-\(k\) stratum?
+
+This makes the geometry very concrete.
+
+Let
+\[
+R\subset Z
+\]
+be a smooth locally closed stratum on which
+\[
+\operatorname{rk}d\iota=k&lt;r,
+\]
+and write
+\[
+s=\dim R.
+\]
+
+At \(z\in R\), the annihilator
+\[
+\ker\bigl(V^\vee\to T_z^*Z\bigr)
+\]
+has dimension \(n-k\). Hence the incidence over \(R\) has dimension
+\[
+s+(n-k-1)
+=
+(n-1)+(s-k).
+\]
+
+So the **excess dimension** is exactly
+\[
+\boxed{e_R=s-k.}
+\]
+
+This gives three cases.
+
+If
+\[
+s&lt;k,
+\]
+the incidence over \(R\) has dimension \(&lt;n-1\). It cannot contribute to the degree of the conormal map.
+
+If
+\[
+s=k,
+\]
+it has exactly dimension \(n-1\). It can be an actual additional component of the finite correspondence.
+
+If
+\[
+s&gt;k,
+\]
+it has excess dimension \(e_R=s-k\). Intersection theory must cut it down by \(e_R\) dimensions before it contributes to the generic degree.
+
+This explains the criterion we discussed earlier:
+\[
+\boxed{
+\dim D_k&lt;k\quad\text{for all }k&lt;r
+}
+\]
+implies there are no conormal excess contributions dominating the parameter space.
+
+---
+
+## 9. The clean excess-bundle formula
+
+Suppose, for simplicity, that \(R\) is smooth, the rank is constantly \(k\) there, and
+\[
+W_R
+=
+\mathbf P\!\left(
+\ker(V^\vee\otimes\mathcal O_R\to\Omega_Z^1|_R)
+\right)
+\subset I
+\]
+is a clean component of the zero scheme.
+
+Then
+\[
+\dim W_R=n-1+e_R,
+\qquad e_R=s-k.
+\]
+
+The differential of the universal section induces
+\[
+N_{W_R/X}\longrightarrow \mathscr E|_{W_R}.
+\]
+
+Under the clean-intersection assumption this is injective, and the quotient
+\[
+\mathscr F_R
+=
+\mathscr E|_{W_R}/N_{W_R/X}
+\]
+has rank
+\[
+e_R=s-k.
+\]
+
+The excess contribution is then
+\[
+\boxed{
+\varepsilon_R
+=
+c_{s-k}(\mathscr F_R)\cap[W_R].
+}
+\]
+
+Its numerical contribution to the conormal degree is
+\[
+\boxed{
+e_R^{\rm num}
+=
+\deg q_*
+\left(
+c_{s-k}(\mathscr F_R)\cap[W_R]
+\right).
+}
+\]
+
+This is the classical excess-intersection mechanism: an excess-dimensional zero locus is cut down by the top Chern class of its excess bundle. The more general Segre-class formula above is what remains valid when smoothness or cleanness fails.
+
+---
+
+# 10. A very instructive distinction
+
+Suppose \(r=2\).
+
+If \(d\iota\) drops from rank \(2\) to rank \(1\) at an **isolated point**, then
+\[
+k=1,\qquad s=0&lt;k.
+\]
+
+So that point:
+
+- **is a base point of the Plücker linear system**, hence can lower
+  \[
+  d_{\rm tan}\deg Y;
+  \]
+- but it **cannot contribute to the conormal degree**, because its incidence fiber has dimension only \(n-2&lt;n-1\).
+
+Thus tangent and conormal excess are genuinely different.
+
+By contrast, if \(d\iota=0\) at an isolated point of a surface,
+\[
+k=0,\qquad s=0=k.
+\]
+Then
+\[
+\{z\}\times\mathbf P(V^\vee)
+\]
+has dimension \(n-1\), so it is an actual extra conormal component and contributes to
+\[
+\int_Zc_2(\Omega_Z^1)-d_{\rm con}.
+\]
+
+This is probably the clearest geometric explanation of why the two corrections differ.
+
+---
+
+# 11. Curves: everything collapses to the ramification divisor
+
+For \(r=1\), let \(R\) be the zero divisor of
+\[
+d\iota:T_Z\to V\otimes\mathcal O_Z.
+\]
+
+Then
+\[
+\mathcal U^\vee\simeq K_Z(-R).
+\]
+
+Hence both formulas coincide:
+\[
+\boxed{
+d_{\rm tan}\deg Y
+=
+\deg K_Z-\deg R,
+}
+\]
+and
+\[
+\boxed{
+d_{\rm con}
+=
+\deg K_Z-\deg R.
+}
+\]
+
+Meanwhile
+\[
+\int_Zc_1(\Omega_Z^1)=\deg K_Z,
+\]
+so the conormal excess is exactly
+\[
+\boxed{\deg R.}
+\]
+
+At a ramification point \(p\), every ambient covector annihilates
+\[
+d\iota_p(T_pZ)=0,
+\]
+so
+\[
+\{p\}\times\mathbf P(V^\vee)
+\]
+is an extra incidence component. Its multiplicity is the vanishing order of the differential.
+
+That is the simplest model for all the higher-dimensional excess terms.
+
+---
+
+## The two master formulas
+
+For a smooth \(Z^r\) and a **generically immersive**
+\[
+\iota_Z:Z\to A,
+\]
+I would put these two boxed statements in the talk.
+
+With \(\Gamma\) the Gauss graph and \(\mathcal U\) its limiting tangent bundle,
+\[
+\boxed{
+d_{\rm tan}\deg_{\rm Pl}\gamma_Z(Z)
+=
+\int_\Gamma c_1(\mathcal U^\vee)^r
+=
+\int_\Gamma(\nu^*K_Z-E)^r.
+}
+\]
+and
+\[
+\boxed{
+d_{\rm con}
+=
+\int_\Gamma c_r(\mathcal U^\vee).
+}
+\]
+
+The intrinsic Chern numbers are
+\[
+\boxed{
+K_Z^r
+=
+d_{\rm tan}\deg_{\rm Pl}Y
++
+\operatorname{Exc}_{\rm tan},
+}
+\]
+\[
+\boxed{
+\int_Zc_r(\Omega_Z^1)
+=
+d_{\rm con}
++
+\operatorname{Exc}_{\rm con}.
+}
+\]
+
+Here
+\[
+\operatorname{Exc}_{\rm tan}
+\]
+is governed by the **Segre class of the maximal-minor/base scheme**, while
+\[
+\operatorname{Exc}_{\rm con}
+\]
+is governed by the **localized top Chern class of the full incidence zero scheme**, equivalently by the full defect
+\[
+[\nu^*\Omega_Z^1]-[\mathcal U^\vee].
+\]
+
+That distinction is, I think, important enough to become part of your general theory: **\(c_1^r\) measures the determinant defect of the differential, whereas \(c_r\) is sensitive to the complete rank-drop geometry.**</div>
+</div>
+</section>
+<section class="turn" id="turn-19">
+<h2>Turn 19</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">So I think I also need to check why the Albanese map for Fano/Schoen surface are embedding</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Yes. And I would separate **immersion** from **embedding**, because the two are proved for different reasons.
+
+For your Chern/Gauss formulas, immersion is what matters. Full embedding is only needed when you want to literally regard \(S\subset \operatorname{Alb}(S)\).
+
+For the **Fano surface** \(F=F(X)\) of a smooth cubic threefold \(X\), fix a line \(\ell_0\) and consider the Abel–Jacobi map
+\[
+u:F\longrightarrow J(X),\qquad
+[\ell]\longmapsto AJ(\ell-\ell_0).
+\]
+The classical results are:
+\[
+u:F\hookrightarrow J(X)
+\quad\text{is a closed embedding},
+\]
+and the induced homomorphism
+\[
+\Phi:\operatorname{Alb}(F)\longrightarrow J(X)
+\]
+is an isomorphism.
+
+By the universal property of the Albanese,
+\[
+u=\Phi\circ a_F,
+\]
+where
+\[
+a_F:F\to\operatorname{Alb}(F)
+\]
+is the Albanese map. Since \(\Phi\) is an isomorphism and \(u\) is an embedding,
+\[
+\boxed{a_F\text{ is an embedding}.}
+\]
+
+So this is the clean logical proof. The difficult geometric input is really the Abel–Jacobi embedding theorem. You do not need to reprove it in your talk unless you want to enter cubic-threefold geometry.
+
+For the **Schoen surface**, the reason is fundamentally different: embeddedness is built into Schoen's deformation construction.
+
+Start with a genus-\(2\) curve \(C\), \(J=J(C)\). The reducible central surface is
+\[
+V=(C\times C)\cup_C J,
+\]
+and it is naturally an embedded surface in
+\[
+A_0=J\times J:
+\]
+the component \(C\times C\) is embedded using the Abel–Jacobi embedding on each factor, while the \(J\)-component is the diagonal
+\[
+\Delta_J\subset J\times J.
+\]
+Their intersection is the diagonal copy of \(C\).
+
+Schoen then deforms this **embedded surface inside a deformation of the ambient abelian fourfold**. There is a flat family
+\[
+\mathcal S\hookrightarrow\mathcal A\to\Delta
+\]
+such that
+\[
+A_0=J(C)\times J(C),\qquad
+S_0=\Delta_J\cup(C\times C),
+\]
+and, for \(t\neq0\),
+\[
+\boxed{S_t\hookrightarrow A_t
+\text{ is the Albanese embedding}.}
+\]
+
+So I would not try to derive Schoen embeddedness from the canonical map. It is a theorem coming from the **embedded deformation**
+\[
+V\subset J\times J
+\rightsquigarrow
+S\subset A.
+\]
+
+There is, however, a very nice independent way to check the **immersion** property, and this fits your talk extremely well.
+
+For either surface let
+\[
+a_S:S\to\operatorname{Alb}(S),
+\qquad
+V=T_0\operatorname{Alb}(S).
+\]
+At \(p\in S\), if
+\[
+\operatorname{rk}(da_{S,p})&lt;2,
+\]
+then the evaluation
+\[
+V^\vee\to\Omega^1_{S,p}
+\]
+has rank at most \(1\). Therefore
+\[
+\Lambda^2V^\vee\to K_{S,p}
+\]
+is zero. Consequently every section in
+\[
+\operatorname{Im}
+\left(
+\lambda_S:\Lambda^2V^\vee\to H^0(K_S)
+\right)
+\]
+vanishes at \(p\).
+
+Now for Fano,
+\[
+\lambda_F:\Lambda^2V^\vee\xrightarrow{\sim}H^0(K_F),
+\]
+and for a general Schoen surface,
+\[
+\lambda_S:\Lambda^2V^\vee\twoheadrightarrow H^0(K_S).
+\]
+In both cases the canonical system is base-point-free; for a general Schoen surface the canonical map is explicitly a finite morphism of degree \(2\).
+
+Hence a rank-drop point would be a base point of \(|K_S|\), impossible. Thus
+\[
+\boxed{da_S\text{ has rank }2\text{ everywhere}.}
+\]
+
+This gives you a very elegant uniform statement:
+\[
+\lambda_S\text{ surjective}
++
+|K_S|\text{ base-point-free}
+\quad\Longrightarrow\quad
+a_S\text{ is an immersion}.
+\]
+
+But note carefully:
+\[
+\boxed{\text{this proves immersion, not global injectivity}.}
+\]
+
+For global injectivity, your inputs are:
+\[
+\begin{array}{c|c}
+\text{Fano} &amp;
+\text{Abel--Jacobi embedding }F\hookrightarrow J(X)
+\text{ and }\operatorname{Alb}(F)\simeq J(X),\\[1mm]
+\text{Schoen} &amp;
+\text{Schoen's embedded deformation }
+V\subset J\times J\rightsquigarrow S\subset\operatorname{Alb}(S).
+\end{array}
+\]
+
+That is probably the cleanest way to present it in the talk: prove the **immersion criterion** as part of your general theory, and cite the stronger embedding theorem separately for Fano and Schoen.</div>
+</div>
+</section>
+<section class="turn" id="turn-20">
+<h2>Turn 20</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">Why is that? I don't know if B has the expected dimension</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">No expected-dimension hypothesis on \(B\) is needed for that identity. It is purely the scheme-theoretic definition of the degeneracy locus by maximal minors.
+
+Let
+\[
+\varphi:V^\vee\otimes\mathcal O_Z\longrightarrow \Omega_Z^1,
+\qquad \dim Z=r,\ \dim V=n,
+\]
+and assume \(\varphi\) has rank \(r\) generically. Define
+\[
+B:=D_{r-1}(\varphi)
+\]
+scheme-theoretically by the ideal of maximal minors
+\[
+\mathcal I_B:=I_r(\varphi).
+\]
+
+Now work locally on an open set where \(\Omega_Z^1\) is trivialized:
+\[
+\Omega_Z^1\simeq \mathcal O_Z^{\oplus r}.
+\]
+Choose a basis \(e_1,\ldots,e_n\) of \(V^\vee\). Then \(\varphi\) is represented by an \(r\times n\) matrix
+\[
+M=(a_{ij}).
+\]
+
+The determinant map
+\[
+\Lambda^r\varphi:
+\Lambda^rV^\vee\otimes\mathcal O_Z
+\longrightarrow
+\Lambda^r\Omega_Z^1=K_Z
+\]
+does the following. For
+\[
+e_{i_1}\wedge\cdots\wedge e_{i_r},
+\]
+its image is
+\[
+\det M_{i_1,\ldots,i_r}\;
+(\omega_1\wedge\cdots\wedge\omega_r),
+\]
+where \(M_{i_1,\ldots,i_r}\) is the corresponding \(r\times r\) minor.
+
+Therefore the image sheaf is generated by **all maximal minors of \(M\)** times a local generator of \(K_Z\). Hence
+\[
+\operatorname{Im}(\Lambda^r\varphi)
+=
+I_r(M)\,K_Z.
+\]
+
+But \(I_r(M)\) is precisely the ideal defining \(D_{r-1}(\varphi)\). Thus
+\[
+\boxed{
+\operatorname{Im}\!\left(
+\Lambda^rV^\vee\otimes\mathcal O_Z\to K_Z
+\right)
+=
+\mathcal I_B\otimes K_Z .
+}
+\]
+
+This is true even if \(B\)
+
+- has larger dimension than expected,
+- has embedded components,
+- is nonreduced,
+- has components of different dimensions.
+
+All of that information is encoded in the maximal-minor ideal \(\mathcal I_B\).
+
+The only role of **generic immersivity** is to ensure that \(\varphi\) has generic rank \(r\), so at least one maximal minor is nonzero generically. Therefore
+\[
+\mathcal I_B\neq0
+\]
+generically and \(B\neq Z\); equivalently, the determinant map is not identically zero.
+
+There is also a useful Fitting-ideal formulation. If
+\[
+\mathcal C:=\operatorname{coker}(\varphi),
+\]
+then
+\[
+\mathcal I_B
+=
+\operatorname{Fitt}_0(\mathcal C),
+\]
+so
+\[
+\operatorname{Im}(\Lambda^r\varphi)
+=
+\operatorname{Fitt}_0(\mathcal C)\otimes K_Z.
+\]
+
+This is why \(B\) is exactly the **scheme-theoretic base locus** of the Plücker linear system.
+
+What *does* depend on expected dimension is what you can subsequently say about the geometry of \(B\), its Segre class, Porteous formulas, etc. For example, you cannot blindly use a Thom–Porteous fundamental-class formula unless the relevant codimension hypotheses hold. But the identity
+\[
+\operatorname{Im}(\Lambda^r\varphi)=\mathcal I_BK_Z
+\]
+itself requires no such hypothesis.
+
+This distinction is important for the excess formulas we discussed: the safest object is always the **maximal-minor scheme \(B\)** with its full scheme structure, regardless of whether it has the expected codimension.</div>
+</div>
+</section>
+<section class="turn" id="turn-21">
+<h2>Turn 21</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">Can we describe the im\varphi related with I_B?</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Yes, but only at the level of the **determinant** of \(\operatorname{Im}\varphi\). The ideal \(I_B\) does not in general determine \(\operatorname{Im}\varphi\) itself.
+
+Set
+\[
+E:=\operatorname{Im}\varphi\subset \Omega_Z^1=:F,
+\qquad
+\varphi:V^\vee\otimes\mathcal O_Z\to F,
+\]
+where \(F\) has rank \(r\) and \(E\) also has generic rank \(r\). Then
+\[
+C:=F/E
+\]
+is a torsion sheaf, and
+\[
+\boxed{I_B=\operatorname{Fitt}_0(C).}
+\]
+
+Equivalently, \(I_B\) measures the determinant of the inclusion
+\[
+E\hookrightarrow F.
+\]
+
+Indeed, taking top exterior powers,
+\[
+\Lambda^rE\longrightarrow\Lambda^rF=K_Z,
+\]
+and the image is exactly
+\[
+\boxed{
+\operatorname{Im}\bigl(\Lambda^rE\to K_Z\bigr)
+=
+I_B\otimes K_Z.
+}
+\]
+
+So one can write informally
+\[
+\boxed{\det E=I_B\cdot\det\Omega_Z^1}
+\]
+as a subsheaf of \(K_Z\). More precisely, this means the image of \(\Lambda^rE\) inside \(K_Z\), because \(\Lambda^rE\) itself need not be locally free.
+
+This is the strongest general statement involving only \(I_B\).
+
+The reason \(I_B\) does **not** determine \(E\) is already visible over a DVR. Suppose locally
+\[
+F\simeq R^r
+\]
+and, after changing bases, the inclusion looks like
+\[
+E=
+t^{a_1}R e_1\oplus\cdots\oplus t^{a_r}R e_r,
+\qquad a_i\ge0.
+\]
+Then
+\[
+F/E\simeq \bigoplus_i R/(t^{a_i}),
+\]
+while
+\[
+I_B=\operatorname{Fitt}_0(F/E)
+=(t^{a_1+\cdots+a_r}).
+\]
+
+Thus \(I_B\) remembers only
+\[
+a_1+\cdots+a_r,
+\]
+whereas \(E\) remembers the whole tuple
+\[
+(a_1,\ldots,a_r).
+\]
+
+For example,
+\[
+E_1=t^2Re_1\oplus Re_2
+\]
+and
+\[
+E_2=tRe_1\oplus tRe_2
+\]
+both have
+\[
+I_B=(t^2),
+\]
+but they are very different subsheaves of \(R^2\).
+
+So conceptually,
+\[
+\boxed{
+I_B\text{ measures the total determinant defect, not the full rank-drop structure.}
+}
+\]
+
+This fits exactly with the distinction we found earlier: the tangent Plücker correction depends largely on this determinant defect, whereas the conormal correction can see finer information in \(E=\operatorname{Im}\varphi\).
+
+There is also a useful divisorial version. Write the codimension-one part of \(B\) as
+\[
+D=\sum_D m_DD,
+\]
+where
+\[
+m_D=\operatorname{ord}_D(I_B).
+\]
+Then after taking reflexive hulls,
+\[
+\boxed{
+(\Lambda^rE)^{**}\simeq K_Z(-D).
+}
+\]
+The codimension-\(\ge2\) part of \(B\) disappears after reflexive hull, while the full ideal
+\[
+I_BK_Z\subset K_Z
+\]
+retains it.
+
+If you want more information about \(E\) than \(I_B\) provides, you should keep the **whole collection of Fitting/determinantal ideals**
+\[
+I_j(\varphi),
+\]
+not just the maximal-minor ideal \(I_r(\varphi)=I_B\). Those describe the successive rank-drop loci
+\[
+D_k(\varphi)=V(I_{k+1}(\varphi))
+\]
+and encode much more of the structure of \(\operatorname{Im}\varphi\).</div>
+</div>
+</section>
+<section class="turn" id="turn-22">
+<h2>Turn 22</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">I don't know what Fitt_0 is, please teach me in a nice way, like I'm the one who just learn basic concepts of AG</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Yes. The easiest way to think about \(\operatorname{Fitt}_0\) is:
+
+&gt; **It is an ideal attached to a finitely generated module that records where the module fails to vanish, together with multiplicity information.**
+
+In your situation it measures exactly where the cokernel of
+\[
+\varphi:V^\vee\otimes\mathcal O_Z\longrightarrow \Omega_Z^1
+\]
+is nonzero.
+
+## Start with the simplest example
+
+Let \(R\) be a ring and consider
+\[
+M=R/(f).
+\]
+We have a presentation
+\[
+R\xrightarrow{\cdot f}R\longrightarrow M\longrightarrow0.
+\]
+
+The matrix of the first map is just
+\[
+(f).
+\]
+We define
+\[
+\operatorname{Fitt}_0(M)=(f).
+\]
+
+Geometrically, if \(R\) is the coordinate ring of an affine variety, then \(M\) is zero away from
+\[
+V(f).
+\]
+So the ideal \((f)\) tells us where \(M\) lives.
+
+This is the basic picture.
+
+---
+
+## Now a matrix
+
+Suppose \(M\) has a presentation
+\[
+R^m\xrightarrow{A}R^r\longrightarrow M\longrightarrow0,
+\]
+where \(A\) is an \(r\times m\) matrix.
+
+Then
+\[
+\boxed{
+\operatorname{Fitt}_0(M)
+=
+\text{ideal generated by all }r\times r\text{ minors of }A.
+}
+\]
+
+In other words, take the **largest possible minors**, because the target \(R^r\) has rank \(r\).
+
+Why is this natural? At a point \(p\), the cokernel \(M_p\) vanishes exactly when
+\[
+A_p:R_p^m\to R_p^r
+\]
+is surjective. Surjectivity means that \(A_p\) has rank \(r\), which means that at least one \(r\times r\) minor is invertible at \(p\).
+
+Therefore
+\[
+M_p\neq0
+\]
+exactly when all the maximal minors vanish at \(p\).
+
+Thus, set-theoretically,
+\[
+\boxed{
+V(\operatorname{Fitt}_0(M))=\operatorname{Supp}(M).
+}
+\]
+
+The advantage of the Fitting ideal over merely saying “support” is that it also remembers a natural **scheme structure and multiplicities**.
+
+---
+
+## A \(2\times2\) example
+
+Take
+\[
+A=
+\begin{pmatrix}
+x&amp;0\\
+0&amp;y
+\end{pmatrix}
+\]
+over \(R=k[x,y]\).
+
+Then
+\[
+M=\operatorname{coker}(A)
+\simeq R/(x)\oplus R/(y).
+\]
+
+The maximal minor is
+\[
+\det A=xy,
+\]
+so
+\[
+\operatorname{Fitt}_0(M)=(xy).
+\]
+
+Thus
+\[
+V(\operatorname{Fitt}_0(M))
+=
+V(xy)
+=
+V(x)\cup V(y).
+\]
+
+This is exactly where the cokernel is nonzero.
+
+Now change the matrix to
+\[
+A=
+\begin{pmatrix}
+x&amp;0\\
+0&amp;x
+\end{pmatrix}.
+\]
+Then
+\[
+M\simeq R/(x)\oplus R/(x),
+\]
+and
+\[
+\operatorname{Fitt}_0(M)=(x^2).
+\]
+
+Set-theoretically the support is still just
+\[
+V(x),
+\]
+but the Fitting ideal remembers the multiplicity \(2\).
+
+That is why it is more useful than merely taking the support.
+
+---
+
+# Your situation
+
+You have
+\[
+\varphi:
+V^\vee\otimes\mathcal O_Z
+\longrightarrow
+\Omega_Z^1,
+\]
+where
+\[
+\operatorname{rank}\Omega_Z^1=r.
+\]
+
+Let
+\[
+\mathcal C:=\operatorname{coker}\varphi.
+\]
+
+If \(\iota_Z\) is generically immersive, then \(\varphi\) is generically surjective. Hence \(\mathcal C\) is zero at a general point and is supported exactly where the differential loses rank.
+
+Locally trivialize
+\[
+\Omega_Z^1\simeq\mathcal O_Z^{\,r}.
+\]
+Then \(\varphi\) is represented by an \(r\times n\) matrix
+\[
+A.
+\]
+
+Therefore
+\[
+\boxed{
+\operatorname{Fitt}_0(\mathcal C)
+=
+I_r(A),
+}
+\]
+where \(I_r(A)\) denotes the ideal generated by all \(r\times r\) minors.
+
+But this is exactly the ideal defining the degeneracy scheme
+\[
+B=D_{r-1}(\varphi).
+\]
+
+So in your notation,
+\[
+\boxed{
+\mathcal I_B
+=
+\operatorname{Fitt}_0(\operatorname{coker}\varphi).
+}
+\]
+
+You do not actually need the language of Fitting ideals if it feels like unnecessary abstraction. You can simply say:
+
+&gt; \(B\) is defined by the maximal minors of the matrix of \(\varphi\).
+
+The notation \(\operatorname{Fitt}_0\) is just a coordinate-free name for that construction.
+
+---
+
+# Why does this appear in \(\Lambda^r\varphi\)?
+
+This is perhaps the most important connection for you.
+
+Suppose locally
+\[
+\varphi:\mathcal O_Z^n\to\mathcal O_Z^r
+\]
+has matrix \(A\).
+
+Take
+\[
+\Lambda^r\varphi:
+\Lambda^r\mathcal O_Z^n
+\longrightarrow
+\Lambda^r\mathcal O_Z^r\simeq\mathcal O_Z.
+\]
+
+If you apply this to
+\[
+e_{i_1}\wedge\cdots\wedge e_{i_r},
+\]
+you get
+\[
+\det(A_{i_1,\dots,i_r}).
+\]
+
+So the image of \(\Lambda^r\varphi\) is the ideal generated by the maximal minors:
+\[
+\operatorname{Im}(\Lambda^r\varphi)
+=
+I_r(A).
+\]
+
+Globally,
+\[
+\Lambda^r\Omega_Z^1=K_Z,
+\]
+<span class="source-anchor" id="cite-src-23">hence</span><a class="cited-by" href="#turn-23" title="Jump to the later question about this step">↩ cited in Turn 23</a>
+\[
+\boxed{
+\operatorname{Im}
+\left(
+\Lambda^rV^\vee\otimes\mathcal O_Z
+\to K_Z
+\right)
+=
+\mathcal I_B\otimes K_Z.
+}
+\]
+
+This is why the Fitting ideal appears naturally in your Gauss-map story.
+
+---
+
+## Why is it called “zeroth” Fitting ideal?
+
+There are higher Fitting ideals too.
+
+If
+\[
+R^m\xrightarrow A R^r\to M\to0,
+\]
+then roughly
+\[
+\operatorname{Fitt}_i(M)
+\]
+is generated by the minors of size
+\[
+r-i.
+\]
+
+So
+\[
+\operatorname{Fitt}_0(M)
+\]
+uses the largest, \(r\times r\), minors.
+
+For your differential
+\[
+V^\vee\otimes\mathcal O_Z\to\Omega_Z^1,
+\]
+these higher Fitting ideals correspond to deeper rank drops. For example,
+\[
+D_{r-1}=\{\operatorname{rank}\varphi\le r-1\}
+\]
+is cut out by the \(r\times r\) minors, while
+\[
+D_{r-2}=\{\operatorname{rank}\varphi\le r-2\}
+\]
+is cut out by the \((r-1)\times(r-1)\) minors.
+
+So Fitting ideals are basically a systematic language for **determinantal rank conditions**.
+
+The one fact I would retain for your talk is simply
+\[
+\boxed{
+\operatorname{Fitt}_0(\operatorname{coker}\varphi)
+=
+\text{ideal of maximal minors of }\varphi
+=
+\mathcal I_B.
+}
+\]
+
+Everything else can be introduced only if you need the finer rank strata later.</div>
+</div>
+</section>
+<section class="turn" id="turn-23">
+<h2>Turn 23</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">I still don't understand this <a class="quoted-inline citation-jump" data-source="cite-src-23" href="#cite-src-23">"hence"</a>
+<div class="citation-context">
+<div class="citation-label">Quoted from Turn 22</div>
+<div class="citation-excerpt">Globally,
+\[
+\Lambda^r\Omega_Z^1=K_Z,
+\]
+hence
+\[
+\operatorname{Im}\left(
+\Lambda^rV^\vee\otimes\mathcal O_Z\to K_Z
+\right)
+=
+\mathcal I_B\otimes K_Z.
+\]</div>
+<a class="citation-jump citation-button" data-source="cite-src-23" href="#cite-src-23">Show cited position</a>
+</div></div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Yes. The “hence” is really a **local-to-global gluing step**, and I skipped too much. Let me spell it out slowly.
+
+We have
+\[
+\varphi:V^\vee\otimes\mathcal O_Z\longrightarrow \Omega_Z^1,
+\]
+where \(\dim Z=r\). Taking the \(r\)-th wedge gives
+\[
+\Lambda^r\varphi:
+\Lambda^rV^\vee\otimes\mathcal O_Z
+\longrightarrow
+\Lambda^r\Omega_Z^1=K_Z.
+\]
+
+The target \(K_Z\) is a **line bundle**, not globally \(\mathcal O_Z\). That is exactly why one has to be a little careful.
+
+### Locally, \(K_Z\) looks like \(\mathcal O_Z\)
+
+Take an open set \(U\subset Z\) on which \(\Omega_Z^1\) is trivial, and choose a frame
+\[
+\omega_1,\ldots,\omega_r.
+\]
+Then
+\[
+\omega_1\wedge\cdots\wedge\omega_r
+\]
+is a generator of \(K_Z|_U\). Let me call it
+\[
+\eta_U:=\omega_1\wedge\cdots\wedge\omega_r.
+\]
+
+So on \(U\),
+\[
+K_Z|_U=\mathcal O_U\,\eta_U.
+\]
+
+Choose also a basis \(e_1,\ldots,e_n\) of \(V^\vee\). Locally,
+\[
+\varphi(e_j)=\sum_{i=1}^r a_{ij}\omega_i,
+\]
+so \(\varphi\) is represented by the matrix
+\[
+A=(a_{ij}).
+\]
+
+Now take
+\[
+e_{j_1}\wedge\cdots\wedge e_{j_r}.
+\]
+Applying \(\Lambda^r\varphi\) gives
+\[
+\varphi(e_{j_1})\wedge\cdots\wedge\varphi(e_{j_r}).
+\]
+
+By the usual determinant formula for wedge products,
+\[
+\varphi(e_{j_1})\wedge\cdots\wedge\varphi(e_{j_r})
+=
+\det(A_{j_1,\ldots,j_r})\,\eta_U.
+\]
+
+Therefore the image sheaf on \(U\) is generated by
+\[
+\det(A_I)\eta_U
+\]
+for all \(r\)-element subsets \(I\subset\{1,\ldots,n\}\).
+
+Hence
+\[
+\operatorname{Im}(\Lambda^r\varphi)|_U
+=
+\left(\det(A_I):|I|=r\right)\eta_U.
+\]
+
+But by definition,
+\[
+I_B|_U=
+\left(\det(A_I):|I|=r\right).
+\]
+
+So locally we have
+\[
+\boxed{
+\operatorname{Im}(\Lambda^r\varphi)|_U
+=
+I_B|_U\cdot\eta_U.
+}
+\]
+
+Now what does
+\[
+I_B\otimes K_Z
+\]
+look like on \(U\)? Since
+\[
+K_Z|_U=\mathcal O_U\eta_U,
+\]
+we get
+\[
+(I_B\otimes K_Z)|_U
+=
+I_B|_U\otimes\mathcal O_U\eta_U
+=
+I_B|_U\eta_U.
+\]
+
+So on every trivializing open set,
+\[
+\operatorname{Im}(\Lambda^r\varphi)|_U
+=
+(I_B\otimes K_Z)|_U.
+\]
+
+That is the missing “hence.”
+
+Therefore globally,
+\[
+\boxed{
+\operatorname{Im}\left(
+\Lambda^rV^\vee\otimes\mathcal O_Z
+\longrightarrow K_Z
+\right)
+=
+I_B\otimes K_Z.
+}
+\]
+
+The reason these local equalities glue is that when you change the local generator of \(K_Z\),
+\[
+\eta_{U'}=g\,\eta_U
+\]
+for an invertible function \(g\), both sides are multiplied by exactly the same unit \(g\).
+
+---
+
+### A concrete \(r=2\) example
+
+Suppose \(\dim Z=2\), and locally
+\[
+\Omega_Z^1=\mathcal O_U\,dx\oplus\mathcal O_U\,dy.
+\]
+Suppose \(V^\vee\) has basis \(e_1,e_2,e_3\), and
+\[
+\varphi=
+\begin{pmatrix}
+a&amp;b&amp;c\\
+d&amp;e&amp;f
+\end{pmatrix}.
+\]
+
+Thus
+\[
+\varphi(e_1)=a\,dx+d\,dy,
+\]
+etc.
+
+Now
+\[
+\Lambda^2\varphi(e_1\wedge e_2)
+=
+(ae-bd)\,dx\wedge dy,
+\]
+\[
+\Lambda^2\varphi(e_1\wedge e_3)
+=
+(af-cd)\,dx\wedge dy,
+\]
+and
+\[
+\Lambda^2\varphi(e_2\wedge e_3)
+=
+(bf-ce)\,dx\wedge dy.
+\]
+
+Therefore
+\[
+\operatorname{Im}(\Lambda^2\varphi)
+=
+(ae-bd,\;af-cd,\;bf-ce)\,(dx\wedge dy).
+\]
+
+The ideal
+\[
+I_B=(ae-bd,\;af-cd,\;bf-ce)
+\]
+is exactly the ideal of the locus where \(\varphi\) has rank \(&lt;2\). Since
+\[
+K_Z|_U=\mathcal O_U(dx\wedge dy),
+\]
+we have
+\[
+\operatorname{Im}(\Lambda^2\varphi)
+=
+I_B\,K_Z
+\]
+on \(U\).
+
+So the statement is really just:
+\[
+\boxed{
+\text{maximal minors}
+\times
+\text{local generator of }K_Z.
+}
+\]
+
+The \(I_B\) records **how much the top wedge of the differential vanishes**, while \(K_Z\) records **where that top wedge naturally lives**.</div>
+</div>
+</section>
+<section class="turn" id="turn-24">
+<h2>Turn 24</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">Here I_B is the pullback of original I_B from \mu? 
+<div class="citation-context reply-context">
+<div class="citation-label">Replying to / cited from Turn 18</div>
+<div class="citation-excerpt">for the resolved Gauss map and \(E\) for the exceptional Cartier divisor, normalized by
+\[
+\mathcal I_B\mathcal O_\Gamma=\mathcal O_\Gamma(-E).
+\]</div>
+<a class="citation-jump citation-button" data-source="reply-src-24" href="#reply-src-24">Show cited position</a>
+</div>
+</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Yes. More precisely, if
+\[
+\mu:\Gamma=\operatorname{Bl}_B Z\longrightarrow Z
+\]
+is the blow-up of the ideal sheaf \(\mathcal I_B\), then in
+\[
+\mathcal I_B\mathcal O_\Gamma=\mathcal O_\Gamma(-E)
+\]
+the left-hand side means the **extension of the original ideal \(\mathcal I_B\) from \(Z\) to \(\Gamma\)**:
+\[
+\boxed{
+\mathcal I_B\mathcal O_\Gamma
+:=
+\operatorname{Im}\!\left(
+\mu^*\mathcal I_B\longrightarrow\mathcal O_\Gamma
+\right).
+}
+\]
+
+I would be a little careful about calling it simply “the pullback,” because \(\mathcal I_B\) need not be a line bundle.
+
+Indeed,
+\[
+\mu^*\mathcal I_B
+=
+\mathcal O_\Gamma\otimes_{\mu^{-1}\mathcal O_Z}\mu^{-1}\mathcal I_B
+\]
+is a sheaf, and there is a natural multiplication map
+\[
+\mu^*\mathcal I_B\longrightarrow\mathcal O_\Gamma.
+\]
+Its **image** is what we denote by
+\[
+\mathcal I_B\mathcal O_\Gamma.
+\]
+
+The defining property of the blow-up is precisely that this image becomes an invertible ideal:
+\[
+\boxed{
+\mathcal I_B\mathcal O_\Gamma
+\simeq\mathcal O_\Gamma(-E).
+}
+\]
+
+Here \(E\) is the exceptional Cartier divisor associated with the blow-up.
+
+So the picture is
+\[
+\mathcal I_B\subset\mathcal O_Z
+\]
+downstairs, and upstairs
+\[
+\mu^*\mathcal I_B\longrightarrow
+\underbrace{\mathcal I_B\mathcal O_\Gamma}_{\text{invertible}}
+=
+\mathcal O_\Gamma(-E)
+\subset\mathcal O_\Gamma.
+\]
+
+### Why introduce \(E\)?
+
+Downstairs, \(\mathcal I_B\) may be complicated: \(B\) can have codimension \(2\), several components, nonreduced structure, etc. It is certainly not generally of the form
+\[
+\mathcal O_Z(-D)
+\]
+for a divisor \(D\).
+
+After blowing up, however, the ideal becomes principal in the sheaf-theoretic sense:
+\[
+\mathcal I_B\mathcal O_\Gamma=\mathcal O_\Gamma(-E).
+\]
+
+This lets us turn the statement
+\[
+\operatorname{Im}
+\left(
+\Lambda^rV^\vee\otimes\mathcal O_Z\to K_Z
+\right)
+=
+\mathcal I_BK_Z
+\]
+into an honest line-bundle statement upstairs:
+\[
+\boxed{
+\text{moving Plücker line bundle on }\Gamma
+=
+\mu^*K_Z\otimes\mathcal O_\Gamma(-E).
+}
+\]
+
+That is why
+\[
+\bar\gamma^*\mathcal O_{\operatorname{Gr}}(1)
+\simeq
+\mu^*K_Z(-E).
+\]
+
+A simple example is blowing up \(Z=\mathbf A^2\) at the origin:
+\[
+\mathcal I_B=(x,y).
+\]
+Downstairs, \((x,y)\) is not an invertible ideal. After
+\[
+\mu:\operatorname{Bl}_0\mathbf A^2\to\mathbf A^2,
+\]
+however,
+\[
+(x,y)\mathcal O_\Gamma=\mathcal O_\Gamma(-E),
+\]
+where \(E\simeq\mathbf P^1\) is the exceptional divisor.
+
+So yes: **it is the original \(\mathcal I_B\) pulled upstairs via \(\mu\), more precisely its extended ideal, and the blow-up turns it into \(\mathcal O_\Gamma(-E)\).**</div>
+</div>
+</section>
+<section class="turn" id="turn-25">
+<h2>Turn 25</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">But as O_{\Gamma}=\mu^* O_Z, is the left-hand side just \mu^*I_B?</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Not necessarily. This is exactly the subtle point.
+
+You are right that
+\[
+\mu^*\mathcal O_Z\simeq \mathcal O_\Gamma.
+\]
+Starting from the inclusion
+\[
+\mathcal I_B\hookrightarrow \mathcal O_Z,
+\]
+pullback gives a map
+\[
+\mu^*\mathcal I_B\longrightarrow \mu^*\mathcal O_Z
+=\mathcal O_\Gamma.
+\]
+
+But this map need **not remain injective**, because \(\mu^*(-)=(-)\otimes_{\mathcal O_Z}\mathcal O_\Gamma\) is right-exact, not left-exact.
+
+So there are two different sheaves:
+\[
+\boxed{\mu^*\mathcal I_B}
+\]
+and
+\[
+\boxed{
+\mathcal I_B\mathcal O_\Gamma
+:=
+\operatorname{Im}\bigl(\mu^*\mathcal I_B\to\mathcal O_\Gamma\bigr).
+}
+\]
+
+In general,
+\[
+\mu^*\mathcal I_B\twoheadrightarrow
+\mathcal I_B\mathcal O_\Gamma
+\]
+can have a kernel supported on the exceptional locus.
+
+For the blow-up, it is the **image** that satisfies
+\[
+\boxed{
+\mathcal I_B\mathcal O_\Gamma=\mathcal O_\Gamma(-E).
+}
+\]
+
+### Example: blow up the origin of \(\mathbf A^2\)
+
+Take
+\[
+Z=\mathbf A^2=\operatorname{Spec}k[x,y],
+\qquad
+I=(x,y),
+\]
+and let
+\[
+\mu:\Gamma=\operatorname{Bl}_0\mathbf A^2\to\mathbf A^2.
+\]
+
+On the chart where
+\[
+y=xt,
+\]
+the extended ideal is
+\[
+I\mathcal O_\Gamma=(x,xt)=(x).
+\]
+Thus
+\[
+I\mathcal O_\Gamma=(x)=\mathcal O_\Gamma(-E)
+\]
+on this chart.
+
+But \(\mu^*I\) is slightly larger. Downstairs,
+\[
+I=(x,y)
+\]
+has the presentation
+\[
+R\xrightarrow{(-y,x)}R^2\to I\to0.
+\]
+After tensoring upstairs, \(y=xt\), so
+\[
+\mu^*I
+=
+S^2/\langle(-xt,x)\rangle
+=
+S^2/\langle x(-t,1)\rangle.
+\]
+
+The map
+\[
+\mu^*I\to (x)\subset S
+\]
+sends
+\[
+e_1\mapsto x,\qquad e_2\mapsto xt.
+\]
+The element
+\[
+-te_1+e_2
+\]
+maps to zero. But inside \(\mu^*I\) we only know
+\[
+x(-te_1+e_2)=0.
+\]
+So this is torsion supported on
+\[
+x=0,
+\]
+the exceptional divisor.
+
+Thus
+\[
+\mu^*I
+\neq I\mathcal O_\Gamma,
+\]
+while
+\[
+I\mathcal O_\Gamma
+=
+\mu^*I/(\text{exceptional torsion}).
+\]
+
+So the correct picture is
+\[
+\boxed{
+\mu^*\mathcal I_B
+\twoheadrightarrow
+\mathcal I_B\mathcal O_\Gamma
+=
+\mathcal O_\Gamma(-E)
+\hookrightarrow
+\mathcal O_\Gamma.
+}
+\]
+
+If \(\mathcal I_B\) were already locally free of rank \(1\), for example the ideal of an effective Cartier divisor, then pulling back preserves the inclusion and there would be no distinction. But for a general determinantal ideal \(I_B\), the distinction matters.</div>
+</div>
+</section>
+<section class="turn" id="turn-26">
+<h2>Turn 26</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">Could you explain the difference in the blow up of A^2 case, describing them explicitly in terms of local charts?</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Yes. Let us do the blow-up of \(\mathbf A^2\) completely explicitly. This is the best example for seeing why
+\[
+\mu^*I\neq I\mathcal O_\Gamma
+\]
+even though \(\mu^*\mathcal O_Z=\mathcal O_\Gamma\).
+
+Take
+\[
+Z=\mathbf A^2=\operatorname{Spec}k[x,y],
+\qquad I=(x,y),
+\]
+and let
+\[
+\mu:\Gamma=\operatorname{Bl}_0\mathbf A^2\to\mathbf A^2.
+\]
+
+The blow-up is
+\[
+\Gamma=
+\{((x,y),[U:V])\in\mathbf A^2\times\mathbf P^1:
+xV=yU\}.
+\]
+
+It has two standard affine charts.
+
+### The \(x\)-chart
+
+Take \(U\neq0\), and put
+\[
+t=\frac VU.
+\]
+The equation \(xV=yU\) becomes
+\[
+y=xt.
+\]
+Thus
+\[
+U_x=\operatorname{Spec}k[x,t],
+\]
+and
+\[
+\mu|_{U_x}:(x,t)\longmapsto(x,xt).
+\]
+
+The exceptional divisor here is
+\[
+E\cap U_x=\{x=0\}.
+\]
+
+Now consider the two objects separately.
+
+The **extended ideal** is obtained simply by taking the original functions \(x,y\) and viewing them upstairs:
+\[
+I\mathcal O_{U_x}
+=(x,y)\mathcal O_{U_x}.
+\]
+But \(y=xt\), so
+\[
+I\mathcal O_{U_x}
+=(x,xt)
+=(x).
+\]
+
+Therefore
+\[
+\boxed{I\mathcal O_{U_x}=(x)=\mathcal O_{U_x}(-E).}
+\]
+
+This is a genuine ideal inside the ring \(k[x,t]\).
+
+Now compute the **module pullback**
+\[
+\mu^*I|_{U_x}
+=
+I\otimes_{k[x,y]}k[x,t].
+\]
+
+This is subtler.
+
+Downstairs, \(I=(x,y)\) has a presentation
+\[
+k[x,y]\xrightarrow{\binom{-y}{x}}
+k[x,y]^2
+\longrightarrow I\longrightarrow0.
+\]
+If \(e_x,e_y\) denote the two generators, the relation is
+\[
+-y\,e_x+x\,e_y=0.
+\]
+
+After pulling back to the \(x\)-chart, substitute
+\[
+y=xt.
+\]
+The relation becomes
+\[
+-xt\,e_x+x\,e_y
+=
+x(e_y-te_x)=0.
+\]
+
+Hence
+\[
+\boxed{
+\mu^*I|_{U_x}
+=
+\frac{k[x,t]e_x\oplus k[x,t]e_y}
+     {\langle x(e_y-te_x)\rangle}.
+}
+\]
+
+Now introduce
+\[
+w:=e_y-te_x.
+\]
+Then
+\[
+xw=0.
+\]
+
+So, as a module,
+\[
+\boxed{
+\mu^*I|_{U_x}
+\simeq
+k[x,t]\,e_x
+\oplus
+\bigl(k[x,t]/(x)\bigr)w.
+}
+\]
+
+This formula displays the issue perfectly: the pullback has an extra torsion summand
+\[
+k[x,t]/(x),
+\]
+supported exactly on the exceptional divisor \(E=\{x=0\}\).
+
+### The natural map to \(\mathcal O_\Gamma\)
+
+The original inclusion
+\[
+I\hookrightarrow k[x,y]
+\]
+pulls back to a map
+\[
+\mu^*I|_{U_x}\longrightarrow k[x,t].
+\]
+
+It sends
+\[
+e_x\longmapsto x,
+\qquad
+e_y\longmapsto y=xt.
+\]
+
+Therefore
+\[
+w=e_y-te_x
+\longmapsto
+xt-tx=0.
+\]
+
+So the entire torsion summand is killed.
+
+The image is
+\[
+(x,xt)=(x).
+\]
+
+Thus on this chart we have
+\[
+\boxed{
+\mu^*I
+=
+k[x,t]e_x
+\oplus
+k[x,t]/(x)\,w
+\twoheadrightarrow
+(x)
+=
+I\mathcal O_\Gamma.
+}
+\]
+
+The kernel is
+\[
+\boxed{
+\ker(\mu^*I\to I\mathcal O_\Gamma)
+\simeq k[x,t]/(x).
+}
+\]
+
+That is the difference.
+
+---
+
+### The \(y\)-chart gives the same picture
+
+Now take \(V\neq0\), and put
+\[
+s=\frac UV.
+\]
+Then
+\[
+x=sy,
+\]
+so
+\[
+U_y=\operatorname{Spec}k[s,y],
+\]
+and
+\[
+\mu(s,y)=(sy,y).
+\]
+
+Here
+\[
+E\cap U_y=\{y=0\}.
+\]
+
+The extended ideal is
+\[
+I\mathcal O_{U_y}
+=(sy,y)
+=(y),
+\]
+so
+\[
+\boxed{I\mathcal O_{U_y}=(y)=\mathcal O_{U_y}(-E).}
+\]
+
+For the pullback module, the original relation
+\[
+-y e_x+x e_y=0
+\]
+becomes
+\[
+-y e_x+sy e_y
+=
+y(-e_x+s e_y)=0.
+\]
+
+Set
+\[
+w'=e_x-se_y.
+\]
+Then
+\[
+yw'=0,
+\]
+and therefore
+\[
+\boxed{
+\mu^*I|_{U_y}
+\simeq
+k[s,y]\,e_y
+\oplus
+\bigl(k[s,y]/(y)\bigr)w'.
+}
+\]
+
+Again, the second summand is torsion supported on the exceptional divisor.
+
+The natural map
+\[
+\mu^*I\to\mathcal O_\Gamma
+\]
+sends
+\[
+e_x\mapsto sy,\qquad e_y\mapsto y,
+\]
+and hence
+\[
+w'=e_x-se_y\mapsto sy-sy=0.
+\]
+
+Its image is simply
+\[
+(y)=I\mathcal O_{U_y}.
+\]
+
+---
+
+## So what is happening conceptually?
+
+On either chart:
+\[
+\boxed{
+\mu^*I
+=
+\text{line-bundle part}
++
+\text{torsion on }E,
+}
+\]
+while
+\[
+\boxed{
+I\mathcal O_\Gamma
+=
+\text{line-bundle part only}.
+}
+\]
+
+More precisely,
+\[
+\begin{array}{c|c|c}
+ &amp; U_x &amp; U_y\\
+\hline
+I\mathcal O_\Gamma &amp;(x)&amp;(y)\\[1mm]
+\mu^*I&amp;
+S_xe_x\oplus S_x/(x)&amp;
+S_ye_y\oplus S_y/(y)
+\end{array}
+\]
+
+and the torsion pieces are killed by the natural map
+\[
+\mu^*I\to\mathcal O_\Gamma.
+\]
+
+Away from the exceptional divisor there is no distinction. For example on \(U_x\) where \(x\neq0\), the relation
+\[
+x(e_y-te_x)=0
+\]
+implies
+\[
+e_y=te_x,
+\]
+so
+\[
+\mu^*I\simeq\mathcal O_\Gamma
+\]
+there. The discrepancy occurs only on \(E\).
+
+This is exactly why the notation
+\[
+I\mathcal O_\Gamma
+\]
+means
+\[
+\boxed{
+\operatorname{Im}(\mu^*I\to\mathcal O_\Gamma),
+}
+\]
+not simply \(\mu^*I\).
+
+And the defining miracle of the blow-up is that this **image** is invertible:
+\[
+\boxed{
+I\mathcal O_\Gamma=\mathcal O_\Gamma(-E).
+}
+\]
+
+In fact, in this example you can think of
+\[
+\mu^*I/\text{torsion}
+\simeq
+I\mathcal O_\Gamma
+\simeq
+\mathcal O_\Gamma(-E).
+\]
+That last formulation is often the most intuitive one.</div>
+</div>
+</section>
+<section class="turn" id="turn-27">
+<h2>Turn 27</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">How to compute the pullback of an ideal (f_1,f_2,...) of A, when the map is A-&gt;B?</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Yes. Suppose you have a ring map
+\[
+\phi:A\longrightarrow B
+\]
+and an ideal
+\[
+I=(f_1,\dots,f_m)\subset A.
+\]
+
+There are **two related constructions**, and this is exactly the distinction that caused the confusion in the blow-up example.
+
+If you mean the **inverse image of the closed subscheme** \(V(I)\subset \operatorname{Spec}A\) under
+\[
+\operatorname{Spec}B\longrightarrow \operatorname{Spec}A,
+\]
+then its ideal in \(B\) is simply the **extended ideal**
+\[
+\boxed{
+IB=(\phi(f_1),\dots,\phi(f_m))\subset B.
+}
+\]
+So computationally: just substitute the images of the variables/functions under \(A\to B\).
+
+For example, let
+\[
+A=k[x,y],\qquad I=(x,y),
+\]
+and on the \(x\)-chart of the blow-up let
+\[
+B=k[x,t],\qquad
+x\mapsto x,\quad y\mapsto xt.
+\]
+Then
+\[
+IB=(x,xt)=(x).
+\]
+
+That is the ideal of the exceptional divisor on this chart.
+
+But if you mean the **pullback of \(I\) as an \(A\)-module/sheaf**, then
+\[
+\boxed{
+\phi^*I=I\otimes_A B.
+}
+\]
+
+This need not equal the ideal \(IB\subset B\). There is only a natural map
+\[
+I\otimes_A B\longrightarrow B,
+\qquad
+f\otimes b\longmapsto \phi(f)b,
+\]
+and its image is precisely
+\[
+IB.
+\]
+
+So the precise relationship is
+\[
+\boxed{
+I\otimes_A B
+\longrightarrow
+B,
+\qquad
+\operatorname{Im}=IB.
+}
+\]
+
+In general the map can have a kernel.
+
+For the same blow-up chart,
+\[
+I=(x,y)\subset k[x,y],
+\qquad
+B=k[x,t],\quad y=xt.
+\]
+As a module, \(I\) has generators \(e_x,e_y\) with relation
+\[
+-y e_x+x e_y=0.
+\]
+After tensoring with \(B\), this becomes
+\[
+-xt\,e_x+x e_y=0,
+\]
+i.e.
+\[
+x(e_y-te_x)=0.
+\]
+Thus
+\[
+I\otimes_A B
+=
+\frac{Be_x\oplus Be_y}{\langle x(e_y-te_x)\rangle}.
+\]
+
+The natural map to \(B\) is
+\[
+e_x\mapsto x,\qquad e_y\mapsto xt.
+\]
+Hence
+\[
+e_y-te_x\mapsto0.
+\]
+This element can be nonzero in \(I\otimes_A B\), even though it maps to zero in \(B\).
+
+So
+\[
+I\otimes_A B
+\neq (x)
+\]
+as modules, while
+\[
+\operatorname{Im}(I\otimes_A B\to B)
+=(x)=IB.
+\]
+
+A good rule to remember is:
+\[
+\boxed{
+\begin{array}{ll}
+\text{pullback of the ideal as a module} &amp;
+I\otimes_A B,\\[1mm]
+\text{ideal defining the scheme-theoretic inverse image} &amp;
+IB=(\phi(f_1),\ldots,\phi(f_m)).
+\end{array}}
+\]
+
+They coincide when
+\[
+I\otimes_A B\to B
+\]
+is injective—for instance under suitable flatness hypotheses—but not in general.
+
+And this is why, for the blow-up map \(\mu\), one writes
+\[
+\boxed{
+I\mathcal O_{\widetilde X}
+=
+\operatorname{Im}\bigl(\mu^*I\to\mathcal O_{\widetilde X}\bigr),
+}
+\]
+rather than automatically identifying it with \(\mu^*I\).</div>
+</div>
+</section>
+<section class="turn" id="turn-28">
+<h2>Turn 28</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">So in my local chart the pullback \mu^*I_Z is (x_1,x_1y_2,x_1y_3)=(x_1), the pullback is a line bundle?</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Yes — **if by “pullback of the ideal” you mean the ideal defining the scheme-theoretic inverse image**, then in your notation you are exactly right.
+
+In your \(B_1\)-chart of the blow-up, you have
+\[
+x_2=x_1y_2,\qquad x_3=x_1y_3
+\]
+(and similarly in higher dimension), with exceptional divisor given by \(x_1=0\).
+
+So if downstairs
+\[
+I_Z=(x_1,x_2,x_3),
+\]
+then upstairs
+\[
+I_Z\mathcal O_{B_1}
+=
+(x_1,x_1y_2,x_1y_3)
+=
+(x_1).
+\]
+
+Therefore this **extended ideal**
+\[
+I_Z\mathcal O_{B_1}
+\]
+is principal, hence locally free of rank \(1\). Globally on the blow-up these local principal ideals glue to
+\[
+\boxed{
+I_Z\mathcal O_{\widetilde A}
+\simeq \mathcal O_{\widetilde A}(-E).
+}
+\]
+
+So yes:
+\[
+\boxed{
+\text{the scheme-theoretic pullback ideal becomes a line bundle on the blow-up.}
+}
+\]
+
+But there is one terminology point that is causing all the confusion. If one writes
+\[
+\mu^*I_Z
+\]
+in the **sheaf/module sense**, then by definition
+\[
+\mu^*I_Z
+=
+I_Z\otimes_{\mathcal O_A}\mathcal O_{\widetilde A},
+\]
+and that object need not be a line bundle. It can have torsion along \(E\).
+
+The object you computed as
+\[
+(x_1,x_1y_2,x_1y_3)=(x_1)
+\]
+is really
+\[
+\boxed{
+I_Z\mathcal O_{\widetilde A}
+=
+\operatorname{Im}
+\left(
+\mu^*I_Z\to\mathcal O_{\widetilde A}
+\right).
+}
+\]
+
+So I would keep the notation distinction:
+\[
+\boxed{
+\begin{aligned}
+\mu^*I_Z
+&amp;=I_Z\otimes\mathcal O_{\widetilde A}
+&amp;&amp;\text{(module pullback; may have torsion)},\\
+I_Z\mathcal O_{\widetilde A}
+&amp;=(x_1)
+&amp;&amp;\text{(extended ideal; a line bundle on the blow-up)}.
+\end{aligned}}
+\]
+
+In your \(B_1\)-chart, it is the second one that is visibly
+\[
+(x_1)=\mathcal O(-E).
+\]
+
+And this property — that \(I_Z\mathcal O_{\widetilde A}\) becomes invertible — is essentially the defining universal property of the blow-up.</div>
+</div>
+</section>
+<section class="turn" id="turn-29">
+<h2>Turn 29</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">So you think \mu^*I_Z is not (x_1,x_1y_2,x_1y_3)? Why?</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Exactly: if by \(\mu^*I_Z\) you mean “the ideal generated by the pulled-back functions,” then in your notation you are right:
+\[
+\mu^*I_Z=(x_1,x_1y_2,x_1y_3)=(x_1),
+\]
+and it is a line bundle.
+
+The only issue is that there are **two conventions** hiding behind the notation \(\mu^*I_Z\).
+
+Let
+\[
+A=\mathbf C[x_1,x_2,x_3],\qquad
+B=\mathbf C[x_1,y_2,y_3],
+\]
+with
+\[
+x_1\mapsto x_1,\qquad
+x_2\mapsto x_1y_2,\qquad
+x_3\mapsto x_1y_3.
+\]
+Take
+\[
+I_Z=(x_1,x_2,x_3)\subset A.
+\]
+
+If you pull back the **ideal as functions**, then
+\[
+I_ZB=(x_1,x_1y_2,x_1y_3)=(x_1).
+\]
+This is the ideal of the inverse-image subscheme, and on the blow-up it is indeed
+\[
+\mathcal O(-E).
+\]
+
+What I was calling \(\mu^*I_Z\) before was the pullback as an \(\mathcal O\)-module:
+\[
+I_Z\otimes_A B.
+\]
+That object is slightly bigger.
+
+To see why, let \(e_1,e_2,e_3\) denote the three generators corresponding to \(x_1,x_2,x_3\). Downstairs we have relations such as
+\[
+x_1e_2-x_2e_1=0.
+\]
+After tensoring with \(B\), since \(x_2=x_1y_2\), this becomes
+\[
+x_1(e_2-y_2e_1)=0.
+\]
+
+The key point is:
+\[
+x_1(e_2-y_2e_1)=0
+\]
+does **not** imply
+\[
+e_2=y_2e_1
+\]
+inside \(I_Z\otimes_A B\), because \(e_2-y_2e_1\) may be \(x_1\)-torsion.
+
+Similarly,
+\[
+x_1(e_3-y_3e_1)=0.
+\]
+
+So locally
+\[
+I_Z\otimes_A B
+\simeq
+B e_1
+\oplus
+\frac{B}{(x_1)}(e_2-y_2e_1)
+\oplus
+\frac{B}{(x_1)}(e_3-y_3e_1).
+\]
+
+There is a natural map
+\[
+I_Z\otimes_A B\longrightarrow B
+\]
+sending
+\[
+e_1\mapsto x_1,\qquad
+e_2\mapsto x_1y_2,\qquad
+e_3\mapsto x_1y_3.
+\]
+
+The torsion elements
+\[
+e_2-y_2e_1,\qquad e_3-y_3e_1
+\]
+go to \(0\). Therefore the image is precisely
+\[
+(x_1,x_1y_2,x_1y_3)=(x_1).
+\]
+
+So the exact distinction is
+\[
+\boxed{
+I_Z\otimes_A B
+\longrightarrow
+I_ZB=(x_1),
+}
+\]
+where the first object has extra torsion supported on the exceptional divisor, while the second is the line bundle.
+
+For your notes, I think we should adopt your convention and simply write
+\[
+\boxed{\mu^*I_Z=(x_1)}
+\]
+for the **pulled-back ideal sheaf**. If we ever need the tensor-product pullback, I will explicitly write
+\[
+I_Z\otimes_{\mathcal O_Z}\mathcal O_{\widetilde Z}
+\]
+so there is no ambiguity.</div>
+</div>
+</section>
+<section class="turn" id="turn-30">
+<h2>Turn 30</h2>
+<div class="message user">
+<div class="role">User</div>
+<div class="content">Good, can you record this discussion and export it as a html document like the [personal_handwritten_collection/AI_generated_learning/chat_archive_builder.html at main · ramified/personal_handwritten_collection · GitHub](https://github.com/ramified/personal_handwritten_collection/raw/main/AI_generated_learning/chat_archive_builder.html) ?</div>
+</div>
+<div class="message assistant">
+<div class="role">Assistant</div>
+<div class="content">Done. I made it as a standalone searchable HTML archive with MathJax, a table of contents, dark/light mode, print styling, and the notation convention we settled on.
+
+[Download the HTML archive](sandbox:/mnt/data/tangent_gauss_map_chat_archive.html)
+
+I also normalized the blow-up discussion to your convention that
+\[
+\mu^*I_Z
+\]
+means the extended ideal generated by the pulled-back functions, while the tensor-product pullback is written explicitly when needed.</div>
+</div>
+</section>
+<footer>Standalone HTML archive. MathJax is loaded from a CDN for formula rendering.</footer>
+</main>
+</div>
+<script>
+const root=document.documentElement;
+document.getElementById('theme').onclick=()=>{
+  root.setAttribute('data-theme',root.getAttribute('data-theme')==='dark'?'light':'dark');
+};
+document.getElementById('search').addEventListener('input',e=>{
+  const q=e.target.value.trim().toLowerCase();
+  document.querySelectorAll('.turn').forEach(s=>{
+    s.classList.toggle('hidden',q && !s.innerText.toLowerCase().includes(q));
+  });
+});
+
+
+document.querySelectorAll('.citation-jump').forEach(link=>{
+  link.addEventListener('click',ev=>{
+    const id=link.dataset.source;
+    const target=document.getElementById(id);
+    if(!target) return;
+    ev.preventDefault();
+    history.replaceState(null,'','#'+id);
+    target.scrollIntoView({behavior:'smooth',block:'center'});
+    target.classList.remove('citation-flash');
+    void target.offsetWidth;
+    target.classList.add('citation-flash');
+    setTimeout(()=>target.classList.remove('citation-flash'),2200);
+  });
+});
+</script>
+</body>
+</html>
